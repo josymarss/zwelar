@@ -1,0 +1,19 @@
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding: 10px;
+}
+.container h2{
+    margin-top:70px;
+    color:#222f3e;
+}
+.paragraph{
+    width:600px;
+    margin-top:10px;
+    text-indent:30px;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    color:#576574;
+}

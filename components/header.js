@@ -22,7 +22,7 @@ export function Header (){
                 <li>
                     <FontAwesomeIcon icon={faCodeBranch}>
                     </FontAwesomeIcon>
-                    <span><Link href='https://github.com/josymarss/kimbundu-technical-expressions:'>github</Link></span>
+                    <span><Link href='https://github.com/josymarss/kimbundu-technical-expressions'>github</Link></span>
                 </li>
             </ul>
             <div className={styles.searchSection}>

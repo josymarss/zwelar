@@ -52,3 +52,17 @@
     height:50px;
     border-radius:4px;
 }
+@media screen and (max-width:600px){
+    .container{
+        align-items:center;
+        justify-content:center;
+    }
+    .search{
+        align-items:center;
+        justify-content:center;
+    }
+    .words{
+        align-items:center;
+        justify-content:center;
+    }
+}

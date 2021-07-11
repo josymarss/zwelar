@@ -1,4 +1,5 @@
 .header{
+    top:0px;
     position:fixed;
     display:flex;
     width:100%;
@@ -64,8 +65,25 @@
     align-items:center;
     justify-content:center;
   }
-@media screen and (max-width:750px){
+@media screen and (max-width:800px){
     .searchSection{
         display:none;
+    }
+}
+@media screen and (max-width:600px){
+    .header{
+        padding:12px;
+        top:0px;
+        position:fixed;
+        height: 80px;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+    .header h2{
+        margin-top:30px;
+    }
+    .header ul {
+        margin-top:-14px;
     }
 }

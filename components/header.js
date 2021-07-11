@@ -17,6 +17,9 @@ export function Header (){
             </h2>
             <ul>
                 <li>
+                    <Link href='/grammar'>{`gramática`}</Link>
+                </li>
+                <li>
                     <Link href='/about'>sobre</Link>
                 </li>
                 <li>

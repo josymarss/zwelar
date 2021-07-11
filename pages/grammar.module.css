@@ -1,0 +1,22 @@
+.contanier{
+    margin-top:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+
+}
+.contanier p {
+    color:rgb(116, 116, 116);
+    flex-wrap:wrap;
+}
+.container p span {
+    font-style: italic;
+    color:#1dd1a1;
+    text-decoration:underline;
+}
+@media screen and (max-width:700px){
+    /* .container{
+
+    } */
+}

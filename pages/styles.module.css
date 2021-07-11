@@ -7,6 +7,7 @@
     position:relative;
 }
 .search{
+    align-self:center;
     margin-top:70px;
     display:flex;
     align-items:center;
@@ -54,10 +55,12 @@
 }
 @media screen and (max-width:600px){
     .container{
-        align-items:center;
+        margin-top:20px;
+        align-items:flex-start;
         justify-content:center;
     }
     .search{
+        align-self:center;
         align-items:center;
         justify-content:center;
     }

@@ -6,8 +6,16 @@ import styles from './styles.module.css'
 
 export function Header (){
     
-    const onSugerir = () =>{
-        console.log('Clicked!')
+    const onSugerir = (e) =>{
+        // const value = e.target.value
+        // if (value !== ''){
+        //     const pyShell = new PythonShell('suggestion.py')
+        //     pyShell.send(value)
+        //     pyShell.end((err, code, signal) => {
+        //        // 
+        //        err? console.log('Some error ocurred!') : 'Good!!'
+        //     })
+        // }
     }
 
     return(

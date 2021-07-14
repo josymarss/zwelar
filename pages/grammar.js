@@ -1,17 +1,24 @@
+import { useState,useEffect } from 'react'
 import Link from 'next/link'
 
 import grammar from './grammar.module.css'
+import { datagrammar } from '../datagrammar'
 
 export default function Grammar(){
+    const [alphabet, setAlphabet] = useState([])
+    
+    useEffect(()=>{
+        setAlphabet(datagrammar.alphabet)
+    },[])
+
     return(
         <div className={grammar.container}>
-            <p>Página em construção.</p>
-            <p>
-                <Link href='/translations'>
-                    {`Página estará disponível em breve.`}
-                </Link>
-                <span>{` retornar para a página inicial`}</span>
-            </p>
+           <h2>Alfabeto</h2>
+           <div className={grammar.alphabet}>
+                {alphabet.map((letter,index) => (
+                    <p key={index}>{letter}</p>
+                ))}  
+           </div>
         </div>
     )
 }

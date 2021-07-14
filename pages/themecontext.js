@@ -1,6 +1,6 @@
-import { createContext } from 'react'
-import theme from './theme.module.css'
+// import { createContext } from 'react'
+// import theme from './theme.module.css'
 
-const Theme = createContext(theme.default)
+// const Theme = createContext(theme.default)
 
-export default Theme
+// export default Theme

@@ -13,6 +13,12 @@
     color:#1dd1a1;
     word-wrap: break-word;
 }
+.intro{
+    word-wrap:break-word;
+    font-size: 14px;
+    color:#414141;
+    margin:8px 0px;    
+}
 .alphabet p {
     padding:10px;
     font-size:25px;

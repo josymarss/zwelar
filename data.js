@@ -6,7 +6,7 @@ export const data = [
     },
     {
         "word":"App",
-        "translation":"Aplikativu"
+        "translation":"App"
     },
     {
         "word":"Bit",
@@ -32,4 +32,13 @@ export const data = [
         "word":"Computer",
         "translation":"Komputeh"
     },
+    {
+        "word":"SQL",
+        "translation":"SKL",
+        "description":"Structured Query Language",
+    },
+    {
+        "word":"Web",
+        "translation":"Web"
+    }
 ]

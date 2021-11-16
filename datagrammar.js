@@ -2,6 +2,7 @@ export const datagrammar = {
     alphabet:[
         "A - ",
         "B - ",
+        "D - ",
         "E - ",
         "F - ",
         "H - ",

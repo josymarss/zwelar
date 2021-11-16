@@ -1,22 +1,27 @@
-import { useState, useEffect, Fragment } from 'react'
+import { useState, useEffect, Fragment } from 'react';
 
-import styles from './styles.module.css'
-import { Header } from '../components/header'
-import { data } from '../data'
+import styles from './styles.module.css';
+import { Header } from '../components/header';
+import { data } from '../data';
 
 export default function TranslationPage(){
-    const [datafetched, updateDate] = useState([])
-    const [search, updateSearch] = useState('')
+    const [datafetched, updateDate] = useState([]);
+    const [search, updateSearch] = useState('');
+    
     useEffect(() => {
-        updateDate(data)
-    },[])
+        updateDate(data);
+    },[]);
 
     useEffect(()=>{
         
-    },[datafetched])
+    },[datafetched]);
 
     const onBuscar = () =>{
-        updateDate(data.filter(elem => elem.word === search || elem.word.toLocaleLowerCase() === search || elem.word.toUpperCase() === search))
+        updateDate(data.
+            filter(elem => elem.word === search || 
+                elem.word.toLocaleLowerCase() === search ||
+                 elem.word.toUpperCase() === search) ||
+                 elem.word.toLocaleLowerCase() === search.toLocaleLowerCase());
     }
     
     const MyData = ()=>(
@@ -26,9 +31,17 @@ export default function TranslationPage(){
                 <div className={styles.words} key={index}>
                     <p>{data.translation}</p>
                 </div>
+               { data.description ?
+                    <>
+                        <p className={styles.title}>Description</p>
+                        <div className={styles.words} key={index}>
+                            <p>{data.description}</p>
+                        </div>
+                    </>: ""
+                }
             </>
-        ))      
-    )
+        ))     
+    );
     
     return(
         <div className={styles.container}>
@@ -45,5 +58,5 @@ export default function TranslationPage(){
             <MyData />
 
         </div>
-    )
+    );
 }

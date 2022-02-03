@@ -8,7 +8,7 @@ export default function Ordinals(){
             <div className={styles.container}>
                   <h2>Números ordinais</h2>
                   {dataNumbersOrdinals.map(number => 
-                       <NumberComponent number={number.key} value={number.value} /> 
+                       <NumberComponent key={index} number={number.key} value={number.value} /> 
                   )}
             </div>
       );

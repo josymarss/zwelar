@@ -1,4 +1,4 @@
-import react,{ useState,useEffect } from 'react';
+import React,{ useState,useEffect } from 'react';
 
 import alfabet from './alfabeth.module.css';
 import { datagrammar } from '../../datagrammar';

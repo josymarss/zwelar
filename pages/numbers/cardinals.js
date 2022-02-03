@@ -6,8 +6,8 @@ export default function Cardinals(){
       return(
             <div className={styles.container}>
                   <h2>Números Cardinais em kimbundu</h2>
-                  {dataNumbers.map(number => 
-                        <NumberComponent number={number.key} value={number.value} />
+                  {dataNumbers.map(number,index => 
+                        <NumberComponent key={index} number={number.key} value={number.value} />
                   )}
                   
             </div>

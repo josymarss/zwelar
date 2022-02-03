@@ -11,7 +11,6 @@ import Footer from '../components/footer'
 config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }) {
-  let crossorigin = ;
   return(
     <> 
       <Head>

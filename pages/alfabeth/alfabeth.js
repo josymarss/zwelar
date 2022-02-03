@@ -3,7 +3,7 @@ import React,{ useState,useEffect } from 'react';
 import alfabet from './alfabeth.module.css';
 import { datagrammar } from '../../datagrammar';
 
-export default function(){
+export default function Alphabet(){
       const [alphabet, setAlphabet] = useState([]);
     
       useEffect(()=>{

@@ -17,7 +17,9 @@
     color:#1dd1a1;
 }
 .search input{
-    height:28px;
+    height:50px;
+    width:400px;
+    font-size:14pt;
     border: 1px solid #e7e7e7;
     padding:10px;
 }
@@ -26,9 +28,11 @@
     border:none;
     border-radius:3px;
     color:white;
-    height:28px;
+    height:50px;
+    width:80px;
     background-color:#1dd1a1;
     padding:10px;
+    font-size:14pt;
     text-align:center;
 }
 .search button:hover{
@@ -37,10 +41,10 @@
 .title{
     font-weight:bold;
     color:#222f3e;
-    font-size:16px;
+    font-size:20px;
 }
 .words{
-    font-size:14px;
+    font-size:18px;
     color:#222f3e;
     display:flex;
     align-items:center;

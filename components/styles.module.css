@@ -11,7 +11,11 @@
 .header h2{
     color:#f1f1f1;
     font-size:20px;
-    margin-left:8px;
+    margin-left:18px;
+    text-transform: uppercase;
+} 
+.header h2:hover{
+    color:#1dd1a1;
 }
 .header ul{
     color:white;
@@ -30,6 +34,9 @@
 }
 .header ul li:hover{
     color:#1dd1a1;
+    text-transform: uppercase;
+    transition:0.1s ease-in-out;
+    font-size:12pt;
 }
 .searchSection{
     display:flex;

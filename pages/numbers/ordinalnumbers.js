@@ -1,0 +1,43 @@
+export const dataNumbersOrdinals = [
+      {
+            key:1,
+            value:'Kamoxi'
+      },
+      {
+            key:2, 
+            value:' Kayari'
+      },
+      {
+           key:3, 
+           value:'Katatu'
+      },
+      {
+            key:4, 
+            value:'Kawana'
+      },
+      {
+            key:5, 
+            value:'Katanu'
+      },
+      {
+            key:6,
+            value:'Kasamanu'
+      },
+      {
+            key:7,
+            value:'Kasambwadi'
+      },
+      {
+            key:8,
+            value:'Kanake'
+      },
+      {
+            key:9,
+            value:'Kavua'
+      },
+      {
+            key:10,
+            value:'Kakwini'
+      }
+      
+];

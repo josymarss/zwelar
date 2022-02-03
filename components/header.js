@@ -21,19 +21,22 @@ export function Header (){
     return(
         <header className={styles.header}>
             <h2>
-                <Link href='/'>Kibumdu-tech</Link>
+                <Link href='/'>Wana Kimbumdu</Link>
             </h2>
             <ul>
                 <li>
-                    <Link href='/grammar'>{`gramática`}</Link>
+                    <Link href='/'>{`Home`}</Link>
                 </li>
                 <li>
-                    <Link href='/about'>sobre</Link>
+                    <Link href='/grammar/grammar'>{`Gramática`}</Link>
+                </li>
+                <li>
+                    <Link href='/about/about'>Sobre</Link>
                 </li>
                 <li>
                     <FontAwesomeIcon icon={faCodeBranch}>
                     </FontAwesomeIcon>
-                    <span><Link href='https://github.com/josymarss/kimbundu-technical-expressions'>github</Link></span>
+                    <span><Link href='https://github.com/josymarss/kimbundu-technical-expressions'>Github</Link></span>
                 </li>
             </ul>
             <div className={styles.searchSection}>

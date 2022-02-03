@@ -11,13 +11,14 @@ import Footer from '../components/footer'
 config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }) {
+  let crossorigin = ;
   return(
     <> 
       <Head>
         <script 
           async 
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5514991570328030"
-          crossorigin="anonymous">
+          crossOrigin='anonymous'>
         </script>
       </Head>
       <Header />

@@ -1,18 +1,16 @@
-## Learn More 
-This project has as main objective to bring some words that do not exist in the Kimbundu language in order to make it consistent and updated, this project goes beyond a translation of technical words it aims at a greater objective of having this language as official, as it is a of the most talked about in Angola, it is estimated that it is the third
+## Saber mais
+Este projeto tem como principal objetivo trazer algumas palavras que não existem na língua Kimbundu de forma a torná-la consistente e atualizada, este projeto vai além de uma tradução de palavras técnicas visa um objetivo maior de ter esta língua como oficial, como é um dos mais falados em Angola, estima-se que seja o terceiro
 
-## Notes
-To contribute, you need to have a little knowledge of languages, or at least know that in the Kimbundu language there are no certain letters, so this unofficial translation follows linguistic parameters studied by the maintainer of this project. Remember that some words are not translated from technical English because they do not have a literal and/or semantic translation for other languages, in these cases these words will be kept from the original. as an example we have the word "bit", "byte" and others.
+## Notas
+Para contribuir, você precisa ter um pouco de conhecimento de idiomas, ou pelo menos saber que no idioma Kimbundu não existem letras certas, então essa tradução não oficial segue parâmetros linguísticos estudados pelo mantenedor deste projeto. Lembre-se que algumas palavras não são traduzidas do inglês técnico porque não possuem tradução literal e/ou semântica para outros idiomas, nestes casos essas palavras serão mantidas do original. como exemplo temos a palavra "bit", "byte" e outras.
 
-## How to contribute
-1. Create a branch of the word you want to add and add to the array, as this site is static.
-1. then explain the reasons for the transformation or not of the word.
-1. remember that some letters they do not exist in the original ancient Kimbundu. Ex: "C","R" and "Q".
-
-## Getting Started
-
-This project was created with the nextjs framework.
+## Como contribuir
+Crie uma ramificação da palavra que você deseja adicionar e adicione ao array, pois este site é estático.
+depois explique os motivos da transformação ou não da palavra.
+lembre-se que algumas letras não existem no antigo Kimbundu original. Ex: "C", "R" e "Q".
+Começando
+Este projeto foi criado com o framework nextjs.
 
 ```npm run dev```
-# or
+# ou
 ```yarn dev```

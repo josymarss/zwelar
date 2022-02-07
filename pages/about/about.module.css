@@ -12,19 +12,29 @@
     align-self:center;
 }
 .paragraph{
+    display:flex;
+    align-items:flex-start;
+    flex-wrap:wrap;
     width:700px;
+    padding:30px;
     font-size:16pt;
-    margin-bottom:-10px;
     text-indent:30px;
     letter-spacing: 0.5px;
     text-align: justify;
     color:#1c1c1c;
+    margin-top:-40px;
+    margin-bottom:20px;
 }
 @media screen and (max-width:600){
     .container{
         flex-wrap:wrap;
+        align-items:center;
+        justify-content:center;
+    }
+    .container h2 {
+        margin-top:20px;
     }
     .paragraph{
-        width:auto;
+        flex-wrap: wrap;
     }
 }

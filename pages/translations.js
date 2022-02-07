@@ -1,8 +1,7 @@
 import { useState, useEffect, Fragment } from 'react';
-
 import styles from './styles.module.css';
-import { Header } from '../components/header';
-import { data } from '../data';
+
+import { data } from '../data/data';
 
 export default function TranslationPage(){
     const [datafetched, updateDate] = useState([]);

@@ -18,11 +18,11 @@
       flex-direction: row;
       align-items:center;
 }
-.number  > p {
+.paragraph{
       font-size:20pt;
       background-color:rgb(233, 233, 233);
       padding:8px 20px;
-      border-radius:2px;
+      border-radius:2px;   
 }
 .number  > span {
       border-radius:2px;

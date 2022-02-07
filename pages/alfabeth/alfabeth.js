@@ -1,13 +1,14 @@
 import React,{ useState,useEffect } from 'react';
 
 import alfabet from './alfabeth.module.css';
-import { datagrammar } from '../../datagrammar';
+import ShowAndListComponent from '../showomponent/showandlistten';
+import { dataAlphabet } from '../../data/datagrammar';
 
 export default function Alphabet(){
       const [alphabet, setAlphabet] = useState([]);
     
       useEffect(()=>{
-            setAlphabet(datagrammar.alphabet)
+            setAlphabet(dataAlphabet)
       },[]);
       
       return(
@@ -20,8 +21,8 @@ export default function Alphabet(){
                         usa-se a letra "k" em seu lugar .`}
                   </p>
                   <div className={alfabet.alphabet}>
-                        {alphabet.map((letter,index) => (
-                              <p key={index}>{letter}</p>
+                        {alphabet.map(letter => (
+                              <ShowAndListComponent key={letter.key} value={letter.value} />
                         ))}  
                   </div>
                   <h2>Pronúncia</h2>

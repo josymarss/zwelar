@@ -25,7 +25,7 @@ export default function Grammar(){
                             </li>
                         </ul>
                 </li>
-                    <li><span>Animais</span></li>
+                    <li onClick={() => router.push('/animals/animals')}><span>Animais</span></li>
                     <li><span>Familiares</span></li>
                     <li><span>Saudações</span></li>
                     <li><span>Perguntas</span></li>

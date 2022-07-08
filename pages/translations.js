@@ -34,7 +34,7 @@ export default function TranslationPage(){
                     <>
                         <p className={styles.title}>Description</p>
                         <div className={styles.words} key={index}>
-                            <p>{data.description}</p>
+                            <p >{data.description}</p>
                         </div>
                     </>: ""
                 }
@@ -52,7 +52,7 @@ export default function TranslationPage(){
                 />
                 <button onClick={onBuscar}>Buscar</button>
             </div>
-            <h2>Traduções</h2>
+            <h2 className='text-red-500'>Traduções</h2>
             
             <MyData />
 

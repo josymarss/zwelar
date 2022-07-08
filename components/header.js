@@ -34,9 +34,16 @@ export function Header (){
                     <Link href='/about/about'>Sobre</Link>
                 </li>
                 <li>
+                    <Link href='/team/team'>Criadores</Link>
+                </li>
+                <li>
                     <FontAwesomeIcon icon={faCodeBranch}>
                     </FontAwesomeIcon>
-                    <span><Link href='https://github.com/josymarss/kimbundu-technical-expressions'>Github</Link></span>
+                    <span>
+                        <Link href='https://github.com/josymarss/kimbundu-technical-expressions'>
+                            <a target="_blank">Github</a>
+                        </Link>
+                    </span>
                 </li>
             </ul>
             <div className={styles.searchSection}>

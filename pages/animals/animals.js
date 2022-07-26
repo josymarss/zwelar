@@ -5,8 +5,8 @@ import CardImage from '../../components/cardimage';
 
 export default function Animals(){
       return (
-            <div className={styles. container}>
-                  <h2>Animais em kimbundu</h2>
+            <div className=' bg-red-200'>
+                  <h2 className='text-xl'>Animais em kimbundu</h2>
                   <CardImage altImage='/dog.png'/>
                   {dataAnimals.map((number,index) => 
                         <ShowAndListComponent key={index} number={number.key} value={number.value} />

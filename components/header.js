@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faCodeBranch, faMoon } from "@fortawesome/free-solid-svg-icons";
-import { Input,Button } from 'antd';
+import { faCodeBranch, faMoon } from "theme-ui";
+import { Input,Button } from 'theme-ui';
 import { useRouter } from 'next/router'
 
 export function Header (){
@@ -70,17 +70,18 @@ export function Header (){
             </div>
         </header>
         {router.pathname === '/' ?
-            <div className=" flex justify-between relative w-full bg-cover bg-[url('/bg-image.png')] bg-no-repeat h-[389px]">
-            <img 
-                className='absolute -top-16 right-20'
-                alt='Mulher zuela kimbundu' 
-                src='/girl.png'
-            />
-            <div className="flex flex-col justify-center  items-center bg-color-red-400">
-                <h2 className='w-[380px] ml-10 mt-4 inline-block font-semibold font-sans text-3xl text-white'>Está mais do que na hora, de você <span className="text-green-400">zuelar</span> kimbundu</h2>
-                <Button type='primary'value='Iniciar'>Iniciar</Button>
-            </div>
-        </div> : ''}
+                <div className=" flex justify-between relative w-full bg-cover bg-[url('/bg-image.png')] bg-no-repeat h-[389px]">
+                <img
+                    className='absolute -top-16 right-20'
+                    alt='Mulher zuela kimbundu' 
+                    src='/girl.png'
+                />
+                <div className="flex flex-col justify-center  items-center bg-color-red-400">
+                    <h2 className='w-[380px] ml-10 mt-4 inline-block font-semibold font-sans text-3xl text-white'>Está mais do que na hora, de você <span className="text-green-400">zuelar</span> kimbundu</h2>
+                    <Button variant='secondary'>Iniciar</Button>
+                </div>
+            </div> : ''
+        }
         </>
     )
 }

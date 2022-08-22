@@ -1,6 +1,6 @@
 import { useState, useEffect, Fragment } from 'react';
 import styles from './styles.module.css';
-
+import { Input, Button, Card } from 'theme-ui';
 import { data } from '../data/data';
 
 export default function TranslationPage(){
@@ -34,7 +34,7 @@ export default function TranslationPage(){
                     <>
                         <p className={styles.title}>Description</p>
                         <div className={styles.words} key={index}>
-                            <p>{data.description}</p>
+                            <p >{data.description}</p>
                         </div>
                     </>: ""
                 }
@@ -45,14 +45,19 @@ export default function TranslationPage(){
     return(
         <div className={styles.container}>
              <div className={styles.search}>
-                <input 
-                    type='text' 
+                {/* <Input 
+                    className='w-28'
+                    type='submit'
+                    required
                     placeholder='Procurar palavra' 
                     onChange={e => updateSearch(e.target.value)}
                 />
-                <button onClick={onBuscar}>Buscar</button>
+                <Button type='primary' onClick={onBuscar}>
+                        Buscar
+                </Button> */}
+                <Card />
             </div>
-            <h2>Traduções</h2>
+            <h2 className='text-red-500'>Traduções</h2>
             
             <MyData />
 

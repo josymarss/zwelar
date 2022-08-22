@@ -1,10 +1,18 @@
-import styles from './styles.module.css'
+import { useRouter } from 'next/router';
+import styles from './styles.module.css';
+
 
 export default function Footer (){
+    const router = useRouter();
+
     return(
-        <footer 
-            className='h-[500px]'>
-                @2021 bantu_dev.
-        </footer>
+         
+            <footer className='flex justify-center bg-slate-800'>
+                {router.pathname === '/' ? 
+                    <div className="flex items-end justify-center p-4">
+                        <p className="text-semibold text-md text-white">{`Criado por bantu.io ${new Date().getFullYear()}`}</p>
+                    </div> : ''
+                }
+            </footer> 
     )
 }

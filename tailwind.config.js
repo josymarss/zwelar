@@ -1,10 +1,13 @@
 module.exports = {
   content: [
-    "./src/**/*.{html,js,jsx,ts,tsx}",
+    "./pages/**/*.{html,js,jsx,ts,tsx}",
     "./components/**/*.{js,jsx,ts,tsx}"
 ],
+  // darkMode:true,
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:[]
+    },
   },
   plugins: [],
 }

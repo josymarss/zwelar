@@ -1,6 +1,7 @@
 import { useState, useEffect, Fragment } from 'react';
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+
 import styles from './styles.module.css';
-import { Input, Button, Card } from 'theme-ui';
 import { data } from '../data/data';
 
 export default function TranslationPage(){
@@ -45,17 +46,17 @@ export default function TranslationPage(){
     return(
         <div className={styles.container}>
              <div className={styles.search}>
-                {/* <Input 
+                <input 
                     className='w-28'
                     type='submit'
                     required
                     placeholder='Procurar palavra' 
                     onChange={e => updateSearch(e.target.value)}
                 />
-                <Button type='primary' onClick={onBuscar}>
+                <button type='primary' onClick={onBuscar}>
                         Buscar
-                </Button> */}
-                <Card />
+                </button>
+                {/* <Card /> */}
             </div>
             <h2 className='text-red-500'>Traduções</h2>
             

@@ -37,7 +37,7 @@ export default function Leading (){
             </div>
             {/* Pratice  */}
             <div className="flex flex-col justify-center items-center p-4 mt-24 bg-slate-900">
-                <h2 className="w-96 text-center text-white font-semibold text-3xl mb-4 mt-4 ">Feito focando no seu aprendzado</h2>
+                <h2 className="w-96 text-center text-white font-semibold text-3xl mb-4 mt-4 ">Feito focando no seu aprendizado</h2>
                 <div className="flex flex-row gap-10 mb-8 ">
                     <div className="flex flex-col items-center gap-4 border border-[#232e36] w-96 h-96 mt-12 p-4">
                         <FontAwesomeIcon icon={faEye} className="text-green-300 text-5xl mr-2"/>
@@ -58,14 +58,26 @@ export default function Leading (){
             </div>
             {/* Family */}
             <div className="flex justify-start bg-slate-100 ">
-                <div className=" bg-[url('/children.jpg')] w-[700px] h-[500px] bg-cover border-slate-100 rounded-sm shadow-2xl">
+                <div className=" bg-[url('/children.jpg')] w-[700px] h-[500px] bg-cover border-slate-100 ">
                 </div>
                 <div className='w-[700px] flex flex-col items-center justify-center'>
                     <FontAwesomeIcon icon={faLocationArrow} className="text-slate-800 text-7xl mr-2"/>
                     <h2 className="text-semibold text-3xl">Aprenda na diáspora</h2>
-                    <p className='mt-4 p-4 text-lg text-center'>O Zelar permite que filhos de descendentes de reis e afro descentes aprendam a língua dos seus ancestrais aonde quer que estejam. Brasileiros, portugueses e Congoleses e não só podem reconectar-se com sua terra mãe.</p>
+                    <p className='mt-4 p-4 text-lg text-center'>O Zuelar permite que filhos de descendentes de reis e afro descentes aprendam a língua dos seus ancestrais aonde quer que estejam. Afro-brasileiros e Angolanos nascidos em Portugal podem reconectar-se com sua terra mãe.</p>
                     
                 </div>
+            </div>
+            {/* Music section */}
+            <div className='flex flex-col items-center justify-center mt-12 gap-2 p-4 rounded-sm drop-shadow-2xl'>
+                <h2 className='w-[440px] text-center text-slate-700 font-semibold text-3xl mb-4 mt-4 '>Oiça músicas em língua nacional kimbundu e veja suas traduções</h2>
+                <div className='gap-4 flex flex-row items-center mt-4'>
+                <div className="w-[500px] h-[400px]">
+                        <img src='/listen.jpg'/>
+                    </div>
+                    <p className="w-96 text-center text-2xl text-gray-800 font-normal mb-4 ml-30">Todo usuário que entende pode adicionar letras de músicas</p>
+                    
+                </div>
+
             </div>
         </>
     );

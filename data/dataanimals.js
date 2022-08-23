@@ -2,66 +2,97 @@ export const dataAnimals = [
       {
             key:'Cão',
             value:'Imbwa',
-            image:'/dog.jpg'
+            image:'/bully2.png',
+            pronounce:null
       },
       {
             key:'Porco',
-            value:'Ngulu'
+            value:'Ngulu',
+            image:'/pig.png',
+            pronounce:null
       },
       {
             key:'Galinha',
-            value:'Sanji'
+            value:'Sanji',
+            image:'/hen.png',
+            pronounce:null
       },
       {
             key:'Bode',
-            value:'Kisutu'
+            value:'Kisutu',
+            image:'/goat.png',
+            pronounce:null
       },
       {
             key:'Pombo',
-            value:'Dyembe'
+            value:'Dyembe',
+            image:'/pigeon.jpg',
+            pronounce:null
       },
       {
             key:'Ovelha',
-            value:'Mbudi'
+            value:'Mbudi',
+            image:'/sheep.jpg',
+            pronounce:null
       },
       {
             key:'Leão',
-            value:'Hoji'
+            value:'Hoji',
+            image:'/lion.png',
+            pronounce:null
       },
       {
             key:'Coelho',
-            value:'Dibulu'
+            value:'Dibulu',
+            image:'/bunny.jpg',
+            pronounce:null
       },
       {
             key:'Mosquito',
-            value:'Hamua'
+            value:'Hamua',
+            image:'/mosquito.jpg',
+            pronounce:null
       },
       {
             key:'Onça',
-            value:'Ingu'
+            value:'Ingu',
+            image:'/jaguar.jpg',
+            pronounce:null
       },
       {
             key:'Boi',
-            value:'Ngombe'
+            value:'Ngombe',
+            image:'/ox.jpg',
+            pronounce:null
       },
       {
             key:'Abelha',
-            value:'Nhoki'
+            value:'Nhoki',
+            image:'/bee.jpg',
+            pronounce:null
       },
       {
             key:'Jacaré',
-            value:'Ngandu'
+            value:'Ngandu',
+            image:'/alligator.jpg',
+            pronounce:null
       },
       {
             key:'Macaco',
-            value:'Hima'
+            value:'Hima',
+            image:'/monkey.jpg',
+            pronounce:null
       },
       {
             key:'Xixikinya',
-            value:'Formiga'
+            value:'Formiga',
+            image:'/ant.jpg',
+            pronounce:null
       },
       {
             key:'Elefante',
-            value:'Nzamba'
+            value:'Nzamba',
+            image:'/elephant.png',
+            pronounce:null
       }
 ];

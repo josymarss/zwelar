@@ -2,8 +2,9 @@ import styles from './plural.module.css';
 
 export default function Plural(){
       return(
-            <div className={styles.container}>
-                  <p>{`O plural em Kimbundu começa geralmente com o prefixo 'Ki'.`}</p>
+            <div className="mt-4 p-10">
+                  <h2 className="font-semibold text-3xl border-b p-2 mb-10 ">Plural em kimbundu</h2>
+                  <p className="text-xl text-gray-600 indent-6 mb-8">{`O plural em Kimbundu começa geralmente com o prefixo 'Ki'.`}</p>
             </div>
       );
 }

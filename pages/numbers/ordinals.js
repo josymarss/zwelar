@@ -5,8 +5,8 @@ import ShowAndListComponent from "../showomponent/showandlistten";
 
 export default function Ordinals(){
       return(
-            <div className={styles.container}>
-                  <h2>Números ordinais</h2>
+            <div className='p-10'>
+                  <h2 className='font-semibold text-3xl border-b p-2 mb-10'>Números ordinais</h2>
                   {dataNumbersOrdinals.map((number,index) => 
                        <ShowAndListComponent key={index} number={number.key} value={number.value} /> 
                   )}

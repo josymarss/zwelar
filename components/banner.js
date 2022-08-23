@@ -5,7 +5,7 @@ export default function Banner(){
     
     return(
         <div className="">
-                <div className="flex items-center justify-center w-full bg-cover bg-[url('/bg-image.png')] bg-no-repeat h-[300px]">
+                <div className="p-10 flex items-center justify-center w-full bg-cover bg-[url('/bg-image.png')] bg-no-repeat h-[300px]">
                     {/* <Image
                         className=''
                         alt='Mulher zuela kimbundu' 

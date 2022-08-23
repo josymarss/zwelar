@@ -28,7 +28,7 @@ export function Header (){
                 <Link href='/'>Zuelar</Link>
             </h2>
             <nav>
-            <ul className=' flex flex-row gap-14'>
+            <ul className=' flex flex-row gap-10'>
                 <li className=" text-md hover:text-green-400">
                     <Link href='/'>{`Home`}</Link>
                 </li>
@@ -36,7 +36,10 @@ export function Header (){
                     <Link href='/grammar/grammar'>{`Gramática`}</Link>
                 </li>
                 <li className="text-md hover:text-green-400">
-                    <Link href='/grammar/grammar'>{`Música`}</Link>
+                    <Link href='#'>{`Música`}</Link>
+                </li>
+                <li className="text-md hover:text-green-400">
+                    <Link href='#'>{`Cursos`}</Link>
                 </li>
                 <li className=" text-md hover:text-green-400">
                     <Link href='/about/about'>Sobre</Link>

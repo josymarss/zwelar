@@ -7,7 +7,7 @@ export default function Grammar(){
 
     return(
         <div className="mt-4 p-10">
-            <h2 className="font-semibold text-xl border-b p-2 mb-4 ">Tópicos</h2>
+            <h2 className="font-semibold text-3xl border-b p-2 mb-10">Tópicos</h2>
             <ul>
                 <li className="font-semibold text-xl font-sans hover:text-slate-700 hover:italic hover:font-semibold hover:cursor-pointer mb-1" onClick={() => router.push('/alfabeth/alfabeth')}>
                     <span>Alfabeto e pronúncia</span>
@@ -16,17 +16,18 @@ export default function Grammar(){
                     Números
                         <ul className='p-3'>
                             <li className="font-semibold text-xl font-sans hover:text-slate-700 hover:italic hover:font-semibold hover:cursor-pointer mb-1" onClick={() => router.push('/numbers/cardinals')}>
-                                    <span>Cardinais</span>
+                                    <span>- Cardinais</span>
                             </li>
                             <li className="font-semibold text-xl font-sans hover:text-slate-700 hover:italic hover:font-semibold hover:cursor-pointer mb-1"onClick={() => router.push('/numbers/ordinals')}>
-                                <span>Ordinais</span>
+                                <span>- Ordinais</span>
                             </li>
                         </ul>
                 </li >
                     <li className="font-semibold text-xl font-sans hover:text-slate-700 hover:italic hover:font-semibold hover:cursor-pointer mb-1" onClick={() => router.push('/animals/animals')}><span>Animais</span></li>
                     <li className="font-semibold text-xl font-sans hover:text-slate-700 hover:italic hover:font-semibold hover:cursor-pointer mb-1"><span>Familiares</span></li>
+                    <li className="font-semibold text-xl font-sans hover:text-slate-700 hover:italic hover:font-semibold hover:cursor-pointer mb-1"><span>Corpo humano</span></li>
                     <li className="font-semibold text-xl font-sans hover:text-slate-700 hover:italic hover:font-semibold hover:cursor-pointer mb-1"><span>Saudações</span></li>
-                    <li className="font-semibold text-xl font-sans hover:text-slate-700 hover:italic hover:font-semibold hover:cursor-pointer mb-1"><span>Perguntas</span></li>
+                    <li className="font-semibold text-xl font-sans hover:text-slate-700 hover:italic hover:font-semibold hover:cursor-pointer mb-1"><span>Como fazer perguntas</span></li>
                     <li className="font-semibold text-xl font-sans hover:text-slate-700 hover:italic hover:font-semibold hover:cursor-pointer mb-1" onClick ={() => router.push('/plural/plural')}><span>O plural em kimbundu</span></li>
             </ul>
         </div>

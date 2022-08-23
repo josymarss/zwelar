@@ -1,10 +1,13 @@
-import Link from 'next/link'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
+import Link from 'next/link';
+import Image from 'next/image';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
+import { faMoon,faCodeBranch } from "@fortawesome/free-solid-svg-icons";// Import the FontAwesomeIcon component
+import { useRouter } from 'next/router';
 
-import styles from './styles.module.css'
+import Banner from './banner';
 
 export function Header (){
+    const router = useRouter();
     
     const onSugerir = (e) =>{
         // const value = e.target.value
@@ -19,34 +22,59 @@ export function Header (){
     }
 
     return(
-        <header className={styles.header}>
-            <h2>
-                <Link href='/'>Wana Kimbumdu</Link>
+        <>
+        <header className='sticky top-0 z-40 bg-slate-100 px-5 flex items-center justify-between flex-row w-full h-[60px] shadow-xl'>
+            <h2 className="font-bold text-2xl text-slate-800">
+                <Link href='/'>Zuelar</Link>
             </h2>
-            <ul>
-                <li>
+            <nav>
+            <ul className=' flex flex-row gap-14'>
+                <li className=" text-md hover:text-green-400">
                     <Link href='/'>{`Home`}</Link>
                 </li>
-                <li>
+                <li className="text-md hover:text-green-400">
                     <Link href='/grammar/grammar'>{`Gramática`}</Link>
                 </li>
-                <li>
+                <li className="text-md hover:text-green-400">
+                    <Link href='/grammar/grammar'>{`Música`}</Link>
+                </li>
+                <li className=" text-md hover:text-green-400">
                     <Link href='/about/about'>Sobre</Link>
                 </li>
-                <li>
-                    <FontAwesomeIcon icon={faCodeBranch}>
-                    </FontAwesomeIcon>
-                    <span><Link href='https://github.com/josymarss/kimbundu-technical-expressions'>Github</Link></span>
+                <li  className=" text-md hover:text-green-400">
+                    <Link href='/team/team'>Criadores</Link>
+                </li>
+                <li  className="text-md hover:text-green-400">
+                    <span className='mr-2'>
+                        <FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon>
+                    </span>
+                    <span className=''>
+                        <Link href='https://github.com/josymarss/kimbundu-technical-expressions'>
+                            <a target="_blank">Github</a>
+                        </Link>
+                    </span> 
+                </li>
+                <li className="text-md hover:text-green-400">
+                    <span className='mr-2'>
+                        <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
+                    </span>
                 </li>
             </ul>
-            <div className={styles.searchSection}>
+            </nav>
+            <div className=''>
                 <input 
+                    className='p-1 rounded-full text-center'
                     type='text' 
                     name='search' 
                     placeholder='Sugerir palavra'
                 />
-                <button onClick={onSugerir}>Sugerir</button>
+                <button className='w-32 hover:text-white p-1 rounded-full text-black ml-2 bg-green-400'onClick={onSugerir}>Sugerir</button>
             </div>
         </header>
+        {router.pathname === '/' ?
+            <Banner />
+            : ''
+        }
+        </>
     )
 }

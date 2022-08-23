@@ -1,7 +1,8 @@
 export const dataAnimals = [
       {
             key:'Cão',
-            value:'Imbwa'
+            value:'Imbwa',
+            image:'/dog.jpg'
       },
       {
             key:'Porco',

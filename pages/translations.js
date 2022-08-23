@@ -1,6 +1,7 @@
 import { useState, useEffect, Fragment } from 'react';
-import styles from './styles.module.css';
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
+import styles from './styles.module.css';
 import { data } from '../data/data';
 
 export default function TranslationPage(){
@@ -34,7 +35,7 @@ export default function TranslationPage(){
                     <>
                         <p className={styles.title}>Description</p>
                         <div className={styles.words} key={index}>
-                            <p>{data.description}</p>
+                            <p >{data.description}</p>
                         </div>
                     </>: ""
                 }
@@ -46,13 +47,18 @@ export default function TranslationPage(){
         <div className={styles.container}>
              <div className={styles.search}>
                 <input 
-                    type='text' 
+                    className='w-28'
+                    type='submit'
+                    required
                     placeholder='Procurar palavra' 
                     onChange={e => updateSearch(e.target.value)}
                 />
-                <button onClick={onBuscar}>Buscar</button>
+                <button type='primary' onClick={onBuscar}>
+                        Buscar
+                </button>
+                {/* <Card /> */}
             </div>
-            <h2>Traduções</h2>
+            <h2 className='text-red-500'>Traduções</h2>
             
             <MyData />
 

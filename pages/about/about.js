@@ -3,7 +3,7 @@ import about from './about.module.css'
 export default function About(){
     return(
             <div className={about.container}>
-                <h2>{`Sobre a língua e Projecto.`}</h2>
+                <h2 className='text-slate-800 font-semibold text-2xl mb-6'>{`Sobre a língua e Projecto.`}</h2>
                 <p className={about.paragraph}>{`
                     Este é um projecto que visa colocar o Kimbundu como uma língua 
                     oficial em Angola, e nesta secção temos como prioridade traduzir 
@@ -32,7 +32,7 @@ export default function About(){
                     chamar Bantu (bantu significa «pessoas», e 
                     é plural de muntu. Em Kimbundu mutu designa 
                     «pessoa», com o plural em atu).`}</p>
-                <h2>Como contribuir.</h2>
+                <h2 className='text-slate-800 font-semibold text-2xl mb-6.'>Como contribuir.</h2>
                 <p className={about.paragraph}>{`
                 Para contribuir, é necessário ter um pouco de conhecimento
                 de línguas, ou pelo menos saber que na língua Kimbundu não

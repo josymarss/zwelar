@@ -18,11 +18,12 @@ export default function Animals(){
                   </div>
                   <div className='flex flex-row flex-wrap gap-6'>
                         {
-                              dataAnimals.map(animal => 
+                              dataAnimals.map((animal,index) => 
                                     <CardImage 
                                           name={animal.key} 
                                           translation={animal.value} 
                                           img={animal.image}
+                                          key={index}
                                     />)
                         }
                   </div>

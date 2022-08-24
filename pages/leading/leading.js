@@ -72,7 +72,7 @@ export default function Leading (){
                 <h2 className='w-[440px] text-center text-slate-700 font-semibold text-3xl mb-4 mt-4 '>Oiça músicas em língua nacional kimbundu e veja suas traduções</h2>
                 <div className='gap-4 flex flex-row items-center mt-4'>
                 <div className="w-[500px] h-[400px]">
-                        <img src='/listen.jpg'/>
+                        <Image width={500} height={400} objectFit='cover' quality={65} alt='Ouvir m]usica' src='/listen.jpg'/>
                     </div>
                     <p className="w-96 text-center text-2xl text-gray-800 font-normal mb-4 ml-30">Todo usuário que entende pode adicionar letras de músicas</p>
                     

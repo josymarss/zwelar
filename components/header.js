@@ -39,7 +39,7 @@ export function Header (){
                     <Link href='#'>{`Música`}</Link>
                 </li>
                 <li className="text-md hover:text-green-400">
-                    <Link href='#'>{`Histórias`}</Link>
+                    <Link href='/history'>{`Histórias`}</Link>
                 </li>
                 <li className="text-md hover:text-green-400">
                     <Link href='#'>{`Cursos`}</Link>

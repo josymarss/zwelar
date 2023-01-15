@@ -1,5 +1,5 @@
 .imageBanner{
-    object-fit: contain;
+    /* object-fit: contain; */
 }
 .container{
     max-width: 100%;

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fakedata } from "./fakedata";
+import { fakedata } from "../../fakedata";
 
 export default function History() {
   const [history, setHistory] = useState();

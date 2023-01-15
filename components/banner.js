@@ -7,7 +7,7 @@ export default function Banner(){
     // bg-[url('/bg-image.png')]
     return(
         <div className={`bg-slate-500 ${styles.container}`}>
-            <img src='/bg-image.png' className={`w-full ${styles.imageBanner}`}/>
+            <img alt='banner' src='/bg-image.png' className={`w-full ${styles.imageBanner}`}/>
         </div>
     );
 

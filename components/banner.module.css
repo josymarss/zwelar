@@ -1,0 +1,6 @@
+.imageBanner{
+    object-fit: contain;
+}
+.container{
+    max-width: 100%;
+}

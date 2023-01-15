@@ -25,7 +25,7 @@ export function Header (){
         <>
         <header className='sticky top-0 z-40 bg-slate-100 px-5 flex items-center justify-between flex-row w-full h-[60px] shadow-xl'>
             <h2 className="font-bold text-2xl text-slate-800">
-                <Link href='/'>Zuelar</Link>
+                <Link href='/'>Zwelar</Link>
             </h2>
             <nav>
             <ul className=' flex flex-row gap-10'>
@@ -39,6 +39,9 @@ export function Header (){
                     <Link href='#'>{`Música`}</Link>
                 </li>
                 <li className="text-md hover:text-green-400">
+                    <Link href='#'>{`Histórias`}</Link>
+                </li>
+                <li className="text-md hover:text-green-400">
                     <Link href='#'>{`Cursos`}</Link>
                 </li>
                 <li className=" text-md hover:text-green-400">
@@ -46,6 +49,9 @@ export function Header (){
                 </li>
                 <li  className=" text-md hover:text-green-400">
                     <Link href='/team/team'>Criadores</Link>
+                </li>
+                <li  className=" text-md hover:text-green-400">
+                    <Link href='#'>Perfil</Link>
                 </li>
                 <li  className="text-md hover:text-green-400">
                     <span className='mr-2'>

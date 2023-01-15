@@ -10,7 +10,7 @@ export default function Footer (){
             <footer className='flex justify-center bg-slate-800'>
                 {router.pathname === '/' ? 
                     <div className="flex items-end justify-center p-4">
-                        <p className="text-semibold text-md text-white">{`Criado por bantu.io ${new Date().getFullYear()}`}</p>
+                        <p className="text-semibold text-md text-white">{`@bantu.io ${new Date().getFullYear()}`}</p>
                     </div> : ''
                 }
             </footer> 

@@ -6,7 +6,9 @@ module.exports = {
   // darkMode:true,
   theme: {
     extend: {
-      fontFamily:[]
+      fontFamily:{
+        mulish:"'Mulish', sans-serif"
+      }
     },
   },
   plugins: [],

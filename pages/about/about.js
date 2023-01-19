@@ -1,8 +1,16 @@
 import about from "./about.module.css";
+import Head from "next/head";
 
 export default function About() {
   return (
     <div className="w-[1200px] p-8">
+      <Head>
+        <title>Zwelar | Sobre o projecto</title>
+        <meta
+          name="Zwelar | sobre o site zwelar"
+          description="O objectivo e tornar as línguas nacionais angolanas como oficiais em topdo o território de Angola"
+        />
+      </Head>
       <h2 className="font-mulish text-slate-800 font-semibold text-2xl mb-6 mt-14">{`Sobre a língua e Projecto.`}</h2>
       <p className="font-mulish text-xl mt-4 text-justify">
         {`
@@ -12,7 +20,7 @@ export default function About() {
             que não existem no actual idioma. Esta começa por se trasncrever a
             visão de um acordo ortográfico que achamos inexistente nessas línguas. 
 
-            Este projeto visa ensinar línguas nacionais, Ramificar um acordo ortográfico, inclusão de
+            Este projecto visa ensinar línguas nacionais, Ramificar um acordo ortográfico, inclusão de
              palavras mais modernas e técnicas. A criação de um acordo ortográfico não oficial é
               para que no futuro essas línguas sejam oficiais em todo o país, cada uma referindo a sua respetiva localidade no território nacional.
               

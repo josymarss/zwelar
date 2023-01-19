@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { fakedata } from "../../fakedata";
+import Head from "next/head";
 
 export default function History() {
   const [history, setHistory] = useState();
@@ -12,6 +13,13 @@ export default function History() {
 
   return (
     <div className="">
+      <Head>
+        <title>Zwelar | Histórias em línguas nacionais</title>
+        <meta
+          name="Zwelar | Gramática"
+          description="Sobre a gramática na lingua nacional em kimbundu e na maior parte das línguas nacionais"
+        />
+      </Head>
       <div className="grid lg:grid-cols-4">
         {/* History and translation, the main history  */}
         <aside className="col-span-3 p-5">

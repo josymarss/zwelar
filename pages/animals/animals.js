@@ -1,3 +1,6 @@
+
+import Head from "next/head";
+
 import styles from '../showomponent/show.module.css';
 import { dataAnimals } from '../../data/dataanimals';
 import CardImage from '../../components/cardimage';
@@ -5,6 +8,13 @@ import ButtonSound from '../../components/buttonsound';
 
 export default function Animals(){
       return (<>
+      <Head>
+        <title>Zwelar | Animais</title>
+        <meta
+          name="Zwelar | Alfabeto"
+          description="Sobre os animais em kimbundu e na maior parte das línguas nacionais"
+        />
+      </Head>
             <div className='flex flex-col p-10'>
                   <h2 className='font-semibold text-3xl border-b p-2 mb-10'>Animais em kimbundu</h2>
                   {/* search section */}

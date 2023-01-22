@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 export function Meta({description,content}){
     return(
-        <Head>
+        <Head className='font-mulish'>
             <title>Kimbundu Tekh</title>
             <meta name={description} content={content} />
             <script 

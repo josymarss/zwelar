@@ -5,9 +5,7 @@ import styles from './show.module.css';
 
 export default function ShowAndListComponent({ number, value }){
       return(
-            <div className={styles.wrap}>
-                      
-                  
+            <div className={`${styles.wrap} font-mulish`}>
                   <div className={styles.number}>
                         <span>
                               <FontAwesomeIcon icon={faVolumeUp} size={20} color='#rgb(24, 24, 24);'/>

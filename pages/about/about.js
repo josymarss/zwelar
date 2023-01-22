@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export default function About() {
   return (
-    <div className="w-[1200px] p-8">
+    <div className="w-[1200px] p-8 font-mulish">
       <Head>
         <title>Zwelar | Sobre o projecto</title>
         <meta

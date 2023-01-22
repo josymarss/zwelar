@@ -7,7 +7,7 @@ export default function Grammar() {
   const router = useRouter();
 
   return (
-    <div className="mt-4 p-10">
+    <div className="mt-4 p-10 font-mulish">
       <Head>
         <title>Zwelar | Gramática</title>
         <meta

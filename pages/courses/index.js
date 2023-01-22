@@ -6,7 +6,7 @@ export default function Courses() {
   const router = useRouter();
 
   return (
-    <div className="mt-10 p-4">
+    <div className="mt-10 p-4 font-mulish">
       <Head>
         <title>Zwelar | Curso de Linguas nacionais</title>
         <meta

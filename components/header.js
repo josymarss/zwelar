@@ -23,7 +23,7 @@ export function Header (){
 
     return(
         <>
-        <header className='sticky top-0 z-40 bg-slate-100 px-5 flex items-center justify-between flex-row w-full h-[60px] shadow-lg'>
+        <header className='sticky top-0 z-40 bg-slate-100 px-5 flex items-center justify-between flex-row w-full h-[60px] shadow-lg font-mulish'>
             <h2 className="font-bold text-2xl text-slate-800">
                 <Link href='/'>Zwelar</Link>
             </h2>
@@ -36,7 +36,7 @@ export function Header (){
                     <Link href='/grammar/grammar'>{`Gramática`}</Link>
                 </li>
                 <li className="text-md hover:text-green-400">
-                    <Link href='#'>{`Música`}</Link>
+                    <Link href='/music'>{`Música`}</Link>
                 </li>
                 <li className="text-md hover:text-green-400">
                     <Link href='/history'>{`Histórias`}</Link>

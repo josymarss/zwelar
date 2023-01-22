@@ -54,7 +54,7 @@ export default function History() {
         </aside>
         {/* a list of history */}
         <aside className="col-span-1 p-5 m-7">
-            <h2 className="font-mulish text-justify text-xl mt-4 ">Relacionados</h2>
+            <h2 className="font-mulish text-justify text-xl mt-4 text-slate-900 ">Relacionados</h2>
             <article className="flex flex-col gap-3">
                 {fakedata.map((music,index) => 
                    <div className="font-mulish text-xl text-justify bg-white shadow p-10 mt-3" key={index}>{music.titleTranslation}</div>

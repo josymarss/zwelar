@@ -5,7 +5,7 @@ import ButtonSound from './buttonsound.js';
 
 function CardImage({ name,translation,img,sound }){
     return(
-        <div className='flex flex-col'>
+        <div className='flex flex-col font-mulish'>
             <div className=''>
                 <div className="w-72 h-72 object-center border-2 border-slate-200  bg-no-repeat bg-cover shadow-xl rounded-sm">
                     <Image width={300} height={300} objectFit='cover' alt={img} src={img} />

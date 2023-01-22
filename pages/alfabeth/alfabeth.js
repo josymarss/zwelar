@@ -12,7 +12,7 @@ export default function Alphabet() {
   }, []);
 
   return (
-    <div className="mt-4 p-10">
+    <div className="mt-4 p-10 font-mulish">
       <Head>
         <title>Zwelar | Alfabeto</title>
         <meta

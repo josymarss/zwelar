@@ -84,8 +84,8 @@ export const dataAnimals = [
             pronounce:null
       },
       {
-            key:'Xixikinya',
-            value:'Formiga',
+            key:'Formiga',
+            value:'Xixikinya',
             image:'/ant.jpg',
             pronounce:null
       },

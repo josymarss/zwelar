@@ -21,9 +21,9 @@ export default function Leading() {
         />
       </Head>
       {/* Partners */}
-      <div className="bg-slate-100 w-full h-48"></div>
+      <div className="bg-slate-100 w-full h-48 font-mulish"></div>
       <div className="flex flex-col items-center justify-center p-4 mt-6">
-        <h2 className="w-[440px] text-center text-slate-900 text-3xl mb-4 mt-4">
+        <h2 className="w-[440px] text-center font-mulish text-slate-900 text-3xl mb-4 mt-4">
           Aprender Linguas nacionais nunca foi tão fácil!
         </h2>
         <div className="flex flex-row items-center mt-12">
@@ -37,7 +37,7 @@ export default function Leading() {
                   icon={faDotCircle}
                   className="text-gray-300 mr-2"
                 />
-                <li className="text-xl text-gray-800 font-normal">
+                <li className="text-xl text-gray-800 font-normal font-mulish">
                   Aprenda dentro e fora de Angola, e acabaram-se as desculpas
                 </li>
               </div>
@@ -46,7 +46,7 @@ export default function Leading() {
                   icon={faDotCircle}
                   className="text-gray-300 mr-2"
                 />
-                <li className="text-xl text-gray-800 font-normal">
+                <li className="text-xl text-gray-800 font-normal font-mulish">
                   Aprenda na sua casa de casa, no seu{" "}
                   <strong>computador</strong> ou seu <strong>telefone</strong>
                 </li>
@@ -56,7 +56,7 @@ export default function Leading() {
                   icon={faDotCircle}
                   className="text-gray-300 mr-2"
                 />
-                <li className="text-xl text-gray-800 font-normal">
+                <li className="text-xl text-gray-800 font-normal font-mulish">
                   Pratique a quelaquer momento, sobre o que aprendeu
                 </li>
               </div>
@@ -65,7 +65,7 @@ export default function Leading() {
                   icon={faDotCircle}
                   className="text-gray-300 mr-2"
                 />
-                <li className="text-xl text-gray-800 font-normal">
+                <li className="text-xl text-gray-800 font-normal font-mulish">
                   Partilha com seus amigos e familiares, o quanto tens{" "}
                   <i>Zuelado</i>
                 </li>
@@ -77,7 +77,7 @@ export default function Leading() {
 
       {/* Pratice  */}
       <div className="flex flex-col justify-center items-center p-4 mt-24 bg-slate-900">
-        <h2 className="w-[440px] text-center text-white text-3xl mb-4 mt-4">
+        <h2 className="w-[440px] text-center text-white text-3xl mb-4 mt-4 font-mulish">
           Criado com foco no seu nível de entendimento
         </h2>
         <div className="flex flex-row gap-10 mb-8 ">
@@ -87,8 +87,8 @@ export default function Leading() {
               className="text-green-300 mr-2"
               size="3x"
             />
-            <p className="text-white font-semibold text-2xl">Olhe</p>
-            <p className="text-white text-center text-lg">
+            <p className="text-white font-semibold text-2xl font-mulish">Olhe</p>
+            <p className="text-white text-center text-lg font-mulish">
               Olhe atentamente para as imagens, isso lhe ajuda a criar quandos
               mentais enquand ouve o significado sde cada palavra
             </p>
@@ -99,8 +99,8 @@ export default function Leading() {
               className="text-green-300 mr-2"
               size="3x"
             />
-            <p className="text-white font-semibold text-2xl">Pratique</p>
-            <p className="text-white text-center text-lg">
+            <p className="text-white font-semibold text-2xl font-mulish">Pratique</p>
+            <p className="text-white text-center text-lg font-mulish">
               Praticar é a melhor forma de aprender, aqui você vai praticar nos
               sentidos da audição.
             </p>
@@ -111,8 +111,8 @@ export default function Leading() {
               className="text-green-300  mr-2"
               size="3x"
             />
-            <p className="text-white font-semibold text-2xl">Fale</p>
-            <p className="text-white text-center text-lg">
+            <p className="text-white font-semibold text-2xl font-mulish">Fale</p>
+            <p className="text-white text-center text-lg font-mulish">
               Por ser uma língua bantu interpretada, têm palavras com
               acentuações tónicas que se mal ditas/acentuadas podem ter outro
               significado e sentido.
@@ -129,10 +129,10 @@ export default function Leading() {
             className="text-slate-800 mr-2"
             size="4x"
           />
-          <h2 className="w-[440px] text-center text-slate-900 text-3xl mb-4 mt-4">
+          <h2 className="w-[440px] text-center text-slate-900 text-3xl mb-4 mt-4 font-mulish">
             Aprenda na diáspora
           </h2>
-          <p className="mt-4 p-4 text-lg text-center">
+          <p className="mt-4 p-4 text-lg text-center font-mulish">
             O Zuelar permite que filhos de descendentes de reis e afro descentes
             aprendam a língua dos seus ancestrais aonde quer que estejam.
             Afro-brasileiros e Angolanos nascidos em Portugal podem
@@ -142,7 +142,7 @@ export default function Leading() {
       </div>
       {/* Music section */}
       <div className="flex flex-col items-center justify-center mt-12 gap-2 p-4 rounded-sm drop-shadow-2xl">
-        <h2 className="w-[440px] text-center text-slate-900 text-3xl mb-4 mt-4">
+        <h2 className="w-[440px] text-center text-slate-900 text-3xl mb-4 mt-4 font-mulish">
           Oiça músicas na língua nacional kimbundu{" "}
           <strong>e veja suas traduções</strong>
         </h2>
@@ -157,7 +157,7 @@ export default function Leading() {
               src="/sing.png"
             />
           </div>
-          <p className="w-96 text-center text-xl text-slate-900 font-normal mb-4 ml-30">
+          <p className="w-96 text-center text-xl text-slate-900 font-normal mb-4 ml-30 font-mulish">
             Todo usuário que entende pode adicionar letras de músicas
           </p>
         </div>

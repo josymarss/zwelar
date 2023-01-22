@@ -65,6 +65,18 @@ export default function Courses() {
           </div>
         </div>
 
+        <div className="flex flex-col items-center w-96 hover:-translate-y-2 transition-transform cursor-pointer  my-5">
+          <div className="w-72 h-48 rounded-md bg-[url('/Nganguela.jpg')] bg-cover z-10 border border-gray-300"></div>
+          <div className="w-[350px] h-[290px] bg-slate-50 -mt-10 rounded-md shadow-xl  border border-gray-100">
+            <div className="flex items-center justify-between p-10 mt-4 font-mulish  ">
+                <h2 className="text-green-500 text-2xl font-semibold">Ngangela</h2>
+                <p className="font-mulish font-semibold text-sm">7.500 kz</p>
+            </div>
+            <p className="px-10 -mt-6 text-justify font-mulish text-sm">O cuanhama é uma língua nígero-congolesa falada por cerca de 420 mil pessoas em Angola e 715 mil pessoas na Namíbia. Os seus falantes pertencem ao grupo étnico kwanyama ou cuanhama, um subgrupo do povo ovambo.....</p>
+            <button className="ml-10 p-2 px-5 rounded-md mt-2 hover:bg-green-600 hover:text-slate-50 transition-colors font-semibold bg-green-500 text-slate-900" onClick={() => router.push({pathname:'/detailcourse',query:{data:'Em construção'} })}>Ver curso</button>
+          </div>
+        </div>
+
 
       </div>
     </div>

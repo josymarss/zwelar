@@ -6,8 +6,10 @@ export default function Banner(){
     const router = useState();
     // bg-[url('/bg-image.png')]
     return(
-        <div className="bg-slate-500 bg-[url('/bg-image.png')] w-full h-screen bg-no-repeat bg-cover">
-            {/* <img alt='banner' src='/bg-image.png' className={`w-full ${styles.imageBanner}`}/> */}
+        // bg-[url('/bg-image.png')]
+        <div className="bg-slate-500  w-full h-screen bg-no-repeat ">
+            <Image alt='banner' src='/bg-image.png' className='w-full object-contain'/>
+            {/* <button>Come;ar agora</button> */}
         </div>
     );
 

@@ -9,33 +9,32 @@ export default function Music() {
         </h2>
         <p className="text-xl text-green-500 mt-2 font-semibold">Bonga</p>
         <p className=" text-xl text-justify mt-4">
-          Alukenn n'golafua N'ga mu binga kia Muene ondo kala beniaba Eme
-          n'gondodiame
+            {`Alukenn n'golafua N'ga mu binga kia Muene ondo kala beniaba Eme n'gondodiame`}
         </p>
         <p className="text-justify text-xl w-96 mt-3">
-          Mona mona muene Kissueia weza Mona mona muene Kalunga n'gumba
+          {`Mona mona muene Kissueia weza Mona mona muene Kalunga n'gumba`}
         </p>
         <p className="text-justify text-xl w-96 mt-3">
-          N'zambi awani banack mona N'ga muvalele Muene ondo kala beniaba Eme
-          n'gondodiame
+          {`N'zambi awani banack mona N'ga muvalele Muene ondo kala beniaba Eme
+          n'gondodiame`}
         </p>
       </div>
 
       <div className="col-span-1 p-5">
         <h2 className="font-semibold text-3xl text-slate-900 text-left">
-          Mona Ki Ngi Xica
+          {`Mona Ki Ngi Xica`}
         </h2>
         <p className="text-xl text-green-500 mt-2 font-semibold">Bonga</p>
         <p className=" text-xl text-justify mt-4">
-          Alukenn n'golafua N'ga mu binga kia Muene ondo kala beniaba Eme
-          n'gondodiame
+        {`Alukenn n'golafua N'ga mu binga kia Muene ondo kala beniaba Eme
+          n'gondodiame`}
         </p>
         <p className="text-justify text-xl w-96 mt-3">
-          Mona mona muene Kissueia weza Mona mona muene Kalunga n'gumba
+        {`Mona mona muene Kissueia weza Mona mona muene Kalunga n'gumba`}
         </p>
         <p className="text-justify text-xl w-96 mt-3">
-          N'zambi awani banack mona N'ga muvalele Muene ondo kala beniaba Eme
-          n'gondodiame
+        {`N'zambi awani banack mona N'ga muvalele Muene ondo kala beniaba Eme
+          n'gondodiame`}
         </p>
       </div>
 

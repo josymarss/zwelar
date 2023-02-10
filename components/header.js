@@ -48,7 +48,7 @@ export function Header (){
                     <Link href='/about/about'>Sobre</Link>
                 </li>
                 <li  className=" text-md hover:text-green-400">
-                    <Link href='/team/team'>Criadores</Link>
+                    <Link href='/team'>Criadores</Link>
                 </li>
                 <li  className=" text-md hover:text-green-400">
                     <Link href='#'>Perfil</Link>

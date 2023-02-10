@@ -45,15 +45,21 @@ export default function Music() {
         {/* Cards */}
         <div className="flex gap-2 flex-wrap">
           <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4 ">
-            <div className="bg-[url('/bonga.jpg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
+            <div className="bg-[url('/ruy.jpg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
             <p className="mt-2 text-md">
-              <strong>David Zé</strong> Mona Ki ngi Xica
+              <strong>Ruy Mingas</strong> Birin birin
+            </p>
+          </div>
+          <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4 ">
+            <div className="bg-[url('/antonio.jpg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
+            <p className="mt-2 text-md">
+              <strong>António Paulino</strong> Kamba Ba Laumba 
             </p>
           </div>
           <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4">
             <div className="bg-[url('/Artur.jpg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
             <p className="mt-2 text-md">
-              <strong>David Zé</strong> Mana
+              <strong>Artur Nunes</strong> Mana
             </p>
           </div>
           <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4">
@@ -63,7 +69,7 @@ export default function Music() {
             </p>
           </div>
           <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4">
-            <div className="bg-[url('/yuri.jpg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
+            <div className="bg-[url('/yuri.jpeg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
             <p className="mt-2 text-md">
               <strong>Yuri da Cunha</strong> Kuma Kwakie
             </p>

@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       fontFamily:{
         mulish:"'Mulish', sans-serif"
+      },
+      keyframes:{
+        
       }
     },
   },

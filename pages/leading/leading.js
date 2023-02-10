@@ -21,7 +21,12 @@ export default function Leading() {
         />
       </Head>
       {/* Partners */}
-      <div className="bg-slate-100 w-full h-48 font-mulish"></div>
+      <div className="flex items-center justify-center gap-x-11 py-3 flex-wrap bg-slate-900 w-full h-32 font-mulish">
+        <p className="text-2xl text-white">bantu.io</p>
+        <p className='text-2xl text-white font-bold'>ANGOPOLYGLOT</p>
+      </div>
+
+
       <div className="flex flex-col items-center justify-center p-4 mt-6">
         <h2 className="w-[440px] text-center font-mulish text-slate-900 text-3xl mb-4 mt-4">
           Aprender Linguas nacionais nunca foi tão fácil!

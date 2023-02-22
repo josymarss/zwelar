@@ -28,7 +28,7 @@ export function Header (){
                 <Link href='/'>Zwelar</Link>
             </h2>
             <nav>
-            <ul className=' flex flex-row gap-10'>
+            <ul className=' flex flex-row gap-[1.2rem]'>
                 <li className=" text-md hover:text-green-400">
                     <Link href='/'>{`Home`}</Link>
                 </li>
@@ -53,7 +53,7 @@ export function Header (){
                 <li  className=" text-md hover:text-green-400">
                     <Link href='#'>Perfil</Link>
                 </li>
-                <li  className="text-md hover:text-green-400">
+                <li  className="flex text-md hover:text-green-400">
                     <span className='mr-2'>
                         <FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon>
                     </span>
@@ -70,14 +70,14 @@ export function Header (){
                 </li>
             </ul>
             </nav>
-            <div className=''>
+            <div className='flex'>
                 <input 
                     className='p-1 rounded-full text-center'
                     type='text' 
                     name='search' 
                     placeholder='Sugerir palavra'
                 />
-                <button className='w-32 hover:text-white p-1 rounded-full text-black ml-2 bg-green-400'onClick={onSugerir}>Sugerir</button>
+                <button className='w-[5rem] hover:text-white p-1 rounded-full text-black ml-2 bg-green-400'onClick={onSugerir}>Enviar</button>
             </div>
         </header>
         {router.pathname === '/' ?

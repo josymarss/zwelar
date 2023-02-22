@@ -33,7 +33,7 @@ export default function Leading() {
         </h2>
         <div className="flex flex-row items-center mt-12">
           <div className="">
-            <div className="bg-[url('/kid.jpg')] w-80 h-80 bg-cover border-slate-100 rounded-sm shadow-2xl"></div>
+            <div className="bg-[url('/landing-images/kid.jpg')] w-80 h-80 bg-cover border-slate-100 rounded-sm shadow-2xl"></div>
           </div>
           <div className="ml-8">
             <ul>
@@ -127,7 +127,7 @@ export default function Leading() {
       </div>
       {/* Family */}
       <div className="flex justify-start bg-slate-100 ">
-        <div className=" bg-[url('/children.jpg')] w-[700px] h-[500px] bg-cover border-slate-100 "></div>
+        <div className=" bg-[url('/landing-images/children.jpg')] w-[700px] h-[500px] bg-cover border-slate-100 "></div>
         <div className="w-[700px] flex flex-col items-center justify-center">
           <FontAwesomeIcon
             icon={faLocationArrow}
@@ -159,7 +159,7 @@ export default function Leading() {
               objectFit="cover"
               quality={65}
               alt="Ouvir música"
-              src="/sing.png"
+              src="/landing-images/sing.png"
             />
           </div>
           <p className="w-96 text-center text-xl text-slate-900 font-normal mb-4 ml-30 font-mulish">

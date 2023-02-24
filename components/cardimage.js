@@ -7,8 +7,8 @@ function CardImage({ name,translation,img,sound }){
     return(
         <div className='flex flex-col font-mulish'>
             <div className=''>
-                <div className="w-72 h-72 object-center border-2 border-slate-200  bg-no-repeat bg-cover shadow-xl rounded-sm">
-                    <Image width={300} height={300} objectFit='cover' alt={img} src={img} />
+                <div className="w-full h-72 object-center border-2 border-slate-200  bg-no-repeat bg-cover shadow-xl rounded-sm">
+                    <Image width={100} height={300} objectFit='cover' alt={img} src={img} />
                 </div>
                 <div className='flex flex-row items-center gap-4 mt-3'>
                     <div className="mt-3">

@@ -81,12 +81,12 @@ export default function Leading() {
       </div>
 
       {/* Pratice  */}
-      <div className="flex flex-col justify-center items-center p-4 mt-24 bg-slate-900">
+      <div className="w-full flex flex-col justify-center items-center p-4 mt-24 bg-slate-900">
         <h2 className="w-[440px] text-center text-white text-3xl mb-4 mt-4 font-mulish">
           Criado com foco no seu nível de entendimento
         </h2>
-        <div className="flex flex-row gap-10 mb-8 ">
-          <div className="flex flex-col items-center gap-4 border border-[#232e36] w-96 h-64 mt-12 p-4">
+        <div className="flex flex-col lg:grid lg:grid-cols-3   gap-10 mb-8">
+          <div className="flex flex-col items-center gap-4 border border-[#232e36] h-64 mt-12 p-4">
             <FontAwesomeIcon
               icon={faEye}
               className="text-green-300 mr-2"
@@ -95,10 +95,10 @@ export default function Leading() {
             <p className="text-white font-semibold text-2xl font-mulish">Olhe</p>
             <p className="text-white text-center text-lg font-mulish">
               Olhe atentamente para as imagens, isso lhe ajuda a criar quandos
-              mentais enquand ouve o significado sde cada palavra
+              mentais enquanto ouve o significado de cada palavra
             </p>
           </div>
-          <div className=" flex flex-col items-center gap-4 border border-[#232e36] w-96 h-64 mt-12 p-4">
+          <div className=" flex flex-col items-center gap-4 border border-[#232e36] h-64 mt-12 p-4">
             <FontAwesomeIcon
               icon={faHeadphones}
               className="text-green-300 mr-2"
@@ -110,7 +110,7 @@ export default function Leading() {
               sentidos da audição.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-4 border border-[#232e36] w-96 h-64 mt-12 p-4">
+          <div className="flex flex-col items-center gap-4 border border-[#232e36] h-64 mt-12 p-4">
             <FontAwesomeIcon
               icon={faVolumeUp}
               className="text-green-300  mr-2"

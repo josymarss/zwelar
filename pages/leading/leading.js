@@ -31,16 +31,16 @@ export default function Leading() {
         <h2 className="w-[440px] text-center font-mulish text-slate-900 text-3xl mb-4 mt-4">
           Aprender Linguas nacionais nunca foi tão fácil!
         </h2>
-        <div className="w-full flex flex-col md:flex-row items-center mt-12">
+        <div className="w-full flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row items-center justify-center mt-12">
           <div className="bg-[url('/landing-images/kid.jpg')] w-60 h-60 md:w-80 md:h-80 bg-cover border-slate-100 rounded-sm shadow-2xl"></div>
           <div className="md:ml-8 mt-12">
-            <ul className="w-[fit-content]">
+            <ul className="">
               <div className="flex flex-row items-center">
                 <FontAwesomeIcon
                   icon={faDotCircle}
                   className="text-gray-300 mr-2"
                 />
-                <li className="text-[14px] md:text-xl text-gray-800 font-normal font-mulish">
+                <li className="text-[14px] md:text-lg lg:text-xl text-gray-800 font-normal font-mulish">
                   Aprenda dentro e fora de Angola, e acabaram-se as desculpas
                 </li>
               </div>
@@ -49,7 +49,7 @@ export default function Leading() {
                   icon={faDotCircle}
                   className="text-gray-300 mr-2"
                 />
-                <li className="text-[14px] md:text-xl text-gray-800 font-normal font-mulish">
+                <li className="text-[14px] md:text-lg lg:text-xl text-gray-800 font-normal font-mulish">
                   Aprenda na sua casa de casa, no seu{" "}
                   <strong>computador</strong> ou seu <strong>telefone</strong>
                 </li>
@@ -59,7 +59,7 @@ export default function Leading() {
                   icon={faDotCircle}
                   className="text-gray-300 mr-2"
                 />
-                <li className="text-[14px] md:text-xl text-gray-800 font-normal font-mulish">
+                <li className="text-[14px] md:text-lg lg:text-xl text-gray-800 font-normal font-mulish">
                   Pratique a quelaquer momento, sobre o que aprendeu
                 </li>
               </div>
@@ -68,7 +68,7 @@ export default function Leading() {
                   icon={faDotCircle}
                   className="text-gray-300 mr-2"
                 />
-                <li className="text-[14px] md:text-xl text-gray-800 font-normal font-mulish">
+                <li className="text-[14px] md:text-lg lg:text-xl text-gray-800 font-normal font-mulish">
                   Partilha com seus amigos e familiares, o quanto tens{" "}
                   <i>Zuelado</i>
                 </li>

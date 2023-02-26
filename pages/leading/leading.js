@@ -21,17 +21,17 @@ export default function Leading() {
         />
       </Head>
       {/* Partners */}
-      <div className="flex items-center justify-center gap-x-11 py-3 flex-wrap bg-slate-900 w-full h-32 font-mulish">
-        <p className="text-2xl text-white">bantu.io</p>
-        <p className='text-2xl text-white font-bold'>ANGOPOLYGLOT</p>
+      <div className="flex items-center justify-center gap-x-5 md:gap-x-11 py-3 flex-wrap bg-slate-900 w-full h-32 font-mulish">
+        <p className="text-x md:text-2xl text-white">bantu.io</p>
+        <p className='text-x md:text-2xl text-white font-bold'>ANGOPOLYGLOT</p>
       </div>
 
 
       <div className="flex flex-col items-center justify-center p-4 mt-6">
-        <h2 className="w-[440px] text-center font-mulish text-slate-900 text-3xl mb-4 mt-4">
+        <h2 className="w-[250px] md:w-[440px] text-center font-mulish text-slate-900 text-x md:text-3xl">
           Aprender Linguas nacionais nunca foi tão fácil!
         </h2>
-        <div className="w-full flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row items-center justify-center mt-12">
+        <div className="w-full flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row items-center justify-center mt-8 md:12">
           <div className="bg-[url('/landing-images/kid.jpg')] w-60 h-60 md:w-80 md:h-80 bg-cover border-slate-100 rounded-sm shadow-2xl"></div>
           <div className="md:ml-8 mt-12">
             <ul className="">

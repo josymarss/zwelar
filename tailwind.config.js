@@ -10,7 +10,7 @@ module.exports = {
         mulish:"'Mulish', sans-serif"
       },
       keyframes:{
-        
+        'lg_': '1090'
       }
     },
   },

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
-import { faMoon,faCodeBranch } from "@fortawesome/free-solid-svg-icons";// Import the FontAwesomeIcon component
+import { faMoon,faCodeBranch, faHome } from "@fortawesome/free-solid-svg-icons";// Import the FontAwesomeIcon component
 import { useRouter } from 'next/router';
 
 import Banner from './banner';
@@ -31,7 +31,13 @@ export function Header (){
                 <nav className='w-[80%]'>
                     <ul className='flex flex-row gap-[1rem]'>
                         <li className=" text-md header-li">
-                            <Link href='/'>{`Home`}</Link>
+                            <Link href='/'> 
+                            <span>
+                            <FontAwesomeIcon icon={faHome}>
+                            </FontAwesomeIcon>
+                                <span>Home</span>
+                                </span>
+                            </Link>
                         </li>
                         <li className="header-li">
                             <Link href='/grammar/grammar'>{`Gramática`}</Link>

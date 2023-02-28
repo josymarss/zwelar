@@ -83,39 +83,39 @@ export default function Leading() {
         <h2 className="text-x md:w-[440px] text-center text-white md:text-3xl mb-4 mt-4 font-mulish">
           Criado com foco no seu nível de entendimento
         </h2>
-        <div className="flex flex-col lg:grid lg:grid-cols-3  md:gap-10 mb-8">
-          <div className="flex flex-col items-center gap-2 md:gap-4 border border-[#232e36] h-64 mt-4 p-4">
+        <div className="flex flex-col lg:grid lg:grid-cols-3 md:grid md:grid-cols-2  md:gap-10 mb-8">
+          <div className="flex flex-col items-center gap-2 md:gap-4 border border-[#232e36] h-[fit-content] md:h-60  mt-4 p-4">
             <FontAwesomeIcon
               icon={faEye}
               className="text-green-300 mr-2 mb-1"
-              size="3x"
+              size="2x"
             />
-            <p className="text-xl text-white font-semibold md:text-2xl font-mulish">Olhe</p>
-            <p className="text-[14px] text-white text-center md:text-lg font-mulish">
+            <p className="text-xl text-white font-semibold font-mulish">Olhe</p>
+            <p className="text-[14px] text-white text-justify md:text-sm font-mulish">
               Olhe atentamente para as imagens, isso lhe ajuda a criar quandos
               mentais enquanto ouve o significado de cada palavra
             </p>
           </div>
-          <div className="flex flex-col items-center gap-2 md:gap-4 border border-[#232e36] h-64 mt-4 p-4">
+          <div className="flex flex-col items-center gap-2 md:gap-4 border border-[#232e36] h-[fit-content] md:h-60  mt-4 p-4">
             <FontAwesomeIcon
               icon={faHeadphones}
               className="text-green-300 mr-2 mb-1"
-              size="3x"
+              size="2x"
             />
-            <p className="text-xl text-white font-semibold md:text-2xl font-mulish">Pratique</p>
-            <p className="text-[14px] text-white text-center md:text-lg font-mulish">
+            <p className="text-xl text-white font-semibold font-mulish">Pratique</p>
+            <p className="text-[14px] text-white  text-justify md:text-sm font-mulish">
               Praticar é a melhor forma de aprender, aqui você vai praticar nos
               sentidos da audição.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-2 md:gap-4 border border-[#232e36] h-64 mt-4 p-4">
+          <div className="flex flex-col items-center gap-2 md:gap-4 border border-[#232e36] h-[fit-content] md:h-60 mt-4 p-4">
             <FontAwesomeIcon
               icon={faVolumeUp}
               className="text-green-300 mr-2 mb-1"
-              size="3x"
+              size="2x"
             />
-            <p className="text-xl text-white font-semibold md:text-2xl font-mulish">Fale</p>
-            <p className="text-[14px] text-white text-center md:text-lg font-mulish">
+            <p className="text-xl text-white font-semibold font-mulish">Fale</p>
+            <p className="text-[14px] text-white text-center md:text-sm text-justify font-mulish">
               Por ser uma língua bantu interpretada, têm palavras com
               acentuações tónicas que se mal ditas/acentuadas podem ter outro
               significado e sentido.

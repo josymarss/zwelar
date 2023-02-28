@@ -7,5 +7,12 @@
 .header-li:hover {
      @apply text-green-400;
 }
+.header-li-span {
+      @apply flex flex-col;
+}
+.header-li-span span { 
+      @apply text-[10px] lg:text-[12px];
+}
+
 @tailwind components;
 @tailwind utilities;

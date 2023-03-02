@@ -33,12 +33,13 @@ export function Header (){
 
     return(
         <>
-        <header className='sticky top-0 z-40 bg-slate-100 px-5 flex items-center w-full h-[60px] shadow-lg font-mulish'>
-            <h2 className="font-bold text-2xl text-slate-800 w-[10%]">
+        <header className='sticky top-0 z-40 bg-slate-100 px-5 flex justify-between items-center w-full h-[60px] shadow-lg font-mulish'>
+            <h2 className="font-bold text-2xl text-slate-800 w-[15%]">
                 <Link href='/'>Zwelar</Link>
             </h2>
-            <div className='flex justify-between w-full'>
-                <nav className='w-[80%]'>
+            <div className='flex justify-between w-[85%] gap-4'>
+                <span className='flex md:hidden'><span><FontAwesomeIcon size='lg' icon={faHome}></FontAwesomeIcon></span></span>
+                <nav className='w-[fit-content] hidden md:flex'>
                     <ul className='flex flex-row gap-[1rem]'>
                         <li className=" text-md header-li">
                             <Link href='/'> 
@@ -119,14 +120,14 @@ export function Header (){
                         </li>
                     </ul>
                 </nav>
-                <div className='flex w-[20%]'>
+                <div className='flex gap-1 w-[20%]'>
                     <input 
                         className='p-1 outline-none rounded-full text-center text-[13px] w-[60%]'
                         type='text' 
                         name='search' 
                         placeholder='Sugerir palavra'
                     />
-                    <button className='w-[30%] hover:text-white px-2 rounded-full text-black ml-2 bg-green-400 text-[12px] 'onClick={onSugerir}>Enviar</button>
+                    <button className='w-[fit-content] hover:text-white  p-2 rounded-full text-black  bg-green-400 text-[12px] 'onClick={onSugerir}>Enviar</button>
                 </div>
             </div>
         </header>

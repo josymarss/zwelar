@@ -2,17 +2,21 @@
 @tailwind base;
 
 .header-li {
-     @apply text-[16px] font-bold;
+     @apply text-[16px] cursor-pointer;
 }
 .header-li:hover {
      @apply text-green-400;
 }
 .header-li-span {
-      @apply flex flex-col;
+      @apply flex flex-col w-10;
 }
 .header-li-span span { 
-      @apply text-[10px] lg:text-[12px];
+      @apply text-[12px] lg:text-[12px];
 }
+.header-li-span  { 
+      @apply text-center;
+}
+
 
 @tailwind components;
 @tailwind utilities;

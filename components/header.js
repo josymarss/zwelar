@@ -8,7 +8,9 @@ import { faMoon,
     faMusic,
     faHistory,
     faCode,
-    faUser
+    faUser,
+    faBrain,
+    faInfo
 } from "@fortawesome/free-solid-svg-icons";// Import the FontAwesomeIcon component
 import { useRouter } from 'next/router';
 
@@ -40,16 +42,16 @@ export function Header (){
                     <ul className='flex flex-row gap-[1rem]'>
                         <li className=" text-md header-li">
                             <Link href='/'> 
-                            <span className='header-li-span'>
-                                <FontAwesomeIcon size='lg' icon={faHome}></FontAwesomeIcon>
-                                <span>Home</span>
-                            </span>
+                                <span className='header-li-span'>
+                                    <span><FontAwesomeIcon size='lg' icon={faHome}></FontAwesomeIcon></span>
+                                    <span>Home</span>
+                                </span>
                             </Link>
                         </li>
                         <li className="header-li">
                             <Link href='/grammar/grammar'>
                                 <span className='header-li-span'>
-                                    <FontAwesomeIcon size='lg' icon={faBook}></FontAwesomeIcon>
+                                    <span><FontAwesomeIcon size='lg' icon={faBook}></FontAwesomeIcon></span>
                                     <span>Gramática</span>
                                 </span>
                             </Link>
@@ -57,7 +59,7 @@ export function Header (){
                         <li className="header-li">
                             <Link href='/music'>
                                 <span className='header-li-span'>
-                                    <FontAwesomeIcon size='lg' icon={faMusic}></FontAwesomeIcon>
+                                    <span><FontAwesomeIcon size='lg' icon={faMusic}></FontAwesomeIcon></span>
                                     <span>Música</span>
                                 </span>
                             </Link>
@@ -65,21 +67,31 @@ export function Header (){
                         <li className="header-li">
                             <Link href='/history'>
                                 <span className='header-li-span'>
-                                    <FontAwesomeIcon size='lg' icon={faHistory}></FontAwesomeIcon>
+                                    <span><FontAwesomeIcon size='lg' icon={faHistory}></FontAwesomeIcon></span>
                                     <span>História</span>
                                 </span>
                             </Link>
                         </li>
                         <li className="header-li">
-                            <Link href='/courses'>{`Cursos`}</Link>
+                            <Link href='/courses'>
+                                <span className='header-li-span'>
+                                    <span><FontAwesomeIcon size='lg' icon={faBrain}></FontAwesomeIcon></span>
+                                    <span>Cursos</span>
+                                </span>
+                            </Link>
                         </li>
                         <li className="header-li">
-                            <Link href='/about/about'>Sobre</Link>
+                            <Link href='/about/about'>
+                                <span className='header-li-span'>
+                                    <span><FontAwesomeIcon size='lg' icon={faInfo}></FontAwesomeIcon></span>
+                                    <span>Sobre</span>
+                                </span>
+                            </Link>  
                         </li>
                         <li  className="header-li">
                             <Link href='/team'>
                                 <span className='header-li-span'>
-                                    <FontAwesomeIcon size='lg' icon={faCode}></FontAwesomeIcon>
+                                    <span><FontAwesomeIcon size='lg' icon={faCode}></FontAwesomeIcon></span>
                                     <span>Criadores</span>
                                 </span>
                             </Link>
@@ -87,7 +99,7 @@ export function Header (){
                         <li  className="header-li">
                             <Link href='#'>
                                 <span className='header-li-span'>
-                                    <FontAwesomeIcon size='lg' icon={faUser}></FontAwesomeIcon>
+                                    <span><FontAwesomeIcon size='lg' icon={faUser}></FontAwesomeIcon></span>
                                     <span>Perfil</span>
                                 </span>
                             </Link>
@@ -95,14 +107,14 @@ export function Header (){
                         <li  className="flex header-li">
                                 <Link href='https://github.com/josymarss/kimbundu-technical-expressions'>
                                 <span className='header-li-span'>
-                                    <FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon>
+                                     <span><FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon></span>
                                      <span><a target="_blank">Github</a></span>
                                 </span> 
                                 </Link>
                         </li>
                         <li className="header-li">
                             <span>
-                                <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
                             </span>
                         </li>
                     </ul>

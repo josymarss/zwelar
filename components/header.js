@@ -30,9 +30,9 @@ export function Header (){
         //     })
         // }
     }
-    const NavItems = ({}) => {
+    const NavItems = ({style}) => {
          return (
-            <nav className='w-[fit-content] hidden md:flex'>
+            <nav className='w-[70%] hidden md:flex'>
                     <ul className='flex flex-row gap-[1rem]'>
                         <li className=" text-md header-li">
                             <Link href='/'> 
@@ -62,7 +62,7 @@ export function Header (){
                             <Link href='/history'>
                                 <span className='header-li-span'>
                                     <span><FontAwesomeIcon size='lg' icon={faHistory}></FontAwesomeIcon></span>
-                                    <span>História</span>
+                                    <span>Histórias</span>
                                 </span>
                             </Link>
                         </li>
@@ -90,22 +90,22 @@ export function Header (){
                                 </span>
                             </Link>
                         </li>
-                        <li  className="header-li">
+                        {/* <li  className="header-li">
                             <Link href='#'>
                                 <span className='header-li-span'>
                                     <span><FontAwesomeIcon size='lg' icon={faUser}></FontAwesomeIcon></span>
                                     <span>Perfil</span>
                                 </span>
                             </Link>
-                        </li>
-                        <li  className="flex header-li">
+                        </li> */}
+                        {/* <li  className="flex header-li">
                                 <Link href='https://github.com/josymarss/kimbundu-technical-expressions'>
                                 <span className='header-li-span'>
                                      <span><FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon></span>
                                      <span><a target="_blank">Github</a></span>
                                 </span> 
                                 </Link>
-                        </li>
+                        </li> */}
                         <li className="header-li">
                             <span>
                             <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
@@ -118,14 +118,14 @@ export function Header (){
 
     return(
         <>
-        <header className='sticky top-0 z-40 bg-slate-100 px-5 flex justify-between items-center w-full h-[60px] shadow-lg font-mulish'>
+        <header className='sticky top-0 z-40 bg-slate-100 px-5 flex justify-between items-center w-full h-[70px] shadow-lg font-mulish'>
             <h2 className="font-bold text-2xl text-slate-800 w-[15%]">
                 <Link href='/'>Zwelar</Link>
             </h2>
-            <div className='flex justify-between w-[85%] gap-4'>
+            <div className='flex md:justify-between md:w-[85%] gap-4'>
                 <span className='flex md:hidden'><span><FontAwesomeIcon size='lg' icon={faHome}></FontAwesomeIcon></span></span>
                     <NavItems />
-                <div className='flex gap-1 w-[20%]'>
+                <div className='flex gap-1  md:w-[20%]'>
                     <input 
                         className='p-1 outline-none rounded-full text-center text-[13px] w-[60%]'
                         type='text' 

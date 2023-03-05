@@ -20,7 +20,7 @@ import Banner from './banner';
 export function Header (){
     const router = useRouter();
     const [toggleMenu, setToggleMenu] = useState(false);
-    
+
     const onSugerir = (e) =>{
         // const value = e.target.value
         // if (value !== ''){
@@ -37,9 +37,9 @@ export function Header (){
     }
     const NavItems = ({style}) => {
          return (
-            <nav className='w-full  md:flex'>
-                    <ul className='flex flex-row justify-center gap-[1rem] w-full'>
-                        <li className=" text-md header-li">
+            <nav className='w-full mt-[-480px] border-t border-t-[#232e36]  md:border-0 md:mt-0 '>
+                    <ul className='flex flex-col h-full  md:p-0 md:bg-[transparent] md:flex-row  md:justify-center gap-[1rem] w-full'>
+                        <li className="text-md header-li">
                             <Link href='/'> 
                                 <span className='header-li-span'>
                                     <span><FontAwesomeIcon size='lg' icon={faHome}></FontAwesomeIcon></span>
@@ -111,11 +111,11 @@ export function Header (){
                                 </span> 
                                 </Link>
                         </li> */}
-                        <li className="header-li">
+                        {/* <li className="header-li">
                             <span>
                             <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
                             </span>
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
          );
@@ -123,16 +123,21 @@ export function Header (){
 
     return(
         <>
-        <header className='sticky top-0 z-40 bg-slate-100 px-2 flex flex-col  justify-between items-center w-full h-[100px] lg:h-[90px] shadow-lg font-mulish'>
+        <header className='sticky top-0 z-40 bg-slate-100 px-2 flex flex-col  justify-between items-center w-full h-[90vh] md:h-[90px] shadow-lg font-mulish'>
             <div className='flex  flex-row justify-between w-full'>
                     <h2 className="font-bold  ml-[1.5rem] mt-1 text-2xl text-slate-800">
                         <Link href='/'>Zwelar</Link>
                     </h2>
-                    <button className='w-[fit-content] hover:text-[blue] mt-1 font-bold  p-1 rounded-[5px] text-black  bg-green-400 text-[11px]' 
-                            onClick={onSugerir}>Sugerir Palavras
-                    </button>
+                    <div className='flex flex-row justify-between gap-4 items-center'>
+                        <span className='header-li mt-2 '>
+                            <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
+                        </span>
+                        <button className='w-[fit-content] hover:text-[blue] mt-1 font-bold  p-1 rounded-[5px] text-black  bg-green-400 text-[11px]' 
+                                onClick={onSugerir}>Sugerir Palavras
+                        </button>
+                    </div>
             </div>
-            <div className='flex w-full md:flex-row py-2 gap-4'>
+            <div className='flex w-full  flex-row py-2 gap-4'>
                 {/* <span className='flex md:hidden' onClick={toggleMenuHandler}><span><FontAwesomeIcon size='lg' icon={faHome}></FontAwesomeIcon></span></span> */}
                     <NavItems />
                 {/* <div className='flex gap-1 hiden mid:flex  md:w-[30%]'>

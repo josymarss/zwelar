@@ -13,11 +13,13 @@ import { faMoon,
     faInfo
 } from "@fortawesome/free-solid-svg-icons";// Import the FontAwesomeIcon component
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 import Banner from './banner';
 
 export function Header (){
     const router = useRouter();
+    const [toggleMenu, setToggleMenu] = useState(false);
     
     const onSugerir = (e) =>{
         // const value = e.target.value
@@ -30,10 +32,13 @@ export function Header (){
         //     })
         // }
     }
+    const toggleMenuHandler = ()=>{
+         console.log("cliked")
+    }
     const NavItems = ({style}) => {
          return (
-            <nav className='w-[70%] hidden md:flex'>
-                    <ul className='flex flex-row gap-[1rem]'>
+            <nav className='w-full md:w-[70%] md:flex'>
+                    <ul className='flex flex-row justify-center gap-[1rem] w-full'>
                         <li className=" text-md header-li">
                             <Link href='/'> 
                                 <span className='header-li-span'>
@@ -90,14 +95,14 @@ export function Header (){
                                 </span>
                             </Link>
                         </li>
-                        {/* <li  className="header-li">
+                        <li  className="header-li">
                             <Link href='#'>
                                 <span className='header-li-span'>
                                     <span><FontAwesomeIcon size='lg' icon={faUser}></FontAwesomeIcon></span>
                                     <span>Perfil</span>
                                 </span>
                             </Link>
-                        </li> */}
+                        </li>
                         {/* <li  className="flex header-li">
                                 <Link href='https://github.com/josymarss/kimbundu-technical-expressions'>
                                 <span className='header-li-span'>
@@ -118,22 +123,22 @@ export function Header (){
 
     return(
         <>
-        <header className='sticky top-0 z-40 bg-slate-100 px-5 flex justify-between items-center w-full h-[70px] shadow-lg font-mulish'>
+        <header className='sticky top-0 z-40 bg-slate-100 px-2 flex flex-col  md:flex-row justify-between items-center w-full h-[90px] md:h-[70px] shadow-lg font-mulish'>
             <h2 className="font-bold text-2xl text-slate-800 w-[15%]">
                 <Link href='/'>Zwelar</Link>
             </h2>
-            <div className='flex md:justify-between md:w-[85%] gap-4'>
-                <span className='flex md:hidden'><span><FontAwesomeIcon size='lg' icon={faHome}></FontAwesomeIcon></span></span>
+            <div className='flex w-full smr:bg-[#000]  md:bg-[#fff] lg:bg-[#ccc] md:flex-row py-2 md:w-[85%] gap-4'>
+                {/* <span className='flex md:hidden' onClick={toggleMenuHandler}><span><FontAwesomeIcon size='lg' icon={faHome}></FontAwesomeIcon></span></span> */}
                     <NavItems />
-                <div className='flex gap-1  md:w-[20%]'>
+                {/* <div className='flex gap-1 hiden mid:flex  md:w-[20%]'>
                     <input 
-                        className='p-1 outline-none rounded-full text-center text-[13px] w-[60%]'
+                        className='p-1 outline-none rounded-[5px] md:rounded-full text-center text-[13px] w-[60%]'
                         type='text' 
                         name='search' 
                         placeholder='Sugerir palavra'
                     />
-                    <button className='w-[fit-content] hover:text-white  p-2 rounded-full text-black  bg-green-400 text-[12px] 'onClick={onSugerir}>Enviar</button>
-                </div>
+                    <button className='w-[fit-content] hover:text-white  p-2 rounded-[5px] md:rounded-full text-black  bg-green-400 text-[12px] 'onClick={onSugerir}>Enviar</button>
+                </div> */}
             </div>
         </header>
         {router.pathname === '/' ?

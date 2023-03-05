@@ -5,11 +5,6 @@ module.exports = {
 ],
   // darkMode:true,
   theme: {
-    screens: {
-      smr: {
-          'min':'300px', 'max':'579px',
-      }
-    },
     extend: {
       fontFamily:{
         mulish:"'Mulish', sans-serif"

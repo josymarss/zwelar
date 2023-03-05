@@ -123,11 +123,11 @@ export function Header (){
 
     return(
         <>
-        <header className='sticky top-0 z-40 bg-slate-100 px-2 flex flex-col  md:flex-row justify-between items-center w-full h-[90px] md:h-[70px] shadow-lg font-mulish'>
+        <header className='sticky top-0 z-40 bg-slate-100 px-2 flex flex-col  justify-between items-center w-full h-[90px] md:h-[70px] shadow-lg font-mulish'>
             <h2 className="font-bold text-2xl text-slate-800 w-[15%]">
                 <Link href='/'>Zwelar</Link>
             </h2>
-            <div className='flex w-full smr:bg-[#000]  md:bg-[#fff] lg:bg-[#ccc] md:flex-row py-2 md:w-[85%] gap-4'>
+            <div className='flex w-full  md:bg-[#fff] lg:bg-[#ccc] md:flex-row py-2 md:w-[85%] gap-4'>
                 {/* <span className='flex md:hidden' onClick={toggleMenuHandler}><span><FontAwesomeIcon size='lg' icon={faHome}></FontAwesomeIcon></span></span> */}
                     <NavItems />
                 {/* <div className='flex gap-1 hiden mid:flex  md:w-[20%]'>

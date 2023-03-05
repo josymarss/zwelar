@@ -10,9 +10,9 @@
 .header-li-span {
       @apply flex flex-col;
 }
-.header-li-span span { 
+ .header-li-span span { 
       @apply text-[12px] lg:text-[12px];
-}
+} 
 .header-li-span  { 
       @apply text-center;
 }

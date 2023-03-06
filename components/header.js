@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
@@ -10,16 +11,19 @@ import { faMoon,
     faCode,
     faUser,
     faBrain,
-    faInfo
+    faInfo,
+    faWindowClose,
+    faBars
 } from "@fortawesome/free-solid-svg-icons";// Import the FontAwesomeIcon component
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
-import Banner from './banner';
+import Banner from './banner'; 
 
 export function Header (){
     const router = useRouter();
     const [toggleMenu, setToggleMenu] = useState(false);
+    
 
     const onSugerir = (e) =>{
         // const value = e.target.value
@@ -37,7 +41,16 @@ export function Header (){
     }
     const NavItems = ({style}) => {
          return (
-            <nav className='w-full mt-[-480px] border-t border-t-[#232e36]  md:border-0 md:mt-0 '>
+            <nav className=' w-full  mt-[-480px] border-t flex flex-col gap-4 border-t-[#232e36]  md:border-0 md:mt-0 '>
+                    <div className='self-end mt-2 flex md:hidden '>
+                       <span> 
+                            <FontAwesomeIcon 
+                                className='text-red-600 cursor-pointer' 
+                                size='lg' 
+                                icon={faWindowClose}>
+                            </FontAwesomeIcon>
+                      </span> 
+                    </div>
                     <ul className='flex flex-col h-full  md:p-0 md:bg-[transparent] md:flex-row  md:justify-center gap-[1rem] w-full'>
                         <li className="text-md header-li">
                             <Link href='/'> 
@@ -124,11 +137,14 @@ export function Header (){
     return(
         <>
         <header className='sticky top-0 z-40 bg-slate-100 px-2 flex flex-col  justify-between items-center w-full h-[90vh] md:h-[90px] shadow-lg font-mulish'>
-            <div className='flex  flex-row justify-between w-full'>
+            <div className='flex  flex-row justify-between w-full flex-wrap'>
                     <h2 className="font-bold  ml-[1.5rem] mt-1 text-2xl text-slate-800">
                         <Link href='/'>Zwelar</Link>
                     </h2>
                     <div className='flex flex-row justify-between gap-4 items-center'>
+                        <span className='header-li mt-2 flex md:hidden'>
+                            <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+                        </span>
                         <span className='header-li mt-2 '>
                             <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
                         </span>

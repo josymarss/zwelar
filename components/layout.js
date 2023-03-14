@@ -1,8 +1,8 @@
-import React, {createContext} from 'react';
+import React, {createContext, useState} from 'react';
 
 const DataContext = createContext();
 
-const DataProvider = ({children}) => {
+function  DataProvider ({children}) {
     const [windowSize, setWindowSize] = useState({
         width: window.innerWidth,
         height: window.innerHeight
@@ -22,8 +22,8 @@ const DataProvider = ({children}) => {
             window.removeEventListener('resize', changeSize);
         }
     },[windowSize]);
-    return (
-        <DataContext.Provider>
+    return ( 
+        <DataContext.Provider value={windowSize}>
              {children}
         </DataContext.Provider>
     );

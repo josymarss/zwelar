@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
@@ -17,6 +17,7 @@ import { faMoon,
 } from "@fortawesome/free-solid-svg-icons";// Import the FontAwesomeIcon component
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+
 
 import Banner from './banner'; 
 

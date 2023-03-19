@@ -23,7 +23,7 @@ import Banner from './banner';
 
 export function Header (){
     const router = useRouter();
-    const [toggleMenu, setToggleMenu] = useState(true);
+    const [toggleMenu, setToggleMenu] = useState(false);
     
 
     const onSugerir = (e) =>{
@@ -41,9 +41,9 @@ export function Header (){
          console.log("cliked")
          setToggleMenu(!toggleMenu)
     }
-    const NavItems = () => {
+    const NavItems = ({style}) => {
          return (
-            <nav className={`flex w-full  mt-[-480px] border-t flex flex-col gap-4 border-t-[#232e36]  md:border-0 md:mt-0 `}>
+            <nav className={`${toggleMenu ?'hidden':'flex'} w-full  mt-[-480px] border-t flex flex-col gap-4 border-t-[#232e36]  md:border-0 md:mt-0 `}>
                     <div className='self-end mt-2 flex md:hidden '>
                        <span> 
                             <FontAwesomeIcon 
@@ -138,12 +138,12 @@ export function Header (){
 
     return(
         <>
-            <header className={`sticky top-0 z-40 py-[0.5rem] bg-slate-100 px-2 flex flex-col  justify-between items-center w-full h-fit md:h-[90px] shadow-lg font-mulish`}>
-                <div className='flex h-fit flex-row justify-between w-full  flex-wrap'>
-                        <h2 className="font-bold  ml-[1.5rem] mt-1 text-xl md:text-2xl text-slate-800">
+            <header className={`sticky top-0 z-40 bg-slate-100 px-2 flex flex-col  justify-between items-center w-full h-[100vh] md:h-[90px] shadow-lg font-mulish`}>
+                <div className='flex h-fit flex-row justify-between w-full flex-wrap'>
+                        <h2 className="font-bold  ml-[1.5rem] mt-1 text-2xl text-slate-800">
                             <Link href='/'>Zwelar</Link>
                         </h2>
-                        <div className='flex flex-row-reverse md:flex-row justify-between gap-4 items-center'>
+                        <div className='flex flex-row justify-between gap-4 items-center flex-row-reverse'>
                             <span onClick={toggleMenuHandler} className='header-li mt-2 flex md:hidden'>
                                 <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                             </span>

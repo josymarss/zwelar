@@ -23,7 +23,7 @@ import Banner from './banner';
 
 export function Header (){
     const router = useRouter();
-    const [toggleMenu, setToggleMenu] = useState(false);
+    const [toggleMenu, setToggleMenu] = useState(true);
     
 
     const onSugerir = (e) =>{
@@ -41,9 +41,9 @@ export function Header (){
          console.log("cliked")
          setToggleMenu(!toggleMenu)
     }
-    const NavItems = ({style}) => {
+    const NavItems = () => {
          return (
-            <nav className={`${toggleMenu ?'hidden':'flex'} w-full  mt-[-480px] border-t flex flex-col gap-4 border-t-[#232e36]  md:border-0 md:mt-0 `}>
+            <nav className={`flex w-full  mt-[-480px] border-t flex flex-col gap-4 border-t-[#232e36]  md:border-0 md:mt-0 `}>
                     <div className='self-end mt-2 flex md:hidden '>
                        <span> 
                             <FontAwesomeIcon 
@@ -138,36 +138,36 @@ export function Header (){
 
     return(
         <>
-        <header className={`sticky top-0 z-40 bg-slate-100 px-2 flex flex-col  justify-between items-center w-full h-[90vh] md:h-[90px] shadow-lg font-mulish`}>
-            <div className='flex  flex-row justify-between w-full flex-wrap'>
-                    <h2 className="font-bold  ml-[1.5rem] mt-1 text-2xl text-slate-800">
-                        <Link href='/'>Zwelar</Link>
-                    </h2>
-                    <div className='flex flex-row justify-between gap-4 items-center'>
-                        <span onClick={toggleMenuHandler} className='header-li mt-2 flex md:hidden'>
-                            <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-                        </span>
-                        <span className='header-li mt-2 '>
-                            <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
-                        </span>
-                        <button className='w-[fit-content] hover:text-[blue] mt-1 font-bold  p-1 rounded-[5px] text-black  bg-green-400 text-[11px]' 
-                                onClick={onSugerir}>Sugerir Palavras
-                        </button>
-                    </div>
-            </div>
-            <div className='flex w-full  flex-row py-2 gap-4'>
-                {/* <span className='flex md:hidden' onClick={toggleMenuHandler}><span><FontAwesomeIcon size='lg' icon={faHome}></FontAwesomeIcon></span></span> */}
-                    <NavItems />
-                {/* <div className='flex gap-1 hiden mid:flex  md:w-[30%]'>
-                    <input 
-                        className='p-1 outline-none rounded-[5px] md:rounded-full text-center text-[13px] w-[60%]'
-                        type='text' 
-                        name='search' 
-                        placeholder='Sugerir palavra'
-                    />
-                </div> */}
-            </div>
-        </header>
+            <header className={`sticky top-0 z-40 py-[0.5rem] bg-slate-100 px-2 flex flex-col  justify-between items-center w-full h-fit md:h-[90px] shadow-lg font-mulish`}>
+                <div className='flex h-fit flex-row justify-between w-full  flex-wrap'>
+                        <h2 className="font-bold  ml-[1.5rem] mt-1 text-xl md:text-2xl text-slate-800">
+                            <Link href='/'>Zwelar</Link>
+                        </h2>
+                        <div className='flex flex-row-reverse md:flex-row justify-between gap-4 items-center'>
+                            <span onClick={toggleMenuHandler} className='header-li mt-2 flex md:hidden'>
+                                <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+                            </span>
+                            <span className='header-li mt-2 '>
+                                <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
+                            </span>
+                            <button className='w-[fit-content] hover:text-[blue] mt-1 font-bold  p-1 rounded-[5px] text-black  bg-green-400 text-[11px]' 
+                                    onClick={onSugerir}>Sugerir Palavras
+                            </button>
+                        </div>
+                </div>
+                <div className='flex w-full  flex-row py-2 gap-4'>
+                    {/* <span className='flex md:hidden' onClick={toggleMenuHandler}><span><FontAwesomeIcon size='lg' icon={faHome}></FontAwesomeIcon></span></span> */}
+                        <NavItems />
+                    {/* <div className='flex gap-1 hiden mid:flex  md:w-[30%]'>
+                        <input 
+                            className='p-1 outline-none rounded-[5px] md:rounded-full text-center text-[13px] w-[60%]'
+                            type='text' 
+                            name='search' 
+                            placeholder='Sugerir palavra'
+                        />
+                    </div> */}
+                </div>
+            </header>
         {router.pathname === '/' ?
             <Banner />
             : ''

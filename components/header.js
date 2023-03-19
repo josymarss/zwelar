@@ -39,10 +39,11 @@ export function Header (){
     }
     const toggleMenuHandler = ()=>{
          console.log("cliked")
+         setToggleMenu(!toggleMenu)
     }
     const NavItems = ({style}) => {
          return (
-            <nav className=' w-full  mt-[-480px] border-t flex flex-col gap-4 border-t-[#232e36]  md:border-0 md:mt-0 '>
+            <nav className={`${toggleMenu ?'hidden':'flex'} w-full  mt-[-480px] border-t flex flex-col gap-4 border-t-[#232e36]  md:border-0 md:mt-0 `}>
                     <div className='self-end mt-2 flex md:hidden '>
                        <span> 
                             <FontAwesomeIcon 
@@ -137,13 +138,13 @@ export function Header (){
 
     return(
         <>
-        <header className='sticky top-0 z-40 bg-slate-100 px-2 flex flex-col  justify-between items-center w-full h-[90vh] md:h-[90px] shadow-lg font-mulish'>
+        <header className={`sticky top-0 z-40 bg-slate-100 px-2 flex flex-col  justify-between items-center w-full h-[90vh] md:h-[90px] shadow-lg font-mulish`}>
             <div className='flex  flex-row justify-between w-full flex-wrap'>
                     <h2 className="font-bold  ml-[1.5rem] mt-1 text-2xl text-slate-800">
                         <Link href='/'>Zwelar</Link>
                     </h2>
                     <div className='flex flex-row justify-between gap-4 items-center'>
-                        <span className='header-li mt-2 flex md:hidden'>
+                        <span onClick={toggleMenuHandler} className='header-li mt-2 flex md:hidden'>
                             <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                         </span>
                         <span className='header-li mt-2 '>

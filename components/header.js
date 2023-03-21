@@ -155,7 +155,7 @@ export function Header (){
                 </div>
             </header>
         {router.pathname === '/' ?
-            <Banner />
+                <Banner />
             : ''
         }
         </>

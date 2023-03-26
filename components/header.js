@@ -18,7 +18,6 @@ import { faMoon,
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
-
 import Banner from './banner'; 
 
 export function Header (){

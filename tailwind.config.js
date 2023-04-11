@@ -9,9 +9,6 @@ module.exports = {
       fontFamily:{
         mulish:"'Mulish', sans-serif"
       },
-      keyframes:{
-        'lg_': '1090'
-      }
     },
   },
   plugins: [],

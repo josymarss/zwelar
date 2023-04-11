@@ -10,7 +10,8 @@ export default function Banner(){
         <div className="bg-slate-500 w-[100%] h-[100%] ">
             <img
               src="/bg-image.png"
-            />
+              alt='image'
+          />
             {/* <Image
               layout='fill'
               objectFit="cover"

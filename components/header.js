@@ -46,7 +46,7 @@ export function Header (){
                     </div>
                     <ul className={`flex flex-col h-full  md:p-0 md:bg-[transparent] md:flex-row  md:justify-center gap-[1rem] w-full`}>
                         <li className="text-md header-li">
-                            <Link href='/'> 
+                            <Link href='/' passHref> 
                                 <span className='header-li-span'>
                                     <span><FontAwesomeIcon size='lg' icon={faHome}></FontAwesomeIcon></span>
                                     <span>Home</span>
@@ -54,7 +54,7 @@ export function Header (){
                             </Link>
                         </li>
                         <li className="header-li">
-                            <Link href='/grammar/grammar'>
+                            <Link href='/grammar/grammar' passHref>
                                 <span className='header-li-span'>
                                     <span><FontAwesomeIcon size='lg' icon={faBook}></FontAwesomeIcon></span>
                                     <span>Gramática</span>
@@ -62,7 +62,7 @@ export function Header (){
                             </Link>
                         </li>
                         <li className="header-li">
-                            <Link href='/music'>
+                            <Link href='/music' passHref>
                                 <span className='header-li-span'>
                                     <span><FontAwesomeIcon size='lg' icon={faMusic}></FontAwesomeIcon></span>
                                     <span>Música</span>
@@ -70,7 +70,7 @@ export function Header (){
                             </Link>
                         </li>
                         <li className="header-li">
-                            <Link href='/history'>
+                            <Link href='/history' passHref>
                                 <span className='header-li-span'>
                                     <span><FontAwesomeIcon size='lg' icon={faHistory}></FontAwesomeIcon></span>
                                     <span>Histórias</span>
@@ -78,7 +78,7 @@ export function Header (){
                             </Link>
                         </li>
                         <li className="header-li">
-                            <Link href='/courses'>
+                            <Link href='/courses' passHref>
                                 <span className='header-li-span'>
                                     <span><FontAwesomeIcon size='lg' icon={faBrain}></FontAwesomeIcon></span>
                                     <span>Cursos</span>
@@ -86,7 +86,7 @@ export function Header (){
                             </Link>
                         </li>
                         <li className="header-li">
-                            <Link href='/about/about'>
+                            <Link href='/about/about' passHref>
                                 <span className='header-li-span'>
                                     <span><FontAwesomeIcon size='lg' icon={faInfo}></FontAwesomeIcon></span>
                                     <span>Sobre</span>
@@ -94,7 +94,7 @@ export function Header (){
                             </Link>  
                         </li>
                         <li  className="header-li">
-                            <Link href='/team'>
+                            <Link href='/team' passHref>
                                 <span className='header-li-span'>
                                     <span><FontAwesomeIcon size='lg' icon={faCode}></FontAwesomeIcon></span>
                                     <span>Criadores</span>
@@ -102,7 +102,7 @@ export function Header (){
                             </Link>
                         </li>
                         <li  className="header-li">
-                            <Link href='#'>
+                            <Link href='#' passHref>
                                 <span className='header-li-span'>
                                     <span><FontAwesomeIcon size='lg' icon={faUser}></FontAwesomeIcon></span>
                                     <span>Perfil</span>

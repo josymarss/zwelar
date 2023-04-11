@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript,  } from "next/document";
 import Script from "next/script";
 
 export default function Document() {
@@ -26,6 +26,7 @@ export default function Document() {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
+    
       </Head>
       <body>
         <Main />

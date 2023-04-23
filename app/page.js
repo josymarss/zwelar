@@ -1,10 +1,11 @@
+'use client'
 import { useState, useEffect, Fragment } from 'react';
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 import styles from './styles.module.css';
 import { data } from '../data/data';
 
-export default function TranslationPage(){
+const TranslationPage = () => {
     const [datafetched, updateDate] = useState([]);
     const [search, updateSearch] = useState('');
     
@@ -65,3 +66,4 @@ export default function TranslationPage(){
         </div>
     );
 }
+export default TranslationPage;

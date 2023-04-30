@@ -20,10 +20,14 @@ const Music = () => {
       setPageNumber(pageNumber+1);
   }
 
-  const MusicCard = ({singer_}) => {
+  const MusicCard = ({singer_, setSinger_}) => {
     const {name,music_title,pic} = singer_;
+    
+    const handlerMusicChange = () =>{
+        setSinger_(singer_);
+    }
     return(
-         <div className=" shadow-md bg-slate-50 p-2 mx-4 mt-4 hover-card">
+         <div onClick={handlerMusicChange} className=" shadow-md bg-slate-50 p-2 mx-4 mt-4 hover-card">
          <div className='border-solid w-[fit-content] h-auto bg-cover rounded-sm transition-all opacity-100 bg-slate-900' >
          <Image
                   width={120}
@@ -85,7 +89,8 @@ const Music = () => {
           {
               singersContent.map((singer_)=> <MusicCard 
                                         key={singer_.id} 
-                                        singer_ = {singer_} 
+                                        singer_ = {singer_}
+                                        setSinger_ = {setSinger}
                                         />)
             } 
           </div>

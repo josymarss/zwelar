@@ -20,7 +20,8 @@ const Music = () => {
       setPageNumber(pageNumber+1);
   }
 
-  const MusicCard = ({author, title, imagUrl}) => {
+  const MusicCard = ({singer_}) => {
+    const {name,music_title,pic} = singer_;
     return(
          <div className=" shadow-md bg-slate-50 p-2 mx-4 mt-4 hover-card">
          <div className='border-solid w-[fit-content] h-auto bg-cover rounded-sm transition-all opacity-100 bg-slate-900' >
@@ -30,11 +31,11 @@ const Music = () => {
                   quality={100}
                   intrinsec= 'true'
                   alt="singer"
-                  src={`/music-images/${imagUrl}`}
+                  src={`/music-images/${pic}`}
           />
          </div>
          <p className="mt-2 text-[8pt] md:text-[12pt]">
-           <strong className='text-[6pt] md:text-[10pt]'>{author}</strong><br/> {title}
+           <strong className='text-[6pt] md:text-[10pt]'>{name}</strong><br/> {music_title}
          </p>
        </div>
     );
@@ -82,11 +83,9 @@ const Music = () => {
         <div>
           <div className="grid grid-cols-2 lg:grid-cols-3 item-center">
           {
-              singersContent.map((ob)=> <MusicCard 
-                                        key={ob.id} 
-                                        author={ob.name} 
-                                        title={ob.music_title} 
-                                        imagUrl={ob.pic}
+              singersContent.map((singer_)=> <MusicCard 
+                                        key={singer_.id} 
+                                        singer_ = {singer_} 
                                         />)
             } 
           </div>
@@ -116,8 +115,7 @@ function solitTextByLine(text){
     lines =  text.split(/\n/);
   } else {
      lines = ["Sem letras de momento"];
-  }
-    
+  }  
     return lines
 }
 

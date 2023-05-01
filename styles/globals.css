@@ -21,7 +21,10 @@
 }
 /*Music PAGE*/
 .pagechange-button {
-      @apply text-green-400;
+      @apply text-green-400 p-2 mx-4 border rounded-[5px] text-[12px];
+}
+.pagechange-button:hover {
+      @apply text-green-500 cursor-pointer;
 }
 .hover-card:hover {
       @apply  cursor-pointer;

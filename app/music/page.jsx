@@ -27,16 +27,16 @@ const Music = () => {
         setSinger_(singer_);
     }
     return(
-         <div onClick={handlerMusicChange} className=" shadow-md bg-slate-50 p-2 mx-4 mt-4 hover-card">
+         <div onClick={handlerMusicChange} className="w-[fit-content] shadow-md bg-slate-50 p-2 mx-4 mt-4 hover-card">
          <div className='border-solid w-[fit-content] h-auto bg-cover rounded-sm transition-all opacity-100 bg-slate-900' >
-         <Image
-                  width={120}
-                  height={120}
-                  quality={100}
-                  intrinsec= 'true'
-                  alt="singer"
-                  src={`/music-images/${pic}`}
-          />
+          <Image
+                    width={120}
+                    height={120}
+                    quality={100}
+                    intrinsec= 'true'
+                    alt="singer"
+                    src={`/music-images/${pic}`}
+            />
          </div>
          <p className="mt-2 text-[8pt] md:text-[12pt]">
            <strong className='text-[6pt] md:text-[10pt]'>{name}</strong><br/> {music_title}
@@ -80,12 +80,12 @@ const Music = () => {
       </div>
 
       <div className='md:w-[50%]'>
-        <h2 className="text-slate-900 font-semibold  text-[12pt] mx-4 w-[100%]"> 
+        <h2 className="text-slate-900 font-semibold text-[12pt] mx-4 w-[100%]"> 
           Mais músicas 
         </h2>
         {/* {/* Cards} */}
         <div>
-          <div className="grid grid-cols-2 lg:grid-cols-3 item-center">
+          <div className="grid grid-cols-2 place-content-center lg:grid-cols-3 item-center">
           {
               singersContent.map((singer_)=> <MusicCard 
                                         key={singer_.id} 
@@ -94,7 +94,7 @@ const Music = () => {
                                         />)
             } 
           </div>
-          <div className='flex w-full'>
+          <div className='flex w-full justify-center mt-5'>
             <span 
               className='pagechange-button'
               onClick={previousPageHandler}>
@@ -119,7 +119,7 @@ function solitTextByLine(text){
   if(text) {
     lines =  text.split(/\n/);
   } else {
-     lines = ["Sem letras de momento"];
+     lines = ["Sem letras de momento..."];
   }  
     return lines
 }

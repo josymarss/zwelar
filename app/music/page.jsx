@@ -5,7 +5,7 @@ import singers from '../../data/singers.json'
 import Image from 'next/image';
 
 const Music = () => {
-  const [singersContent, setSingersContent] = useState(singers)
+  const [singersContent, setSingersContent] = useState(singers);
   const [pageNumber, setPageNumber] = useState(1);
   const [singer, setSinger] = useState(1);
 

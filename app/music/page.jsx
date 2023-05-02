@@ -123,18 +123,4 @@ function solitTextByLine(text){
   }  
     return lines
 }
-
-// export async function getServerSideProps(){
-
-//   const res = await fetch('../../data/singers.json');
-//   console.log(res)
-//   const data = await res.json();
-
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }
-
 export default Music;

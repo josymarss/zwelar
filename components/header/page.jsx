@@ -16,13 +16,13 @@ import { faMoon,
     faWindowClose,
     faBars
 } from "@fortawesome/free-solid-svg-icons";// Import the FontAwesomeIcon component
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 // import './styles.css'
-import Banner from '../banner'; 
+import Banner from '../banner/page'; 
 
 export function Header (){
-    // const router = useRouter();
+    const router = useRouter();
     const [toggleMenu, setToggleMenu] = useState(false);
 
     const onSugerir = (e) =>{
@@ -154,10 +154,10 @@ export function Header (){
                     <NavItems />
                 </div>
             </header>
-        {/* {router.pathname === '/' ?
+        {router.pathname === '/' ?
                 <Banner />
             : ''
-        } */}
+        }
         </>
     )
 }

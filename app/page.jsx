@@ -1,12 +1,14 @@
-// import {useState} from 'react';
+'use client'
+
+import {useState} from 'react';
 import TranslationPage from './translationspage/page'
-import Leading from './leading/leading';
+import Leading from './leading/page';
 
 export default function Home() {
-//   const [loggedIn, setLoggedIn] = useState(true);
+  const [loggedIn, setLoggedIn] = useState(true);
   return (
         <div>
-          {/* {loggedIn ? <Leading /> : <TranslationPage /> } */}
+          {loggedIn ? <Leading /> : <TranslationPage /> }
         </div>
   )
 }

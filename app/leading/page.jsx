@@ -155,7 +155,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
                 <Image
                   width={500}
                   height={400}
-                  objectFit="cover"
+                  // objectFit="cover"
                   quality={65}
                   alt="Ouvir música"
                   src="/landing-images/sing.png"

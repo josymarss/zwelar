@@ -1,19 +1,20 @@
 'use client'
-import { useRouter } from 'next/router';
-import styles from './styles.module.css';
+// import { useRouter } from 'next/router';
+// import styles from './styles.module.css';
 
 
 export default function Footer (){
-    const router = useRouter();
+    // const router = useRouter();
 
     return(
          
             <footer className='flex justify-center bg-slate-800 font-mulish'>
-                {router.pathname === '/' ? 
+                {/* {router.pathname === '/' ?  */}
                     <div className="flex items-end justify-center p-4">
                         <p className="text-semibold text-md text-white">{`@bantu.io ${new Date().getFullYear()}`}</p>
-                    </div> : ''
-                }
+                    </div> 
+                    {/* : ''
+                } */}
             </footer> 
     )
 }

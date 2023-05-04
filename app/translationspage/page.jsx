@@ -2,8 +2,8 @@
 import { useState, useEffect, Fragment } from 'react';
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
-import styles from './styles.module.css';
-import { data } from '../data/data';
+// import styles from './styles.module.css';
+import { data } from '../../data/data';
 
 const TranslationPage = () => {
     const [datafetched, updateDate] = useState([]);
@@ -22,7 +22,7 @@ const TranslationPage = () => {
             filter(elem => elem.word === search || 
                 elem.word.toLocaleLowerCase() === search ||
                  elem.word.toUpperCase() === search) ||
-                 elem.word.toLocaleLowerCase() === search.toLocaleLowerCase());
+                 elem.word.toLocaleLowerCase() === search.toLocaleLowerCase()); 
     }
     
     const MyData = ()=>(

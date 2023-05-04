@@ -18,11 +18,11 @@ import { faMoon,
 } from "@fortawesome/free-solid-svg-icons";// Import the FontAwesomeIcon component
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-// import './styles.css'
+import './styles.css'
 import Banner from '../banner/page'; 
 
 export function Header (){
-    const router = useRouter();
+    // const router = useRouter();
     const [toggleMenu, setToggleMenu] = useState(false);
 
     const onSugerir = (e) =>{
@@ -123,12 +123,12 @@ export function Header (){
                             <Link href='/'>Zwelar</Link>
                         </h2>
                         <div className='flex flex-row-reverse justify-between gap-4 items-center md:flex-row'>
-                            <div className='w-[16px] h-[16px] mb-2'>
+                            <div className='w-[16px] h-[16px] mb-2 md:hidden'>
                                     {!toggleMenu ?   
                                         <span 
                                             onClick={toggleMenuHandler}> 
                                             <FontAwesomeIcon 
-                                                className='text-red-600 header-li mt-2 flex cursor-pointer md:hidden' 
+                                                className='text-red-600 header-li mt-2 flex cursor-pointer ' 
                                                 size='lg' 
                                                 icon={faWindowClose}>
                                         </FontAwesomeIcon>
@@ -154,10 +154,10 @@ export function Header (){
                     <NavItems />
                 </div>
             </header>
-        {router.pathname === '/' ?
                 <Banner />
-            : ''
-        }
+        {/* {router.pathname === '/' ? */}
+            {/* : ''
+        } */}
         </>
     )
 }

@@ -9,6 +9,7 @@ import {
   faLocationArrow,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Banner from "../../components/banner/page";
 
     export default function Leading() {
       return (

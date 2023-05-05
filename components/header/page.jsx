@@ -1,7 +1,6 @@
 'use client'
 import React, {useContext} from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faMoon,
     faCodeBranch, 
@@ -16,7 +15,7 @@ import { faMoon,
     faWindowClose,
     faBars
 } from "@fortawesome/free-solid-svg-icons";// Import the FontAwesomeIcon component
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import './styles.css'
 import Banner from '../banner/page'; 
@@ -128,7 +127,7 @@ export function Header (){
                                         <span 
                                             onClick={toggleMenuHandler}> 
                                             <FontAwesomeIcon 
-                                                className='text-red-600 header-li mt-2 flex cursor-pointer ' 
+                                                className='text-red-600 header-li mt-2 flex cursor-pointer' 
                                                 size='lg' 
                                                 icon={faWindowClose}>
                                         </FontAwesomeIcon>
@@ -136,7 +135,7 @@ export function Header (){
                                         <span 
                                             onClick={toggleMenuHandler} className='header-li mt-2 flex'>
                                             <FontAwesomeIcon 
-                                                className='cursor-pointer md:hidden'
+                                                className='cursor-pointer'
                                                 icon={faBars}>
                                             </FontAwesomeIcon>
                                         </span>

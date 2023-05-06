@@ -1,9 +1,9 @@
 'use client'
 import React, {useContext} from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faMoon,
-    faCodeBranch, 
     faHome,
     faBook,
     faMusic,
@@ -21,7 +21,7 @@ import './styles.css'
 import Banner from '../banner/page'; 
 
 export function Header (){
-    // const router = useRouter();
+    const router = useRouter();
     const [toggleMenu, setToggleMenu] = useState(false);
 
     const onSugerir = (e) =>{
@@ -54,7 +54,7 @@ export function Header (){
                             </Link>
                         </li>
                         <li className="header-li">
-                            <Link href='/grammar/grammar' passHref>
+                            <Link href='/grammar' passHref>
                                 <span className='header-li-span'>
                                     <span><FontAwesomeIcon size='lg' icon={faBook}></FontAwesomeIcon></span>
                                     <span>Gramática</span>
@@ -86,7 +86,7 @@ export function Header (){
                             </Link>
                         </li>
                         <li className="header-li">
-                            <Link href='/about/about' passHref>
+                            <Link href='/about' passHref>
                                 <span className='header-li-span'>
                                     <span><FontAwesomeIcon size='lg' icon={faInfo}></FontAwesomeIcon></span>
                                     <span>Sobre</span>
@@ -153,10 +153,9 @@ export function Header (){
                     <NavItems />
                 </div>
             </header>
-                <Banner />
-        {/* {router.pathname === '/' ? */}
-            {/* : ''
-        } */}
+            {router.pathname === '/' ?
+            <Banner /> : ''
+            } 
         </>
     )
 }

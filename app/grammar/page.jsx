@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+"use client"
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Head from "next/head";
 
 export default function Grammar() {
@@ -19,7 +19,7 @@ export default function Grammar() {
       <ul>
         <li
           className="font-semibold text-xl font-sans hover:text-slate-700 hover:italic hover:font-semibold hover:cursor-pointer mb-1"
-          onClick={() => router.push("/alfabeth/alfabeth")}
+          onClick={() => router.push("/alfabeth")}
         >
           <span>Alfabeto e pronúncia</span>
         </li>
@@ -42,7 +42,7 @@ export default function Grammar() {
         </li>
         <li
           className="font-semibold text-xl font-sans hover:text-slate-700 hover:italic hover:font-semibold hover:cursor-pointer mb-1"
-          onClick={() => router.push("/animals/animals")}
+          onClick={() => router.push("/animals")}
         >
           <span>Animais</span>
         </li>
@@ -60,7 +60,7 @@ export default function Grammar() {
         </li>
         <li
           className="font-semibold text-xl font-sans hover:text-slate-700 hover:italic hover:font-semibold hover:cursor-pointer mb-1"
-          onClick={() => router.push("/plural/plural")}
+          onClick={() => router.push("/plural")}
         >
           <span>O plural em kimbundu</span>
         </li>

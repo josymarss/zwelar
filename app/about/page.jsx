@@ -1,3 +1,4 @@
+"use client";
 import about from "./about.module.css";
 import Head from "next/head";
 

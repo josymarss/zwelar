@@ -116,7 +116,7 @@ import Banner from "../../components/banner/page";
                   size="2x"
                 />
                 <p className="text-xl text-white font-semibold font-mulish">Fale</p>
-                <p className="text-[14px] text-white text-center md:text-sm text-justify font-mulish">
+                <p className="text-[14px] text-white md:text-sm text-justify font-mulish">
                   Por ser uma língua bantu interpretada, têm palavras com
                   acentuações tónicas que se mal ditas/acentuadas podem ter outro
                   significado e sentido.

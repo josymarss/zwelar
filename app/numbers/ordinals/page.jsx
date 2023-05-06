@@ -1,7 +1,8 @@
-import styles from '../showomponent/show.module.css';
+"use client";
+import styles from '../../showomponent/show.module.css';
 
-import { dataNumbersOrdinals } from '../../data/ordinalnumbers';
-import ShowAndListComponent from "../showomponent/showandlistten";
+import { dataNumbersOrdinals } from '../../../data/ordinalnumbers';
+import ShowAndListComponent from "../../showomponent/page";
 
 export default function Ordinals(){
       return(

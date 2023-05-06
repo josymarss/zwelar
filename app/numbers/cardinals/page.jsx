@@ -1,6 +1,7 @@
-import styles from '../showomponent/show.module.css';
-import ShowAndListComponent from '../showomponent/showandlistten';
-import { dataNumbers } from '../../data/cardinalnumbers';
+"use client";
+import ShowAndListComponent from '../../showomponent/page';
+import { dataNumbers } from '../../../data/cardinalnumbers';
+import styles from '../../showomponent/show.module.css';
 
 export default function Cardinals( ){
       return(

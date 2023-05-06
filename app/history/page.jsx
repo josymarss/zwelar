@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import { fakedata } from "../../fakedata";
 import Head from "next/head";

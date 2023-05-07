@@ -1,8 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVolumeUp } from '@fortawesome/free-solid-svg-icons';
 
-import styles from './show.module.css';
-
 export default function ShowAndListComponent({ number, value }){
       return(
             <div className={`${styles.wrap} font-mulish`}>

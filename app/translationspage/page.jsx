@@ -1,8 +1,6 @@
 'use client'
 import { useState, useEffect, Fragment } from 'react';
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-
-// import styles from './styles.module.css';
 import { data } from '../../data/data';
 
 const TranslationPage = () => {

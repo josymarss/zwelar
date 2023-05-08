@@ -1,6 +1,4 @@
 "use client";
-import styles from '../../showomponent/show.module.css';
-
 import { dataNumbersOrdinals } from '../../../data/ordinalnumbers';
 import ShowAndListComponent from "../../showomponent/page";
 

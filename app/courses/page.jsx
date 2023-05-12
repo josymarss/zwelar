@@ -1,4 +1,5 @@
-import { useRouter } from 'next/router';
+"use client"
+import { useRouter } from 'next/navigation';
 import Head from "next/head";
 
 export default function Courses() {

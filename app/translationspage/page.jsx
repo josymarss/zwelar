@@ -26,14 +26,14 @@ const TranslationPage = () => {
     const MyData = ()=>(
         datafetched.map((data,index) => (
             <>
-                <p className={styles.title}>{data.word}</p>
-                <div className={styles.words} key={index}>
+                <p className={"styles.title"}>{data.word}</p>
+                <div className={"styles.words"} key={index}>
                     <p>{data.translation}</p>
                 </div>
                { data.description ?
                     <>
-                        <p className={styles.title}>Description</p>
-                        <div className={styles.words} key={index}>
+                        <p className={"styles.title"}>Description</p>
+                        <div className={"styles.words"} key={index}>
                             <p >{data.description}</p>
                         </div>
                     </>: ""
@@ -43,8 +43,8 @@ const TranslationPage = () => {
     );
     
     return(
-        <div className={styles.container}>
-             <div className={styles.search}>
+        <div className={"styles.container"}>
+             <div className={"styles.search"}>
                 <input 
                     className='w-28'
                     type='submit'

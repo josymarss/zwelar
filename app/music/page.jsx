@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function Music() {
+ function Music() {
   return (
     <div className="font-mulish p-15 grid lg:grid-cols-3 gap-2 md:grid-col-2 m-20">
       <div className="lg:col-span-1 p-5">
@@ -80,7 +80,7 @@ export default function Music() {
     </div>
   );
 }
-
+export default Music;
 
 // const musicas = [{autor: "Bonga", titulo:"Mona Ki Ngi Xica",
 // letra:"Alukenn n'golafua N'ga mu binga kia Muene ondo kala beniaba Eme n'gondodiame, Mona mona muene Kissueia weza Mona mona muene Kalunga n'gumba, "}]

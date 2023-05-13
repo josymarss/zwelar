@@ -1,7 +1,7 @@
 'use client'
 import React, {useContext} from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faMoon,
     faHome,
@@ -33,7 +33,6 @@ export function Header (){
             })
         }
     }
-    console.log(router);
 
     const toggleMenuHandler = ()=>{
          setToggleMenu(!toggleMenu)
@@ -153,9 +152,10 @@ export function Header (){
                     <NavItems />
                 </div>
             </header>
-            {router.pathname === '/' ?
-            <Banner /> : ''
-            } 
+            {/* {router.pathname === '/' ? */}
+            <Banner /> 
+            {/* : ''
+            }  */}
         </>
     )
 }

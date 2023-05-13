@@ -151,7 +151,7 @@ import HeadComponent from "../../components/head/page";
             </h2>
             {/* text-3xl  */}
             <div className="w-full flex flex-col md:flex md:flex-row items-center mt-4 p-4">
-              <div className="w-[250px] h-[200px] md:w-[350px] md:h-[400px]">
+              <div className="w-[250px] h-[200px] md:w-[400px] md:h-[400px]">
                 <Image
                   width={500}
                   height={400}

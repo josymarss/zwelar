@@ -1,7 +1,7 @@
 'use client'
 import React, {useContext} from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faMoon,
     faHome,
@@ -14,10 +14,8 @@ import { faMoon,
     faInfo,
     faWindowClose,
     faBars
-} from "@fortawesome/free-solid-svg-icons";// Import the FontAwesomeIcon component
-// import { useRouter } from 'next/router';
+} from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from 'react';
-import './styles.css'
 import Banner from '../banner/page'; 
 
 export function Header (){
@@ -35,6 +33,8 @@ export function Header (){
             })
         }
     }
+    console.log(router);
+
     const toggleMenuHandler = ()=>{
          setToggleMenu(!toggleMenu)
     }

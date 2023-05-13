@@ -116,7 +116,7 @@ export function Header (){
     return(
         <>
             <header className={`sticky top-0 z-40 bg-slate-100 px-2 flex flex-col  justify-between items-center w-full ${toggleMenu ? 'h-fit' : 'h-[100vh]'} md:h-[90px] shadow-lg font-mulish`}>
-                <div className='flex h-fit flex-row justify-between w-full flex-wrap'>
+                <div className='flex h-fit flex-row justify-between w-full flex-wrap relative'>
                         <h2 className="font-bold text-xl ml-[1.5rem] mt-1 md:text-2xl text-slate-800">
                             <Link href='/'>Zwelar</Link>
                         </h2>

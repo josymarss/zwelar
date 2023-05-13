@@ -1,7 +1,8 @@
-import { useRouter } from 'next/router';
+"use client";
+import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 
-export default function DetailCOurse(){
+function DetailCOurse(){
     const router = useRouter();
     const { data } = router.query;
 
@@ -15,3 +16,4 @@ export default function DetailCOurse(){
         </div>
     );
 }
+export default  DetailCOurse;

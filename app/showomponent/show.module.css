@@ -10,7 +10,7 @@
 .wrap{
       display:flex;
       flex-direction:column;
-      align-items:flex-start;
+      align-items: start;
       padding:10px;
 }
 .number {

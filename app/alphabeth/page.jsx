@@ -1,10 +1,11 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 
-import ShowAndListComponent from "../showomponent/showandlistten";
+import ShowAndListComponent from "../showomponent/page";
 import { dataAlphabet } from "../../data/datagrammar";
 
-export default function Alphabet() {
+function Alphabet() {
   const [alphabet, setAlphabet] = useState([]);
 
   useEffect(() => {
@@ -43,3 +44,4 @@ export default function Alphabet() {
     </div>
   );
 }
+export default Alphabet;

@@ -1,7 +1,6 @@
-"use client";
-import { useState } from "react";
+import React from 'react';
 
- function Music() {
+const Music = () => {
   return (
     <div className="font-mulish p-15 grid lg:grid-cols-3 gap-2 md:grid-col-2 m-20">
       <div className="lg:col-span-1 p-5">
@@ -80,26 +79,5 @@ import { useState } from "react";
     </div>
   );
 }
+
 export default Music;
-
-// const musicas = [{autor: "Bonga", titulo:"Mona Ki Ngi Xica",
-// letra:"Alukenn n'golafua N'ga mu binga kia Muene ondo kala beniaba Eme n'gondodiame, Mona mona muene Kissueia weza Mona mona muene Kalunga n'gumba, "}]
-
-// const authoresEMusicas = [
-//  {autor:'Rui Mingas', titulo:"Mbiri Mbiri", foto:'/ruy.jpg'},
-//  {autor:'António Paulino', titulo:"Kamba Ba Laumba", foto:'/antonio.jpg'},
-//  {autor:'Artur Nunes', titulo:"Kamba Ba Laumba", foto:'/Artur.jpg'},
-//  {autor:'António Paulino', titulo:"Mana", foto:'/antonio.jpg'},
-//  {autor:'Edy Tussa', titulo:"Pekenina", foto:'/edy.jpg'},
-//  {autor:'Yuri da Cunha', titulo:"Kuma kwakie", foto:'/yuri.jpeg'},
-// ]
-// const Card = ({autor, titulo,foto})=> {
-//    return (
-//        <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4 ">
-//          <div className={`bg-[url(${foto})] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900`}></div>
-//          <p className="mt-2 text-md">
-//            <strong>{autor}</strong> {titulo}
-//          </p>
-//      </div>
-//    );
-// }

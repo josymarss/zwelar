@@ -1,9 +1,8 @@
-"use client";
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 
 const Team = () => {
     return(
-        <div className="flex items-center justify-center font-mulish flex-col">
+        <div className="flex items-center  mt-92 justify-center font-mulish flex-col">
             <div className="mt-24 relative">
                 {/* Element */}
                 <div className="bg-[url('/ceo.png')] bg-no-repeat bg-cover w-60 h-60 rounded-full bg-green-200">

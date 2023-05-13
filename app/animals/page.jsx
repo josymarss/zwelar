@@ -1,10 +1,6 @@
-"use client";
 import Head from "next/head";
-
-import styles from '../showomponent/show.module.css';
 import { dataAnimals } from '../../data/dataanimals';
 import CardImage from '../../components/cardimage';
-import ButtonSound from '../../components/buttonsound';
 
 export default function Animals(){
       return (<>

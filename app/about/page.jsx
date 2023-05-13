@@ -1,8 +1,6 @@
-"use client";
-import about from "./about.module.css";
 import Head from "next/head";
 
-export default function About() {
+ function About() {
   return (
     <div className="w-[1200px] p-8 font-mulish">
       <Head>
@@ -90,3 +88,5 @@ export default function About() {
     </div>
   );
 }
+
+export default About;

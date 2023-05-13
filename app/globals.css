@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+.header-li {
+    @apply text-[16px] cursor-pointer;
+}
+.header-li:hover {
+    @apply text-green-400;
+}
+.header-li-span {
+     @apply flex flex-row md:flex-col gap-1;
+}
+.header-li-span span { 
+     @apply text-[12px] lg:text-[12px];
+} 
+.header-li-span  { 
+     @apply md:text-center;
+}

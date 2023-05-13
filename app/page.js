@@ -10,5 +10,5 @@ export default function Home() {
         <div>
           {loggedIn ? <Leading /> : <TranslationPage /> }
         </div>
-  )
-}
+  ) 
+} 

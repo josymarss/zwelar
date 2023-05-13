@@ -1,5 +1,5 @@
+"use client"
 import React from "react";
-import Head from "next/head";
 import Image from "next/image";
 import {
   faDotCircle,
@@ -9,17 +9,17 @@ import {
   faLocationArrow,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import HeadComponent from "../../components/head/page";
 
     export default function Leading() {
       return (
         <>
-          <Head>
-            <title>Zwelar | Aprenda Linguas nacionais</title>
-            <meta
-              name="Sobre o site"
-              description="O melhor e site para aprender línguas nacionais"
-            />
-          </Head>
+          <HeadComponent 
+            title="Zwelar | Aprenda Linguas nacionais"
+            nameMeta="Sobre o site"
+            descMeta = "O melhor e site para aprender línguas nacionais"
+
+          />
           {/* Partners */}
           <div className="flex items-center justify-center gap-x-5 md:gap-x-11 py-3 flex-wrap bg-slate-900 w-full md:h-32 font-mulish">
             <p className="text-x md:text-2xl text-white">bantu.io</p>

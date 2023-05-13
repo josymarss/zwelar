@@ -1,4 +1,3 @@
-"use client";
 import { dataNumbersOrdinals } from '../../../data/ordinalnumbers';
 import ShowAndListComponent from "../../showomponent/page";
 

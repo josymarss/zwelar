@@ -150,18 +150,17 @@ import HeadComponent from "../../components/head/page";
               <strong>e veja suas traduções</strong>
             </h2>
             {/* text-3xl  */}
-            <div className="w-full flex flex-col md:flex md:flex-row items-center mt-4 p-4">
-              <div className="w-[250px] h-[200px] md:w-[400px] md:h-[400px]">
+            <div className="w-full flex flex-col md:flex md:flex-row items-center mt-4 p-4 h-[fit-content]">
+            <div className="w-[250px] md:w-[400px]">
                 <Image
                   width={500}
-                  height={400}
-                  intrensic={true}
-                  quality={65}
+                  height={700}
+                  quality={90}
                   alt="Ouvir música"
                   src="/landing-images/sing.png"
                 />
               </div>
-              <p className="w-48 text-center text-[14px] md:text-xl md:w-[fit-content] md:ml-12 md:mb-36 lg:mb-[0px] text-slate-900 font-bold mb-4 ml-30 mt-12 font-mulish">
+              <p className="text-center text-[14px] md:text-xl md:w-[fit-content] md:ml-12 md:mb-36 md:mt-24 text-slate-900 mt-2 font-bold font-mulish">
                 Todo usuário que entende pode adicionar letras de músicas
               </p>
             </div>

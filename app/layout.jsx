@@ -23,12 +23,6 @@ export default function RootLayout({ children }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5514991570328030"
           crossOrigin="anonymous"
         />
-        <Head>
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0">
-          </meta>
-      </Head>
       <body>
         <Header />
         {children}

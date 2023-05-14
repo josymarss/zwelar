@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 
 function DetailCOurse(){
     const router = useRouter();
-    const { data } = router.query;
+    // const { data } = router.query;
 
     useEffect(() => {
        
@@ -12,7 +12,7 @@ function DetailCOurse(){
 
     return(
         <div className="mt-10 flex flex'col items-center justify-center font-mulish">
-            <p className='text-3xl font-bold text-red-600'>{data}</p>
+            <p className='text-3xl font-bold text-red-600'>{"data"}</p>
         </div>
     );
 }

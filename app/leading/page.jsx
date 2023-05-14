@@ -11,7 +11,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import HeadComponent from "../../components/head/page";
 
-    export default function Leading() {
+export default function Leading() {
       return (
         <>
           <HeadComponent 
@@ -29,7 +29,7 @@ import HeadComponent from "../../components/head/page";
 
           <div className="flex flex-col items-center justify-center p-4 mt-6">
             <h2 className="w-[250px] md:w-[440px] text-center font-mulish text-slate-900 text-x md:text-3xl">
-              Aprender Linguas nacionais nunca foi tão fácil!
+              Aprender Línguas nacionais nunca foi tão fácil!
             </h2>
             <div className="w-full flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row items-center justify-center mt-8 md:12">
               <div className="bg-[url('/landing-images/kid.jpg')] w-60 h-60 md:w-80 md:h-80 bg-cover border-slate-100 rounded-sm shadow-2xl"></div>

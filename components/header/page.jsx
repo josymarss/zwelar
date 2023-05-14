@@ -1,7 +1,7 @@
 'use client'
 import React, {useContext} from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faMoon,
     faHome,
@@ -19,8 +19,9 @@ import { useEffect, useState } from 'react';
 import Banner from '../banner/page'; 
 
 export function Header (){
-    const router = useRouter();
+    const pathname = usePathname();
     const [toggleMenu, setToggleMenu] = useState(false);
+    console.log(pathname)
 
     const onSugerir = (e) =>{
         const value = e.target.value
@@ -152,10 +153,10 @@ export function Header (){
                     <NavItems />
                 </div>
             </header>
-            {/* {router.pathname === '/' ? */}
-            <Banner /> 
-            {/* : ''
-            }  */}
+            { pathname === '/' ?
+                    <Banner /> 
+                    : ''
+            }
         </>
     )
 }

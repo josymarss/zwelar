@@ -1,4 +1,14 @@
 import React from 'react';
+const MusicCard = ({author, title, imagUrl}) => {
+  return(
+       <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4 ">
+       <div className={`bg-[url(/music-images/${imagUrl})] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900`} ></div>
+       <p className="mt-2 text-md">
+         <strong>{author}</strong> {title}
+       </p>
+     </div>
+  );
+}
 
 const Music = () => {
   return (
@@ -42,40 +52,34 @@ const Music = () => {
         <h2 className="text-slate-900 font-semibold text-xl mx-4">
           Mais músicas
         </h2>
-        {/* Cards */}
+        {/* {/* Cards} */}
         <div className="flex gap-2 flex-wrap">
-          <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4 ">
-            <div className="bg-[url('/ruy.jpg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
-            <p className="mt-2 text-md">
-              <strong>Ruy Mingas</strong> Birin birin
-            </p>
-          </div>
-          <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4 ">
-            <div className="bg-[url('/antonio.jpg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
-            <p className="mt-2 text-md">
-              <strong>António Paulino</strong> Kamba Ba Laumba 
-            </p>
-          </div>
+          <MusicCard author="Ruy Mingas"  title="Birin birin" imagUrl="ruy.jpg"/>
+          <MusicCard author="António Paulino"  title="Kamba Ba Laumba" imagUrl='/antonio.jpg'/>
+       
+
+
           <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4">
-            <div className="bg-[url('/Artur.jpg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
+            <div className="bg-[url('/music-images/Artur.jpg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
             <p className="mt-2 text-md">
               <strong>Artur Nunes</strong> Mana
             </p>
           </div>
           <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4">
-            <div className="bg-[url('/edy.jpg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
+            <div className="bg-[url('/music-images/edy.jpg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
             <p className="mt-2 text-md">
               <strong>Edy Tussa</strong> Pekenina
             </p>
           </div>
           <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4">
-            <div className="bg-[url('/yuri.jpeg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
+            <div className="bg-[url('/music-images/yuri.jpeg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
             <p className="mt-2 text-md">
               <strong>Yuri da Cunha</strong> Kuma Kwakie
             </p>
           </div>
         </div>
-      </div>
+      </div> 
+     
     </div>
   );
 }

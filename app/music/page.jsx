@@ -2,7 +2,7 @@ import React from 'react';
 const MusicCard = ({author, title, imagUrl}) => {
   return(
        <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4 ">
-       <div className={`bg-[url(/music-images/${imagUrl})] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900`} ></div>
+       <div className={`bg-[url('/music-images/${imagUrl}')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-95 hover:opacity-100 bg-slate-900`} ></div>
        <p className="mt-2 text-md">
          <strong>{author}</strong> {title}
        </p>
@@ -54,25 +54,28 @@ const Music = () => {
         </h2>
         {/* {/* Cards} */}
         <div className="flex gap-2 flex-wrap">
-          <MusicCard author="Ruy Mingas"  title="Birin birin" imagUrl="ruy.jpg"/>
-          <MusicCard author="António Paulino"  title="Kamba Ba Laumba" imagUrl='/antonio.jpg'/>
+          <MusicCard author="Ruy Mingas"  title="Birin birin" imagUrl='ruy.jpg'/>
+          <MusicCard author="António Paulino"  title="Kamba Ba Laumba" imagUrl='antonio.jpg'/>
+          <MusicCard author="António Paulino"  title="Kamba Ba Laumba" imagUrl='yuri.jpeg'/>
+          <MusicCard author="António Paulino"  title="Kamba Ba Laumba" imagUrl='Artur.jpg'/>
+          <MusicCard author="António Paulino"  title="Kamba Ba Laumba" imagUrl='edy.jpg'/>
        
 
 
           <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4">
-            <div className="bg-[url('/music-images/Artur.jpg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
+            <div className="bg-[url('/music-images/ruy.jpg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
             <p className="mt-2 text-md">
               <strong>Artur Nunes</strong> Mana
             </p>
           </div>
           <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4">
-            <div className="bg-[url('/music-images/edy.jpg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
+            <div className="bg-[url('/music-images/')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
             <p className="mt-2 text-md">
               <strong>Edy Tussa</strong> Pekenina
             </p>
           </div>
           <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4">
-            <div className="bg-[url('/music-images/yuri.jpeg')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
+            <div className="bg-[url('/music-images/')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900"></div>
             <p className="mt-2 text-md">
               <strong>Yuri da Cunha</strong> Kuma Kwakie
             </p>

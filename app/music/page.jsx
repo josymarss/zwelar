@@ -4,8 +4,8 @@ import React from 'react';
 const Music = () => {
   const MusicCard = ({author, title, imagUrl}) => {
     return(
-         <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4 ">
-         <div className={`bg-[url('/music-images/${imagUrl}')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all cursor-pointer opacity-80 hover:opacity-100 bg-slate-900`} ></div>
+         <div className=" shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4 hover:cursor-pointer  ">
+         <div className={`bg-[url('/music-images/${imagUrl}')] w-32 h-32 bg-cover rounded-sm hover:w-36 transition-all opacity-80 hover:opacity-100 bg-slate-900`} ></div>
          <p className="mt-2 text-md">
            <strong>{author}</strong> {title}
          </p>
@@ -34,24 +34,28 @@ const Music = () => {
   );
   }
   return (
-    <div className="font-mulish p-15 grid lg:grid-cols-3 gap-2 grid-col-2 m-20">
+    <div className="font-mulish flex flex-row p-6">
         {/* {/* MUISC LETTERS} */}
-      <div className='W-[60%]'>
+      <div className='W-[50%]'>
+        <MusicLetter />
         <MusicLetter />
       </div>
 
       <div className="col-span-1 p-5 W-[40%]">
-        <h2 className="text-slate-900 font-semibold text-xl mx-4">
+        <h2 className="text-slate-900 font-semibold text-xl mx-4 w-[100%]">
           Mais músicas
         </h2>
         {/* {/* Cards} */}
-        <div className="flex gap-2 flex-wrap">
-          <MusicCard author="Ruy Mingas"  title="Birin birin" imagUrl='ruy.jpg'/>
-          <MusicCard author="António Paulino"  title="Kamba Ba Laumba" imagUrl='antonio.jpg'/>
-          <MusicCard author="Artur Nunes"  title="Mana" imagUrl='Artur.jpg'/>
-          <MusicCard author="Bonga"  title="Mona Ki Ngi Xica" imagUrl='bonga.jpg'/>
-          <MusicCard author="Edy Tussa"  title="Pekenina" imagUrl='edy.jpg'/>
-          <MusicCard author="Yuri da Cunha"  title="Kuma Kwakie" imagUrl='yuri.jpeg'/>
+        <div>
+          <div className="flex gap-2 flex-wrap">
+            <MusicCard author="Ruy Mingas"  title="Birin birin" imagUrl='ruy.jpg'/>
+            <MusicCard author="António Paulino"  title="Kamba Ba Laumba" imagUrl='antonio.jpg'/>
+            <MusicCard author="Artur Nunes"  title="Mana" imagUrl='Artur.jpg'/>
+            <MusicCard author="Bonga"  title="Mona Ki Ngi Xica" imagUrl='bonga.jpg'/>
+            <MusicCard author="Edy Tussa"  title="Pekenina" imagUrl='edy.jpg'/>
+            <MusicCard author="Yuri da Cunha"  title="Kuma Kwakie" imagUrl='yuri.jpeg'/>
+          </div>
+          <div className='flex w-[100%]'>pages numer</div>
         </div>
       </div> 
      

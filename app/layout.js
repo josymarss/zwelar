@@ -12,6 +12,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import { Header } from '../components/header/page';
 import Footer from '../components/footer/page';
 import '../styles/globals.css'
+import HeadComponent from "../components/head/page";
 
 config.autoAddCss = false;
  

@@ -1,14 +1,13 @@
-import React from 'react';
 import Head from "next/head";
 
 const HeadComponent = ({title, nameMeta, descMeta}) => {
     return (
         <Head>
-        <title>{title}</title>
-        <meta
-          name={nameMeta}
-          description={descMeta}
-        />
+          <title>{title}</title>
+          <meta
+            name={nameMeta}
+            description={descMeta}
+          />
         </Head>
     );
 }

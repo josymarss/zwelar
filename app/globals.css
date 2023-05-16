@@ -17,3 +17,9 @@
 .header-li-span  { 
      @apply md:text-center;
 }
+
+/*Music*/
+.music-card-content:hover .music-card {
+     @apply cursor-pointer w-36;
+}
+/*Music*/

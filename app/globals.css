@@ -19,7 +19,7 @@
 }
 
 /*Music*/
-.music-card-content:hover .music-card {
-     @apply cursor-pointer w-36;
+ .music-card:hover {
+     @apply opacity-100;
 }
 /*Music*/

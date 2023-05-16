@@ -5,7 +5,7 @@ const Music = () => {
   const MusicCard = ({author, title, imagUrl}) => {
     return(
          <div className="shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4 music-card-content">
-         <div className={`bg-[url('/music-images/${imagUrl}')] w-32 h-32 bg-cover rounded-sm transition-all opacity-80 hover:opacity-100 bg-slate-900 music-card`} ></div>
+         <div className={`music-card bg-[url('/music-images/${imagUrl}')] w-32 h-32 bg-cover rounded-sm transition-all opacity-80 bg-slate-900`} ></div>
          <p className="mt-2 text-md">
            <strong>{author}</strong> {title}
          </p>

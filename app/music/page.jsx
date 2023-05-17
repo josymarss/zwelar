@@ -5,7 +5,7 @@ const Music = () => {
   const MusicCard = ({author, title, imagUrl}) => {
     return(
          <div className="shadow-md bg-slate-50 p-3 w-30 mx-4 mt-4 music-card-content">
-         <div className={`music-card bg-[url('/music-images/${imagUrl}')] w-28 h-32 bg-cover rounded-sm transition-all opacity-80 bg-slate-900`} ></div>
+         <div className={`bg-[url('/music-images/${imagUrl}')] w-28 h-32 bg-cover rounded-sm transition-all opacity-80 bg-slate-900`} ></div>
          <p className="mt-2 text-[10pt] md:text-[12pt]">
            <strong>{author}</strong><br/> {title}
          </p>
@@ -44,7 +44,7 @@ const Music = () => {
       </div>
 
       <div className="col-span-1 p-5 W-[40%]">
-        <h2 className="text-slate-900 font-semibold text-xl mx-4 w-[100%]">
+        <h2 className="text-slate-900 font-semibold  text-[12pt] mx-4 w-[100%]">
           Mais músicas
         </h2>
         {/* {/* Cards} */}
@@ -52,12 +52,16 @@ const Music = () => {
           <div className="flex gap-2 flex-wrap">
             <MusicCard author="Ruy Mingas"  title="Birin birin" imagUrl='ruy.jpg'/>
             <MusicCard author="António Paulino"  title="Kamba Ba Laumba" imagUrl='antonio.jpg'/>
+            <MusicCard author="Yuri da Cunha"  title="Kuma Kwakie" imagUrl='yuri.jpeg'/>
             <MusicCard author="Artur Nunes"  title="Mana" imagUrl='Artur.jpg'/>
             <MusicCard author="Bonga"  title="Mona Ki Ngi Xica" imagUrl='bonga.jpg'/>
             <MusicCard author="Edy Tussa"  title="Pekenina" imagUrl='edy.jpg'/>
-            <MusicCard author="Yuri da Cunha"  title="Kuma Kwakie" imagUrl='yuri.jpeg'/>
           </div>
-          <div className='flex w-[100%]'>pages numer</div>
+          <div className='flex w-[100%]'>
+            <span>Anterior ...</span>
+            <span> 1 2 3 4 5 ...</span>
+            <span>Seguinte</span>
+          </div>
         </div>
       </div> 
      

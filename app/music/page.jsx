@@ -4,10 +4,10 @@ import React from 'react';
 const Music = () => {
   const MusicCard = ({author, title, imagUrl}) => {
     return(
-         <div className="shadow-md bg-slate-50 p-3 w-32 mx-4 mt-4 music-card-content">
-         <div className={`music-card bg-[url('/music-images/${imagUrl}')] w-32 h-32 bg-cover rounded-sm transition-all opacity-80 bg-slate-900`} ></div>
-         <p className="mt-2 text-md">
-           <strong>{author}</strong> {title}
+         <div className="shadow-md bg-slate-50 p-3 w-30 mx-4 mt-4 music-card-content">
+         <div className={`music-card bg-[url('/music-images/${imagUrl}')] w-28 h-32 bg-cover rounded-sm transition-all opacity-80 bg-slate-900`} ></div>
+         <p className="mt-2 text-[10pt]">
+           <strong>{author}</strong><br/> {title}
          </p>
        </div>
     );
@@ -15,7 +15,7 @@ const Music = () => {
 
   const MusicLetter = () => {
     return (      
-        <div className="lg:col-span-1 p-5">
+        <div className="p-5">
             <h2 className="font-semibold text-3xl text-slate-900 text-left">
               Mona Ki Ngi Xica
             </h2>

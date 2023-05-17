@@ -37,7 +37,7 @@ const Music = () => {
   );
   }
   return (
-    <div className="font-mulish flex flex-row p-6">
+    <div className="font-mulish flex flex-row p-6  w-[100%]">
         {/* {/* MUISC LETTERS} */}
       <div className='W-[50%]'>
         <MusicLetter />
@@ -49,7 +49,7 @@ const Music = () => {
         </h2>
         {/* {/* Cards} */}
         <div>
-          <div className="flex gap-2 flex-wrap">
+          <div className="flex gap-2 flex-wrap w-[100%]">
             <MusicCard author="Ruy Mingas"  title="Birin birin" imagUrl='ruy.jpg'/>
             <MusicCard author="António Paulino"  title="Kamba Ba Laumba" imagUrl='antonio.jpg'/>
             <MusicCard author="Yuri da Cunha"  title="Kuma Kwakie" imagUrl='yuri.jpeg'/>

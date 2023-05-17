@@ -19,11 +19,11 @@
 }
 
 /*Music*/
- /* .music-card:hover {
-     @apply opacity-100;
-} */
-/* .music-letter-text {
+ .music-card:hover {
+     @apply bg-[red];
+} 
+ .music-letter-text {
     @apply text-justify text-[12pt] md:text-[14pt]  w-96 mt-4;
-} */
+}
 
 /*Music*/

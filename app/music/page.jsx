@@ -30,6 +30,8 @@ const Music = () => {
               {`N'zambi awani banack mona N'ga muvalele Muene ondo kala beniaba Eme
               n'gondodiame`}
             </p>
+
+            <button className="text-xl  text-500 mt-2 font-semibold">Traduzir</button>
       </div>
   );
   }
@@ -37,7 +39,6 @@ const Music = () => {
     <div className="font-mulish flex flex-row p-6">
         {/* {/* MUISC LETTERS} */}
       <div className='W-[50%]'>
-        <MusicLetter />
         <MusicLetter />
       </div>
 

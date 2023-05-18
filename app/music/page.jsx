@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
-const Music = () => {
+const Music = ({singers}) => {
+  const [lyrics, setLyrics] = useState()
+
   const MusicCard = ({author, title, imagUrl}) => {
     return(
          <div className="shadow-md bg-slate-50 p-3 w-30 mx-4 mt-4 music-card-content">
@@ -57,11 +59,11 @@ const Music = () => {
             <MusicCard author="Bonga"  title="Mona Ki Ngi Xica" imagUrl='bonga.jpg'/>
             <MusicCard author="Edy Tussa"  title="Pekenina" imagUrl='edy.jpg'/>
           </div>
-          <div className='flex w-[100%]'>
+          {/* <div className='flex w-[100%]'>
             <span>Anterior ...</span>
             <span> 1 2 3 4 5 ...</span>
             <span>Seguinte</span>
-          </div>
+          </div> */}
         </div>
       </div> 
      

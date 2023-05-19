@@ -21,7 +21,6 @@ import Banner from '../banner/page';
 export function Header (){
     const pathname = usePathname();
     const [toggleMenu, setToggleMenu] = useState(false);
-    console.log(pathname)
 
     const onSugerir = (e) =>{
         const value = e.target.value

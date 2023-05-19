@@ -1,9 +1,11 @@
 "use client"
 
 import React, { useState } from 'react';
+import singers from '../../data/singers'
 
-const Music = ({singers}) => {
+const Music = () => {
   const [lyric, setLyric] = useState()
+  console.log(singers)
 
   const MusicCard = ({author, title, imagUrl}) => {
     return(
@@ -44,7 +46,7 @@ const Music = ({singers}) => {
     <div className="font-mulish flex flex-row p-6  w-[100%]">
         {/* {/* MUISC LETTERS} */}
       <div className='W-[50%]'>
-        <MusicLetter />
+        {/* <MusicLetter /> */}
       </div>
 
       <div className="col-span-1 p-5 W-[40%]">
@@ -54,12 +56,12 @@ const Music = ({singers}) => {
         {/* {/* Cards} */}
         <div>
           <div className="flex gap-2 flex-wrap w-[100%]">
-            <MusicCard author="Ruy Mingas"  title="Birin birin" imagUrl='ruy.jpg'/>
+            {/* <MusicCard author="Ruy Mingas"  title="Birin birin" imagUrl='ruy.jpg'/>
             <MusicCard author="António Paulino"  title="Kamba Ba Laumba" imagUrl='antonio.jpg'/>
             <MusicCard author="Yuri da Cunha"  title="Kuma Kwakie" imagUrl='yuri.jpeg'/>
             <MusicCard author="Artur Nunes"  title="Mana" imagUrl='Artur.jpg'/>
             <MusicCard author="Bonga"  title="Mona Ki Ngi Xica" imagUrl='bonga.jpg'/>
-            <MusicCard author="Edy Tussa"  title="Pekenina" imagUrl='edy.jpg'/>
+            <MusicCard author="Edy Tussa"  title="Pekenina" imagUrl='edy.jpg'/> */}
           </div>
           {/* <div className='flex w-[100%]'>
             <span>Anterior ...</span>

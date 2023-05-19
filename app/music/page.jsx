@@ -1,8 +1,9 @@
+"use client"
+
 import React, { useState } from 'react';
 
-
 const Music = ({singers}) => {
-  const [lyrics, setLyrics] = useState()
+  const [lyric, setLyric] = useState()
 
   const MusicCard = ({author, title, imagUrl}) => {
     return(
@@ -15,14 +16,15 @@ const Music = ({singers}) => {
     );
   }
 
-  const MusicLetter = () => {
+  const MusicLetter = ({lyric, author, title}) => {
     return (      
         <div className="p-5">
             <h2 className="font-semibold text-[14pt] md:text-[16pt] text-slate-900 text-left">
-              Mona Ki Ngi Xica
+              {title}
             </h2>
             <div>
-              <p className="text-[12pt] md:text-[14pt] text-green-500 mt-2 font-semibold">Bonga</p>
+              <p className="text-[12pt] md:text-[14pt] text-green-500 mt-2 font-semibold">{author}</p>
+              lyric.
               <p className="text-[12pt] md:text-[14pt]  text-justify mt-4">
                   {`Alukenn n'golafua N'ga mu binga kia Muene ondo kala beniaba Eme n'gondodiame`}
               </p>

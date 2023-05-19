@@ -11,7 +11,7 @@
         name:"Bonga",
         music_title:"Mona Ki Ngi Xica",
         pic:'bonga.jpg',
-        lyric:"",
+        lyric:"Alukenn n'golafua N'ga mu binga kia Muene ondo kala beniaba Eme n'gondodiame\n Mona mona muene Kissueia weza Mona mona muene Kalunga n'gumba \n N'zambi awani banack mona N'ga muvalele Muene ondo kala beniaba Eme n\'gondodiame",
       },
       singer_3: {
         id:3,

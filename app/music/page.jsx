@@ -18,18 +18,19 @@ const Music = () => {
 
   const MusicCard = ({author, title, imagUrl}) => {
     return(
-         <div className="shadow-md bg-slate-50 p-2 mx-4 mt-4 music-card-content">
-         <div className=' w-28 h-100 bg-cover rounded-sm transition-all opacity-80 bg-slate-900' >
+         <div className="w-[fit-content]  shadow-md bg-slate-50 p-2 mx-4 mt-4">
+         <div className='border-solid bg-cover rounded-sm transition-all opacity-80 bg-slate-900' >
          <Image
                   width={500}
                   height={400}
                   quality={90}
+                  intrinsec= 'true'
                   alt="singer"
                   src={`/music-images/${imagUrl}`}
           />
          </div>
-         <p className="mt-2 text-[10pt] md:text-[12pt]">
-           <strong className='text-[8pt] md:text-[10pt]'>{author}</strong><br/> {title}
+         <p className="mt-2 text-[8pt] md:text-[12pt]">
+           <strong className='text-[6pt] md:text-[10pt]'>{author}</strong><br/> {title}
          </p>
        </div>
     );
@@ -38,11 +39,11 @@ const Music = () => {
 
   const MusicLetter = ({lyric, author, title}) => {
     return (      
-        <div className="p-5">
+        <div className="lg:w-full">
             <h2 className="font-semibold text-[14pt] md:text-[16pt] text-slate-900 text-left">
               {title}
             </h2>
-            <div>
+            <div className='flex flex-col flex-wrap'>
               <p className="text-[12pt] md:text-[14pt] text-green-500 mt-2 font-semibold">{author}</p>
 
               <p className="text-[12pt] md:text-[14pt]  text-justify mt-4">
@@ -61,25 +62,25 @@ const Music = () => {
   );
   }
   return (
-    <div className="font-mulish flex flex-row p-6">
+    <div className="flex flex-col md:flex-row p-6 font-mulish w-full">
         {/* {/* MUISC LETTERS} */}
       <div className=''>
         <MusicLetter />
       </div>
 
-      <div className="col-span-1 p-5">
-        <h2 className="text-slate-900 font-semibold  text-[12pt] mx-4 w-[100%]">
-          Mais músicas
+      <div className="">
+        <h2 className="text-slate-900 font-semibold  text-[12pt] mx-4 w-[100%]"> 
+          Mais músicas 
         </h2>
         {/* {/* Cards} */}
         <div>
-          <div className="flex gap-2 flex-wrap">
+          <div className="grid gap-4">
             <MusicCard author="Ruy Mingas"  title="Birin birin" imagUrl='ruy.jpg'/>
             <MusicCard author="António Paulino"  title="Kamba Ba Laumba" imagUrl='antonio.jpg'/>
             <MusicCard author="Yuri da Cunha"  title="Kuma Kwakie" imagUrl='yuri.jpeg'/>
             <MusicCard author="Artur Nunes"  title="Mana" imagUrl='Artur.jpg'/>
             <MusicCard author="Bonga"  title="Mona Ki Ngi Xica" imagUrl='bonga.jpg'/>
-            <MusicCard author="Edy Tussa"  title="Pekenina" imagUrl='edy.jpg'/>
+            <MusicCard author="Edy Tussa"  title="Pekenina" imagUrl='edy.jpg'/> 
           </div>
           {/* <div className='flex w-[100%]'>
             <span>Anterior ...</span>

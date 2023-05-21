@@ -21,9 +21,9 @@ const Music = () => {
          <div className="w-[fit-content]  shadow-md bg-slate-50 p-2 mx-4 mt-4">
          <div className='border-solid bg-cover rounded-sm transition-all opacity-80 bg-slate-900' >
          <Image
-                  width={500}
-                  height={400}
-                  quality={90}
+                  width={150}
+                  height={150}
+                  quality={100}
                   intrinsec= 'true'
                   alt="singer"
                   src={`/music-images/${imagUrl}`}
@@ -74,7 +74,7 @@ const Music = () => {
         </h2>
         {/* {/* Cards} */}
         <div>
-          <div className="grid gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-3 item-center">
             <MusicCard author="Ruy Mingas"  title="Birin birin" imagUrl='ruy.jpg'/>
             <MusicCard author="António Paulino"  title="Kamba Ba Laumba" imagUrl='antonio.jpg'/>
             <MusicCard author="Yuri da Cunha"  title="Kuma Kwakie" imagUrl='yuri.jpeg'/>

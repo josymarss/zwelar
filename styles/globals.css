@@ -19,3 +19,6 @@
 .header-li-span  { 
       @apply md:text-center;
 }
+.pagechange-button {
+       @apply border-solid border-green-400;
+}

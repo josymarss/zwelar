@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect, useState } from 'react';
-// import singers from '../../data/singers'
+import singers from '../../data/singers.json'
 import Image from 'next/image';
 
 const Music = () => {
@@ -10,13 +10,9 @@ const Music = () => {
   
 
   useEffect(()=>{
-    (async()=>{
-      const teste = await fetch('../../data/singers.json');
-      console.log(teste)
-    })()
-    
+
     // setSingersContent(singers)
-    // console.log(singers)
+    console.log(singers)
   },[]);
   // console.log(singersContent)
 
@@ -30,7 +26,7 @@ const Music = () => {
   const MusicCard = ({author, title, imagUrl}) => {
     return(
          <div className="w-[fit-content] shadow-md bg-slate-50 p-2 mx-4 mt-4">
-         <div className='border-solid bg-cover rounded-sm transition-all opacity-100 bg-slate-900' >
+         <div className='border-solid w-auto h-auto bg-cover rounded-sm transition-all opacity-100 bg-slate-900' >
          <Image
                   width={150}
                   height={150}
@@ -112,5 +108,18 @@ const Music = () => {
     </div>
   );
 }
+
+// export async function getServerSideProps(){
+
+//   const res = await fetch('../../data/singers.json');
+//   console.log(res)
+//   const data = await res.json();
+
+//   return {
+//     props: {
+//       data,
+//     },
+//   };
+// }
 
 export default Music;

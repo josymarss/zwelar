@@ -1,21 +1,24 @@
 "use client"
 
 import React, { useEffect, useState } from 'react';
-import singers from '../../data/singers'
+// import singers from '../../data/singers'
 import Image from 'next/image';
 
 const Music = () => {
-  const [lyric, setLyric] = useState()
+  const [singersContent, setSingersContent] = useState({})
   const [pageNumber, setPageNumber] = useState(1);
   
 
   useEffect(()=>{
-    // (async()=>{
-    //   const teste = await fetch('../../data/singers');
-    //   console.log(teste)
-    // })()
-    console.log(singers)
+    (async()=>{
+      const teste = await fetch('../../data/singers.json');
+      console.log(teste)
+    })()
+    
+    // setSingersContent(singers)
+    // console.log(singers)
   },[]);
+  // console.log(singersContent)
 
   const previousPageHandler = () => {
       setPageNumber(pageNumber-1);

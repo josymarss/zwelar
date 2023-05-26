@@ -5,17 +5,9 @@ import singers from '../../data/singers.json'
 import Image from 'next/image';
 
 const Music = () => {
-  const [singersContent, setSingersContent] = useState({})
+  const [singersContent, setSingersContent] = useState(singers)
   const [pageNumber, setPageNumber] = useState(1);
   
-
-  useEffect(()=>{
-
-    // setSingersContent(singers)
-    console.log(singers)
-  },[]);
-  // console.log(singersContent)
-
   const previousPageHandler = () => {
       setPageNumber(pageNumber-1);
   }
@@ -82,12 +74,9 @@ const Music = () => {
         {/* {/* Cards} */}
         <div>
           <div className="grid grid-cols-2 lg:grid-cols-3 item-center">
-            <MusicCard author="Ruy Mingas"  title="Birin birin" imagUrl='ruy.jpg'/>
-            <MusicCard author="António Paulino"  title="Kamba Ba Laumba" imagUrl='antonio.jpg'/>
-            <MusicCard author="Yuri da Cunha"  title="Kuma Kwakie" imagUrl='yuri.jpeg'/>
-            <MusicCard author="Artur Nunes"  title="Mana" imagUrl='Artur.jpg'/>
-            <MusicCard author="Bonga"  title="Mona Ki Ngi Xica" imagUrl='bonga.jpg'/>
-            <MusicCard author="Edy Tussa"  title="Pekenina" imagUrl='edy.jpg'/> 
+          {
+              singersContent.map((ob)=> <MusicCard author={ob.name} title={ob.music_title} imagUrl={ob.pic}/>)
+            } 
           </div>
           <div className='flex w-full'>
             <span 

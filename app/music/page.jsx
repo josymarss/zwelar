@@ -7,6 +7,11 @@ import Image from 'next/image';
 const Music = () => {
   const [singersContent, setSingersContent] = useState(singers)
   const [pageNumber, setPageNumber] = useState(1);
+  const [singer, setSinger] = useState(1);
+
+  useEffect(()=>{
+    setSinger(singersContent[1])
+  },[])
   
   const previousPageHandler = () => {
       setPageNumber(pageNumber-1);
@@ -43,7 +48,7 @@ const Music = () => {
               {title}
             </h2>
             <div className='flex flex-col flex-wrap text-center '>
-              <p className="text-[10pt] md:text-[12pt]  text-green-500 mt-2 font-semibold">{author}</p>
+              <p className="text-[10pt] md:text-[12pt]  text-green-500 mt-2 font-semibold text-left">{author}</p>
 
               <p className="text-[10pt] md:text-[12pt]  text-justify mt-4">
                   {`Alukenn n'golafua N'ga mu binga kia Muene ondo kala beniaba Eme n'gondodiame`}
@@ -64,10 +69,14 @@ const Music = () => {
     <div className="flex flex-col md:flex-row p-2 md:p-6 font-mulish w-full">
         {/* {/* MUISC LETTERS} */}
       <div className=''>
-        <MusicLetter />
+        <MusicLetter 
+          lyric={singer.lyric} 
+          author={singer.name} 
+          title={singer.music_title}
+          />
       </div>
 
-      <div className="sm:mt-5">
+      <div>
         <h2 className="text-slate-900 font-semibold  text-[12pt] mx-4 w-[100%]"> 
           Mais músicas 
         </h2>
@@ -75,7 +84,12 @@ const Music = () => {
         <div>
           <div className="grid grid-cols-2 lg:grid-cols-3 item-center">
           {
-              singersContent.map((ob)=> <MusicCard author={ob.name} title={ob.music_title} imagUrl={ob.pic}/>)
+              singersContent.map((ob)=> <MusicCard 
+                                        key={ob.id} 
+                                        author={ob.name} 
+                                        title={ob.music_title} 
+                                        imagUrl={ob.pic}
+                                        />)
             } 
           </div>
           <div className='flex w-full'>
@@ -96,6 +110,10 @@ const Music = () => {
      
     </div>
   );
+}
+
+function solitTextByLine(text){
+  let lines =  text.split(/\n/);
 }
 
 // export async function getServerSideProps(){

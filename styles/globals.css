@@ -20,5 +20,5 @@
       @apply md:text-center;
 }
 .pagechange-button {
-       @apply border-solid border-green-400;
+       @apply text-green-400;
 }

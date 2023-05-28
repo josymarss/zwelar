@@ -22,11 +22,11 @@ const Music = () => {
 
   const MusicCard = ({author, title, imagUrl}) => {
     return(
-         <div className="w-[fit-content] shadow-md bg-slate-50 p-2 mx-4 mt-4">
-         <div className='border-solid w-auto h-auto bg-cover rounded-sm transition-all opacity-100 bg-slate-900' >
+         <div className=" shadow-md bg-slate-50 p-2 mx-4 mt-4">
+         <div className='border-solid w-[fit-content] h-auto bg-cover rounded-sm transition-all opacity-100 bg-slate-900' >
          <Image
-                  width={150}
-                  height={150}
+                  width={120}
+                  height={120}
                   quality={100}
                   intrinsec= 'true'
                   alt="singer"
@@ -41,6 +41,14 @@ const Music = () => {
   }
   // /music-images/${imagUrl}
 
+  const Lyrics = ({lyric}) => {
+    const lyricLine =  solitTextByLine(lyric);
+  
+     return (
+       lyricLine ? lyricLine.map((text, index)=> <p key={index} className="text-[10pt] md:text-[12pt]  text-justify mt-4"> {text} </p>) : ''
+     );
+  }
+
   const MusicLetter = ({lyric, author, title}) => {
     return (      
         <div className="w-[80%] flex flex-col flex-wrap">
@@ -50,16 +58,7 @@ const Music = () => {
             <div className='flex flex-col flex-wrap text-center '>
               <p className="text-[10pt] md:text-[12pt]  text-green-500 mt-2 font-semibold text-left">{author}</p>
 
-              <p className="text-[10pt] md:text-[12pt]  text-justify mt-4">
-                  {`Alukenn n'golafua N'ga mu binga kia Muene ondo kala beniaba Eme n'gondodiame`}
-              </p>
-              <p className="text-justify text-[12pt] md:text-[14pt]  w-[100%] mt-4">
-                {`Mona mona muene Kissueia weza Mona mona muene Kalunga n'gumba`}
-              </p>
-              <p className="text-justify text-[12pt] md:text-[14pt]  w-[100%] mt-4">
-                {`N'zambi awani banack mona N'ga muvalele Muene ondo kala beniaba Eme
-                n'gondodiame`}
-              </p>
+              <Lyrics lyric ={lyric}/>
             </div>
             {/* <button className="text-xl  text-500 mt-2 font-semibold">Traduzir</button> */}
       </div>
@@ -113,7 +112,11 @@ const Music = () => {
 }
 
 function solitTextByLine(text){
-  let lines =  text.split(/\n/);
+  let lines;
+  if(text)
+    lines =  text.split(/\n/);
+    
+    return lines
 }
 
 // export async function getServerSideProps(){

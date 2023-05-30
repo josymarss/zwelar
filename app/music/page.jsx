@@ -22,7 +22,7 @@ const Music = () => {
 
   const MusicCard = ({author, title, imagUrl}) => {
     return(
-         <div className=" shadow-md bg-slate-50 p-2 mx-4 mt-4">
+         <div className=" shadow-md bg-slate-50 p-2 mx-4 mt-4 hover-card">
          <div className='border-solid w-[fit-content] h-auto bg-cover rounded-sm transition-all opacity-100 bg-slate-900' >
          <Image
                   width={120}
@@ -57,17 +57,16 @@ const Music = () => {
             </h2>
             <div className='flex flex-col flex-wrap text-center '>
               <p className="text-[10pt] md:text-[12pt]  text-green-500 mt-2 font-semibold text-left">{author}</p>
-
-              <Lyrics lyric ={lyric}/>
+               <Lyrics lyric ={lyric}/>
             </div>
             {/* <button className="text-xl  text-500 mt-2 font-semibold">Traduzir</button> */}
       </div>
   );
   }
   return (
-    <div className="flex flex-col md:flex-row p-2 md:p-6 font-mulish w-full">
+    <div className="flex flex-col md:flex-row  p-2 md:p-6 font-mulish w-full">
         {/* {/* MUISC LETTERS} */}
-      <div className=''>
+      <div className='md:w-[50%]'>
         <MusicLetter 
           lyric={singer.lyric} 
           author={singer.name} 
@@ -75,7 +74,7 @@ const Music = () => {
           />
       </div>
 
-      <div>
+      <div className='md:w-[50%]'>
         <h2 className="text-slate-900 font-semibold  text-[12pt] mx-4 w-[100%]"> 
           Mais músicas 
         </h2>
@@ -113,8 +112,11 @@ const Music = () => {
 
 function solitTextByLine(text){
   let lines;
-  if(text)
+  if(text) {
     lines =  text.split(/\n/);
+  } else {
+     lines = ["Sem letras de momento"];
+  }
     
     return lines
 }

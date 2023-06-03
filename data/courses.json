@@ -36,7 +36,7 @@
     },
     {
         "id":6,
-        "url":"nhaneka2.jpg",
+        "url":"nhaneka.jpg",
         "description":"Traduzido do inglês-Nyaneka ou Haneca é uma língua Bantu de Angola. O dialeto Ngambwe é agora considerado uma língua distinta...",
         "language":"Nhaneka (Língua em Extinção)",
         "price": "20.500 kz"
@@ -46,6 +46,6 @@
         "url":"unbundu.jpg",
         "description":"Umbundu é uma língua banta falada pelos ovimbundos, povo originário das montanhas centrais de Angola. É a língua banta mais falada em Angola...",
         "language":"Unbundu",
-        "price":">13.500 kz"
+        "price":"13.500 kz"
     }
 ]

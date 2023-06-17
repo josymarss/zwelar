@@ -12,7 +12,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "next": "^13.3.0",
+    "next": "^13.3.4",
     "primeicons": "^6.0.1",
     "primereact": "^8.7.3",
     "react": "^18.2.0",
@@ -20,9 +20,11 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "babel-preset-env": "^1.7.0",
     "eslint": "7.30.0",
-    "eslint-config-next": "^13.3.1",
+    "eslint-config-next": "^13.3.4",
     "postcss": "^8.4.23",
+    "style-loader": "^3.3.2",
     "tailwindcss": "^3.3.1"
   }
 }

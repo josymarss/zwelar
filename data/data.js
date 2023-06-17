@@ -1,5 +1,5 @@
 //Alphabetic order
-export const data = [
+ export const data =  [
     {
         "word":"Array",
         "translation":"Array"

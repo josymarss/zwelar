@@ -10,7 +10,9 @@ export default function Courses() {
 
   const router = useRouter();
 
-  const CourseCard = ({url, price, language, description}) => {
+  const CourseCard = ({course}) => {
+    console.log(course)
+    const {price, language, url, description} = course;
     return (
             <div className="flex flex-col items-center w-96 hover:-translate-y-2 transition-transform cursor-pointer my-5">
             <div className={`w-72 h-48 rounded-md bg-[url('/course-images/${url}')]  bg-cover z-10 border border-gray-300`}></div>
@@ -33,10 +35,7 @@ export default function Courses() {
         {/* Div Card */}
        { courseContent.map((course)=> <CourseCard 
               key={course.id}
-              price={course.price} 
-              language={course.language} 
-              url={course.url} 
-              description={course.description}  
+              course={course}  
         />
         )
        }

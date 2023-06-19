@@ -14,7 +14,7 @@ const Music = () => {
   },[])
   
   const previousPageHandler = () => {
-      setPageNumber(pageNumber-1);
+     pageNumber > 1 ? setPageNumber(pageNumber-1) : '';
   }
   const nextPageHandler = () => {
       setPageNumber(pageNumber+1);

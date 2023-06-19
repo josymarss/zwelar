@@ -26,13 +26,24 @@ export default function Courses() {
                     src={`/course-images/${url}`} 
             />
             </div>
-            <div className="w-[350px] h-[350px] py-5 bg-slate-50 -mt-10 rounded-md shadow-xl border border-gray-100">
+            <div className="w-[350px] h-[350px] py-5  bg-slate-50 -mt-10 rounded-md shadow-xl border border-gray-100">
               <div className="flex items-center justify-between p-10 mt-4 font-mulish  ">
-                  <h2 className="text-green-500 text-2xl font-semibold">{language}</h2>
-                  <p className="font-mulish font-semibold text-sm">{price}</p>
+                  <h2 className="text-green-500 text-2xl font-semibold">
+                    {language}
+                  </h2>
+                  <p className="font-mulish font-semibold text-sm">
+                    {price}
+                  </p>
               </div>
-              <p className="px-10  -mt-6 text-justify font-mulish text-[10pt] md:text-[12pt]">{description}</p>
-              <button className="ml-10 p-2 px-5 rounded-md mt-2 hover:bg-green-600 hover:text-slate-50 transition-colors font-semibold bg-green-500 text-slate-900" onClick={() => router.push({pathname:'/detailcourse',query:{data:'Em construção'} })}>Ver curso</button>
+              <p className="px-10  -mt-6 text-justify font-mulish text-[10pt] md:text-[12pt]">
+                {description}
+              </p>
+              <button 
+                className="ml-10 p-2 px-5 rounded-md mt-2 hover:bg-green-600 hover:text-slate-50 transition-colors font-semibold bg-green-500 text-slate-900" 
+                onClick={() => router.push({pathname:'/detailcourse',query:{data:'Em construção'} })}
+                >
+                  Ver curso
+              </button>
             </div>
           </div>
     );
@@ -42,7 +53,6 @@ export default function Courses() {
     <div className="mt-10 p-4 font-mulish">
       <h2 className="w-full text-base md:text-xl font-mulish px-10 font-semibold">Cursos disponíveis</h2>
       <div className="relative mt-5 flex-wrap grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2 justify-center">
-        {/* Div Card */}
        { courseContent.map((course)=> <CourseCard 
               key={course.id}
               course = {course}

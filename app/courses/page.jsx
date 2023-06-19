@@ -4,18 +4,28 @@ import { useRouter } from 'next/navigation';
 import Head from "next/head";
 import courses from "../../data/courses.json"
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Courses() {
   const [courseContent, setCourseContent] = useState(courses);
 
   const router = useRouter();
 
-  const CourseCard = ({course}) => {
-    console.log(course)
-    const {price, language, url, description} = course;
+  const CourseCard = ({url, price, language, description}) => {
+    // console.log(url)
     return (
             <div className="flex flex-col items-center w-96 hover:-translate-y-2 transition-transform cursor-pointer my-5">
-            <div className={`w-72 h-48 rounded-md bg-[url('/course-images/${url}')]  bg-cover z-10 border border-gray-300`}></div>
+            <div className={`w-72 h-48 rounded-md  select-none bg-cover z-10 border border-gray-300`}>
+            <Image
+                    width={400}
+                    height={120}
+                    quality={100}
+                    intrinsec= 'true'
+                    alt="language-picture"
+                    className='rounded-md select-none bg-cover'
+                    src={`/course-images/${url}`} 
+            />
+            </div>
             <div className="w-[350px] h-[290px] bg-slate-50 -mt-10 rounded-md shadow-xl border border-gray-100">
               <div className="flex items-center justify-between p-10 mt-4 font-mulish  ">
                   <h2 className="text-green-500 text-2xl font-semibold">{language}</h2>
@@ -35,7 +45,10 @@ export default function Courses() {
         {/* Div Card */}
        { courseContent.map((course)=> <CourseCard 
               key={course.id}
-              course={course}  
+              price={course.price} 
+              language={course.language} 
+              url={course.url} 
+              description={course.description}  
         />
         )
        }

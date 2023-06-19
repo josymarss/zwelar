@@ -45,10 +45,7 @@ export default function Courses() {
         {/* Div Card */}
        { courseContent.map((course)=> <CourseCard 
               key={course.id}
-              price={course.price} 
-              language={course.language} 
-              url={course.url} 
-              description={course.description}  
+              course = {course}
         />
         )
        }

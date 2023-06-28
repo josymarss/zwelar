@@ -14,8 +14,8 @@ export default function Courses() {
   const CourseCard = ({course}) => {
         const {url, price, language, description} = course;
     return (
-            <div className="flex flex-col items-center h-[fit-content]  w-65 hover:-translate-y-2 transition-transform cursor-pointer my-5">
-            <div className="w-72  rounded-md  select-none bg-cover z-10 border border-gray-300">
+            <div className="flex flex-col items-center h-[fit-content] sm:40  w-65 hover:-translate-y-2 transition-transform cursor-pointer my-5">
+            <div className="w-60  rounded-md  select-none bg-cover z-10 border border-gray-300">
             <Image
                     width={400}
                     height={120}
@@ -26,12 +26,12 @@ export default function Courses() {
                     src={`/course-images/${url}`} 
             />
             </div>
-            <div className="w-[350px] h-[350px] py-5  bg-slate-50 -mt-10 rounded-md shadow-xl border border-gray-100">
+            <div className="w-18 md:w-[350px] h-[350px] py-5  bg-slate-50 -mt-10 rounded-md shadow-xl border border-gray-100">
               <div className="flex items-center justify-between p-10 mt-4 font-mulish  ">
-                  <h2 className="text-green-500 text-2xl font-semibold">
+                  <h2 className="text-green-500 text-[12pt] md:text-2xl font-semibold">
                     {language}
                   </h2>
-                  <p className="font-mulish font-semibold text-sm">
+                  <p className="font-mulish font-semibold text-[10pt] md:text-sm">
                     {price}
                   </p>
               </div>
@@ -52,7 +52,7 @@ export default function Courses() {
   return (
     <div className="mt-10 p-4 font-mulish">
       <h2 className="w-full text-base md:text-xl font-mulish px-10 font-semibold">Cursos disponíveis</h2>
-      <div className="relative mt-5 flex-wrap grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2 justify-center">
+      <div className="relative mt-5 flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2 justify-center">
        { courseContent.map((course)=> <CourseCard 
               key={course.id}
               course = {course}

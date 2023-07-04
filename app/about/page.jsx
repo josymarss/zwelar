@@ -2,9 +2,9 @@ import Head from "next/head";
 
  function About() {
   return (
-    <div className="w-full p-8 font-mulish">
-      <h2 className="font-mulish text-slate-800 font-semibold text-2xl mb-6 mt-14">Sobre a língua e Projecto</h2>
-      <p className="font-mulish text-xl mt-4 text-justify">
+    <div className="w-full p-8 pt-[0] font-mulish">
+      <h2 className="font-mulish text-slate-800 font-semibold text-xl mb-6 mt-14">Sobre a língua e Projecto</h2>
+      <p className="font-mulish text-x mt-4 text-justify">
             Este é um projecto que visa colocar o Kimbundu, Tchokwe, Kikongo, Kwanyama, Mbunda*, Nhaneka*, Fyote* e Ngangela como uma língua 
             oficial em Angola, e nesta secção temos como prioridade traduzir 
             palavras do inglês técnico usado no mundo das tecnologias modernas,
@@ -16,8 +16,8 @@ import Head from "next/head";
               para que no futuro essas línguas sejam oficiais em todo o país, cada uma referindo a sua respetiva localidade no território nacional.
       </p>
 
-        <p className="font-mulish text-xl mt-4 text-justify">Existe sessões que nos apegamos para começar a estruturar e alavancar este projecto essas que incluem:</p>
-        <ol className="ml-9 font-mulish text-lg mt-2 text-justify list-disc">
+        <p className="font-mulish text-x mt-4 text-justify">Existe sessões que nos apegamos para começar a estruturar e alavancar este projecto essas que incluem:</p>
+        <ol className="ml-9 font-mulish text-[12pt] mt-2 text-justify list-disc">
             <li>Actualização e correção do alfabeto</li>
             <li>Actualização De palavras modernas no mundo das tecnologias</li>
             <li>Actualização De palavras no mundo económico e socio-político</li>
@@ -25,7 +25,7 @@ import Head from "next/head";
             <li>Gramática de âmbitop geral</li>
             <li>Acordoortográfico</li>
         </ol>
-        <p className="font-mulish text-xl mt-4 text-justify">
+        <p className="font-mulish text-x mt-4 text-justify">
             O alfabeto, gramática, música e histórias, são apenas algumas das categorias que visam dar 
             maior entendimento aos estudadnes e estusiastas da língua. A
               criação de conteúdo por partes dos usuários por meio de sugestões via comentários Ajuda os professores
@@ -33,16 +33,16 @@ import Head from "next/head";
                uma vez que a língua sofreu várias mudanças ao longo dos anos. 
         </p>
         
-      <p className="font-mulish text-xl mt-4 text-justify">{`
-                    O Kimbundu é uma das línguas bantas mais faladas em Angola,
+      <p className="font-mulish text-x mt-4 text-justify">
+                    O Kimbundu é uma das línguas banta mais faladas em Angola,
                     onde é uma das línguas nacionais. 
                     O português tem muitos empréstimos lexicais desta 
                     língua obtidos durante a colonização portuguesa do
                     território angolano e através dos escravos angolanos
                     levados para o Brasil. É falada por cerca de 3 000 000
                     de pessoas em Angola como primeira ou segunda língua.
-                    `}</p>
-      <p className="font-mulish text-xl mt-4 text-justify">{`
+      </p>
+      <p className="font-mulish text-x mt-4 text-justify">
                     O kimbundu é a língua da região de Luanda,
                     Catete*, Malanje e as áreas de fronteira no Norte
                     (Dembos - variante crioula kimbundu/kikongo) e
@@ -53,11 +53,12 @@ import Head from "next/head";
                     século passado os europeus convencionaram 
                     chamar Bantu (bantu significa «pessoas», e 
                     é plural de muntu. Em Kimbundu mutu designa 
-                    «pessoa», com o plural em atu).`}</p>
-      <h2 className="font-mulish text-slate-800 font-semibold text-2xl mb-6 mt-8 text-justify">
+                    «pessoa», com o plural em atu).
+      </p>
+      <h2 className="font-mulish text-slate-800 font-semibold text-xl mb-6 mt-8 text-justify">
         Como contribuir.
       </h2>
-      <p className="font-mulish text-xl mt-4 text-justify">{`
+      <p className="font-mulish text-x mt-4 text-justify">
                 Para contribuir, é necessário ter um pouco de conhecimento
                 de línguas, ou pelo menos saber que na língua Kimbundu não
                 existem certas letras, acima colocamos um asterísticos de palavras que 
@@ -74,7 +75,7 @@ import Head from "next/head";
                 No caso de ser um programador, este é um projecto open source e no repoitório podes encontrar 
                 toda a informação necessária para poder contribuir. clique no link que está no menu
                 com o nome github e será reencaminhado para o código fonte do projecto.
-                `}</p>
+     </p>
     </div>
   );
 }

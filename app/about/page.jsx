@@ -2,10 +2,9 @@ import Head from "next/head";
 
  function About() {
   return (
-    <div className="w-[1200px] p-8 font-mulish">
+    <div className="w-full p-8 font-mulish">
       <h2 className="font-mulish text-slate-800 font-semibold text-2xl mb-6 mt-14">Sobre a língua e Projecto</h2>
       <p className="font-mulish text-xl mt-4 text-justify">
-        {`
             Este é um projecto que visa colocar o Kimbundu, Tchokwe, Kikongo, Kwanyama, Mbunda*, Nhaneka*, Fyote* e Ngangela como uma língua 
             oficial em Angola, e nesta secção temos como prioridade traduzir 
             palavras do inglês técnico usado no mundo das tecnologias modernas,
@@ -15,8 +14,6 @@ import Head from "next/head";
             Este projecto visa ensinar línguas nacionais, Ramificar um acordo ortográfico, inclusão de
              palavras mais modernas e técnicas. A criação de um acordo ortográfico não oficial é
               para que no futuro essas línguas sejam oficiais em todo o país, cada uma referindo a sua respetiva localidade no território nacional.
-              
-            `}
       </p>
 
         <p className="font-mulish text-xl mt-4 text-justify">Existe sessões que nos apegamos para começar a estruturar e alavancar este projecto essas que incluem:</p>

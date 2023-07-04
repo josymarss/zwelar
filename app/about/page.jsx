@@ -3,14 +3,7 @@ import Head from "next/head";
  function About() {
   return (
     <div className="w-[1200px] p-8 font-mulish">
-      <Head>
-        <title>Zwelar | Sobre o projecto</title>
-        <meta
-          name="Zwelar | sobre o site zwelar"
-          description="O objectivo e tornar as línguas nacionais angolanas como oficiais em topdo o território de Angola"
-        />
-      </Head>
-      <h2 className="font-mulish text-slate-800 font-semibold text-2xl mb-6 mt-14">{`Sobre a língua e Projecto.`}</h2>
+      <h2 className="font-mulish text-slate-800 font-semibold text-2xl mb-6 mt-14">Sobre a língua e Projecto</h2>
       <p className="font-mulish text-xl mt-4 text-justify">
         {`
             Este é um projecto que visa colocar o Kimbundu, Tchokwe, Kikongo, Kwanyama, Mbunda*, Nhaneka*, Fyote* e Ngangela como uma língua 

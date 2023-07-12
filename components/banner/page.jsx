@@ -9,6 +9,7 @@ export default function Banner(){
             <img
                 src="/bg-image.png"
                 alt='image'
+                loading="lazy"
               />
             {/* <button className='absolute bottom-19'>Começar agora</button> */}
         </div>

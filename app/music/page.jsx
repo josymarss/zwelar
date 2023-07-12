@@ -36,6 +36,7 @@ const Music = () => {
                     intrinsec= 'true'
                     alt="singer"
                     src={`/music-images/${pic}`}
+                    loading="lazy"
             />
          </div>
          <p className="mt-2 text-[8pt] md:text-[12pt]">
@@ -61,7 +62,7 @@ const Music = () => {
               {title}
             </h2>
             <div className='flex flex-col flex-wrap text-center '>
-              <p className="text-[10pt] md:text-[12pt]  text-green-500 mt-2 font-semibold text-left">{author}</p>
+              <p className="text-[10pt] md:text-[12pt] text-green-500 mt-2 font-semibold text-left">{author}</p>
                <Lyrics lyric ={lyric}/>
             </div>
             {/* <button className="text-xl  text-500 mt-2 font-semibold">Traduzir</button> */}

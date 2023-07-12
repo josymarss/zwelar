@@ -24,6 +24,7 @@ export default function Courses() {
                     alt="language-picture"
                     className='rounded-md select-none bg-cover'
                     src={`/course-images/${url}`} 
+                    loading="lazy"
             />
             </div>
             <div className="w-18 md:w-[350px] h-[fit-content] md:h-[350px] py-5  bg-slate-50 -mt-10 rounded-md shadow-xl border border-gray-100">

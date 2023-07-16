@@ -37,7 +37,7 @@ export function Header (){
     const toggleMenuHandler = ()=>{
          setToggleMenu(!toggleMenu)
     }
-    const NavItems = ({style}) => {
+    const NavItems = () => {
          return (
             <nav className={`${toggleMenu ?'hidden':'flex'} w-full  mt-[-530px] border-t flex flex-col gap-4 border-t-[#232e36]  md:border-0 md:mt-0 `}>
                     <div className='self-end mt-2 flex md:hidden bg-black'>
@@ -116,10 +116,12 @@ export function Header (){
     return(
         <>
             <header className={`sticky top-0 z-40 bg-slate-100 px-2 flex flex-col  justify-between items-center w-full ${toggleMenu ? 'h-fit' : 'h-[100vh]'} md:h-[90px] shadow-lg font-mulish`}>
-                <div className='flex h-fit flex-row justify-between w-full flex-wrap relative'>
-                        <h2 className="font-bold text-xl ml-[1.5rem] mt-1 md:text-2xl text-slate-800">
-                            <Link href='/'>Zwelar</Link>
-                        </h2>
+                <div className='flex h-fit flex-row  justify-between w-full flex-wrap relative'>
+                        <div>
+                            <h2 className="font-bold text-xl md:absolute md:top-6 ml-[1.5rem] md:text-2xl text-slate-800">
+                                <Link href='/'>Zwelar</Link>
+                            </h2>
+                        </div>
                         <div className='flex flex-row-reverse justify-between gap-4 items-center md:flex-row'>
                             <div className='w-[16px] h-[16px] mb-2 md:hidden'>
                                     {!toggleMenu ?   
@@ -140,12 +142,14 @@ export function Header (){
                                         </span>
                                     }
                             </div>
-                            <span className='header-li mt-2 '>
-                                <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
-                            </span>
-                            <button className='w-[fit-content] hover:text-[blue] mt-1 font-bold  p-1 rounded-[5px] text-black  bg-green-400 text-[11px]' 
-                                    onClick={onSugerir}>Sugerir Palavras
-                            </button>
+                            <aside>
+                                <span className='header-li mt-2 '>
+                                    <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
+                                </span>
+                                <button className='w-[fit-content]  hover:text-[blue] mt-3 font-bold  p-1 rounded-[5px] text-black  bg-green-400 text-[11px]' 
+                                        onClick={onSugerir}>Sugerir Palavras
+                                </button>
+                            </aside>
                         </div>
                 </div>
                 <div className='flex w-full  flex-row py-2 gap-4'>

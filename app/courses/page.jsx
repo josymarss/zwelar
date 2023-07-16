@@ -4,23 +4,47 @@ import { useRouter } from 'next/navigation';
 import Head from "next/head";
 import courses from "../../data/courses.json"
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Courses() {
   const [courseContent, setCourseContent] = useState(courses);
 
   const router = useRouter();
 
-  const CourseCard = ({url, price, language, description}) => {
+  const CourseCard = ({course}) => {
+        const {url, price, language, description} = course;
     return (
-            <div className="flex flex-col items-center w-96 hover:-translate-y-2 transition-transform cursor-pointer my-5">
-            <div className={`w-72 h-48 rounded-md bg-[url('/course-images/${url}')]  bg-cover z-10 border border-gray-300`}></div>
-            <div className="w-[350px] h-[290px] bg-slate-50 -mt-10 rounded-md shadow-xl border border-gray-100">
+            <div className="flex flex-col items-center h-[fit-content] sm:40  w-65 hover:-translate-y-2 transition-transform cursor-pointer my-5">
+            <div className="w-60  rounded-md  select-none bg-cover z-10 border border-gray-300">
+            <Image
+                    width={400}
+                    height={120}
+                    quality={100}
+                    intrinsec= 'true'
+                    alt="language-picture"
+                    className='rounded-md select-none bg-cover'
+                    src={`/course-images/${url}`} 
+                    loading="lazy"
+            />
+            </div>
+            <div className="w-18 md:w-[350px] h-[fit-content] md:h-[350px] py-5  bg-slate-50 -mt-10 rounded-md shadow-xl border border-gray-100">
               <div className="flex items-center justify-between p-10 mt-4 font-mulish  ">
-                  <h2 className="text-green-500 text-2xl font-semibold">{language}</h2>
-                  <p className="font-mulish font-semibold text-sm">{price}</p>
+                  <h2 className="text-green-500 text-[12pt] md:text-2xl font-semibold">
+                    {language}
+                  </h2>
+                  <p className="font-mulish font-semibold text-[10pt] md:text-sm">
+                    {price}
+                  </p>
               </div>
-              <p className="px-10 -mt-6 text-justify font-mulish text-sm">{description}</p>
-              <button className="ml-10 p-2 px-5 rounded-md mt-2 hover:bg-green-600 hover:text-slate-50 transition-colors font-semibold bg-green-500 text-slate-900" onClick={() => router.push({pathname:'/detailcourse',query:{data:'Em construção'} })}>Ver curso</button>
+              <p className="px-10  -mt-6 text-justify font-mulish text-[10pt] md:text-[12pt]">
+                {description}
+              </p>
+              <button 
+                className="ml-10 p-2 px-5 rounded-md mt-1 hover:bg-green-600 hover:text-slate-50 transition-colors font-semibold bg-green-500 text-slate-900" 
+                onClick={() => router.push({pathname:'/detailcourse',query:{data:'Em construção'} })}
+                >
+                  Ver curso
+              </button>
             </div>
           </div>
     );
@@ -29,14 +53,10 @@ export default function Courses() {
   return (
     <div className="mt-10 p-4 font-mulish">
       <h2 className="w-full text-base md:text-xl font-mulish px-10 font-semibold">Cursos disponíveis</h2>
-      <div className="relative mt-5 flex flex-wrap items-center lg:justify-start gap-1 sm:justify-center">
-        {/* Div Card */}
+      <div className="relative mt-5 flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2 justify-center">
        { courseContent.map((course)=> <CourseCard 
               key={course.id}
-              price={course.price} 
-              language={course.language} 
-              url={course.url} 
-              description={course.description}  
+              course = {course}
         />
         )
        }

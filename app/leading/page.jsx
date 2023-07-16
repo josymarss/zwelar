@@ -158,6 +158,7 @@ export default function Leading() {
                   quality={90}
                   alt="Ouvir música"
                   src="/landing-images/sing.png"
+                  loading="lazy"
                 />
               </div>
               <p className="text-center text-[14px] md:text-xl md:w-[fit-content] md:ml-12 md:mb-36 md:mt-24 text-slate-900 mt-2 font-bold font-mulish">

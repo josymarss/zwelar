@@ -1,0 +1,10 @@
+.rodape{
+    padding: 18px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rodape h3{
+    font-size: 20px;
+    font-weight: 200;
+}

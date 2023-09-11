@@ -92,7 +92,7 @@ export function Header() {
           <button className="btn">Criar conta / entrar</button>
         </div>
       </header>
-      {/* {pathname === "/" ? <Banner /> : ""} */}
+       {pathname === "/" ? <Banner /> : ""} 
     </>
   );
 }

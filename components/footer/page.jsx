@@ -1,6 +1,6 @@
 'use client'
 // import { useRouter } from 'next/router';
-// import styles from './styles.module.css';
+import'./styles.css';
 
 
 export default function Footer (){
@@ -8,13 +8,14 @@ export default function Footer (){
 
     return(
          
-            <footer className='flex justify-center bg-slate-800 font-mulish'>
-                {/* {router.pathname === '/' ?  */}
-                    <div className="flex items-end justify-center p-4">
-                        <p className="text-semibold text-md text-white">{`@bantu.io ${new Date().getFullYear()}`}</p>
-                    </div> 
-                    {/* : ''
-                } */}
+            <footer>
+               
+                    <div className="rodape">
+                        <h3>Copyright Zwelar</h3>
+                        <h3>Por: Bantudev</h3>
+
+                   </div> 
+                 
             </footer> 
     )
 }

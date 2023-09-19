@@ -2,8 +2,8 @@ import React from "react";
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
 import { config } from "@fortawesome/fontawesome-svg-core";
 
-import { Header } from '../components/header';
-import Footer from '../components/footer';
+import { Header } from '../components/header/page';
+import Footer from '../components/footer/page';
 
 // import  '../styles/globals.css' 
 

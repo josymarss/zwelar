@@ -91,7 +91,7 @@ export default function Leading() {
 
       <h1>Ouve músicas nas línguas <br/> nacionais e veja suas traduções</h1>
       <p>Todo usuário que entende pode adicionar letras de músicas</p>
-      <img src="/banner4.png"  width={600} height={700}/>
+      <Image src="/banner4.png"  width={600} height={700}/>
       </div>
       
       {/* rodape */}

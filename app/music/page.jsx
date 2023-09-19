@@ -11,7 +11,7 @@ const Music = () => {
 
   useEffect(()=>{
     setSinger(singersContent[1])
-  },[])
+  },[singersContent])
   
   const previousPageHandler = () => {
      pageNumber > 1 ? setPageNumber(pageNumber-1) : '';

@@ -1,0 +1,38 @@
+.menuContainer{
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 4rem;
+justify-content: space-between;
+padding-left: 6rem;
+padding-right: 6rem;
+align-items: center;
+}
+
+.Logo{
+    font-size:25px ;
+    font-weight: 600;
+}
+.menuLink{
+    display: flex;
+    flex-direction: row;
+    
+}
+.link{
+    margin-right: 1rem;
+}
+
+.active{
+    color: #e7b102;
+}
+.btn{
+    background-color: #e7b102;
+    width: 14rem;
+    height: 2.5rem;
+    color: #ffff;
+    border-radius: 6px;
+    
+}
+.btn:hover{
+    cursor:pointer;
+}

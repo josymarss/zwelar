@@ -1,0 +1,44 @@
+[
+    {
+      "id":1,
+      "name":"Ruy Mingas",
+      "music_title":"Birin birin",
+      "pic":"ruy.jpg",
+      "lyric":"Welelele \n Kisangela ngwetu ni mazundu \n Welelele \n Kisangela ngwetu ni mazundu \n Oso wadimuka udya ngo lumoxi \n Birin birin ngogo jami \n Watambula o wanga mwibulaze \n Oso wadimuka udya ngo lumoxi \n Birin birin ngogo jami \n Watambula o wanga mwibulaze \n Oso wadimuka udya ngo lumoxi\n  Birin birin ngogo jami\n Watambula o wanga mwibulaze\n  Oso wadimuka udya ngo lumoxi\n  Birin birin ngogo jami\n  Watambula o wanga mwibulaze\n  Oso wadimuka udya ngo lumoxi\n  Birin birin ngogo jami \n  Watambula o wanga mwibulaze \n Oso wadimuka udya ngo lumoxi \n Birin birin ngogo jami \n Watambula o wanga mwibulaze \n"
+    },
+    {
+        "id":2,
+        "name":"Bonga",
+        "music_title":"Mona Ki Ngi Xica",
+        "pic":"bonga.jpg",
+        "lyric":"Alukenn n'golafua N'ga mu binga kia Muene ondo kala beniaba Eme n'gondodiame\n Mona mona muene Kissueia weza Mona mona muene Kalunga n'gumba \n N'zambi awani banack mona N'ga muvalele Muene ondo kala beniaba Eme n'gondodiame"
+      },
+      {
+        "id":3,
+        "name":"Artur Nunes",
+        "music_title":"Mana",
+        "pic":"Artur.jpg",
+        "lyric":""
+      },
+      {
+        "id":4,
+        "name":"António Paulino",
+        "music_title":"Kamba Ba Laumba",
+        "pic":"antonio.jpg",
+        "lyric":""
+      },
+       {
+        "id":5,
+        "name":"Yuri da Cunha",
+        "music_title":"Kuma Kwakie",
+        "pic":"yuri.jpeg",
+        "lyric":""
+      },
+      {
+        "id":6,
+        "name":"Edy Tussa",
+        "music_title":"Pekenina",
+        "pic":"edy.jpg",
+        "lyric":""
+      }
+  ] 

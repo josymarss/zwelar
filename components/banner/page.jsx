@@ -18,7 +18,7 @@ export default function Banner() {
       </div>
 
       <div className="bannerImamge">
-        <Image src="/bannerImg.svg" width={660} height={660}/>
+        <Image src="/bannerImg.svg" width={660} height={660} alt="banner imge"/>
       </div>
     </div>
   );

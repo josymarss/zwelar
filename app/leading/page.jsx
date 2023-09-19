@@ -22,7 +22,7 @@ export default function Leading() {
       />
       {/* Inicio  Banner 2 */}
       <div className="bnrContainer">
-        <Image src="/secondBanner.svg" width={660} height={660} />
+        <Image src="/secondBanner.svg" width={660} height={660} alt="banner 2 "/>
 
         <div>
           <h1>Aprender Linguas nacionais nunca foi tão fácil!</h1>
@@ -78,7 +78,7 @@ export default function Leading() {
           <p style={{width:560}}>O Zuelar permite que filhos de descendentes de reis e afro descentes aprendam a língua dos seus ancestrais aonde quer que estejam. Afro-brasileiros e Angolanos nascidos em Portugal podem reconectar-se com sua terra mãe.</p>
         </div>
 
-        <Image src="/banner3.svg" width={660} height={660} />
+        <Image src="/banner3.svg" width={660} height={660} alt="banner 3"/>
 
       </div>
       
@@ -91,7 +91,7 @@ export default function Leading() {
 
       <h1>Ouve músicas nas línguas <br/> nacionais e veja suas traduções</h1>
       <p>Todo usuário que entende pode adicionar letras de músicas</p>
-      <img src="/banner4.png"  width={600} height={700}/>
+      <Image src="/banner4.png"  width={600} height={700} alt="banner 4"/>
       </div>
       
       {/* rodape */}

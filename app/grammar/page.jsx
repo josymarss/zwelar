@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Head from "next/head";
 
-import { Dialog } from "primereact/dialog";
 
 export default function Grammar() {
   const router = useRouter();

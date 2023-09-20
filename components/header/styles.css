@@ -1,38 +1,41 @@
-.menuContainer{
-display: flex;
-flex-direction: row;
-width: 100%;
-height: 4rem;
-justify-content: space-between;
-padding-left: 6rem;
-padding-right: 6rem;
-align-items: center;
+.menuContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 4rem;
+  justify-content: space-between;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow:4px 2px 2px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
-.Logo{
-    font-size:25px ;
-    font-weight: 600;
+.Logo {
+  font-size: 25px;
+  font-weight: 600;
 }
-.menuLink{
-    display: flex;
-    flex-direction: row;
-    
+.menuLink {
+  display: flex;
+  flex-direction: row;
 }
-.link{
-    margin-right: 1rem;
+.link {
+  margin-right: 1rem;
 }
 
-.active{
-    color: #e7b102;
+.active {
+  color: #e7b102;
 }
-.btn{
-    background-color: #e7b102;
-    width: 14rem;
-    height: 2.5rem;
-    color: #ffff;
-    border-radius: 6px;
-    
+.btn {
+  background-color: #e7b102;
+  width: 14rem;
+  height: 2.5rem;
+  color: #ffff;
+  border-radius: 6px;
 }
-.btn:hover{
-    cursor:pointer;
+.btn:hover {
+  cursor: pointer;
 }

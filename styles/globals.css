@@ -29,4 +29,8 @@
 .hover-card:hover {
       @apply  cursor-pointer;
 }
+
+body {
+      font-family: var(--font-family);
+  }  
 /*Music PAGE*/

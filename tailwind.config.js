@@ -1,3 +1,5 @@
+const {nextui} = require("@nextui-org/react");
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -5,6 +7,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    // Nextui
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+
     
 ],
   // darkMode:true,
@@ -15,5 +20,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  darkMode: "class",
+
+  plugins: [nextui()],
 }

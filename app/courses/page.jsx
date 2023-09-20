@@ -5,11 +5,23 @@ import Head from "next/head";
 import courses from "../../data/courses.json";
 import { useEffect } from "react";
 import Image from "next/image";
-import { Dialog } from 'primereact';
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  Accordion,
+  AccordionItem,
+} from "@nextui-org/react";
 
 export default function Courses() {
   const [courseContent, setCourseContent] = useState(courses);
+  // Modal;
   const [visible, setVisible] = useState(false);
+  const defaultContent =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   const router = useRouter();
 
@@ -48,7 +60,7 @@ export default function Courses() {
               //   pathname: "/detailcourse",
               //   query: { data: "Em construção" },
               // })
-              setVisible(!visible)
+              setVisible(true)
             }
           >
             Ver curso
@@ -60,28 +72,86 @@ export default function Courses() {
 
   return (
     <>
-      {/* <Button
-        label="Show"
-        icon="pi pi-external-link"
-        onClick={() => setVisible(true)}
-      /> */}
-      <Dialog
-        header="Header"
-        visible={visible}
-        style={{ width: "50vw" }}
-        onHide={() => setVisible(false)}
-      >
-        <p className="m-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </Dialog>
+      <Modal isOpen={visible} onClose={() => setVisible(false)}>
+        <ModalContent>
+          <>
+            <ModalHeader className="flex flex-col gap-1">
+              Cronograma do curso
+            </ModalHeader>
+            <ModalBody>
+              <Accordion>
+                <AccordionItem key="1" title="Fundamentos do Kimbundu">
+                  <p>
+                    Aula 1: Introdução ao alfabeto Kimbundu e sons da língua.{" "}
+                  </p>
+                  <br />
+                  <p>Aula 2: Saudações e frases básicas de cortesia.</p>
+                </AccordionItem>
+                <AccordionItem
+                  key="2"
+                  aria-label="Accordion 2"
+                  title="Números"
+                >
+                  <p>Aula 3: Números e contagem em Kimbundu.</p>
+                  <br />
+                  <p>
+                    Aula 4: Vocabulário para cores, números e dias da semana.
+                  </p>
+                </AccordionItem>
+                <AccordionItem
+                  key="3.1"
+                  aria-label="Accordion 1"
+                  title="Gramática e Construção de Frases."
+                >
+                  
+                  <p>Aula 5: Verbos de ação e conjugação no presente. </p>
+                  <br />
+                  <p>Aula 6: Construção de frases simples.</p>
+                  <br />
+                  <p>Aula 7: Plurais e concordância de gênero.</p>
+                  <br />
+                  <p>Aula 8: Expressões</p>
+                </AccordionItem>
 
+                <AccordionItem
+                  key="3"
+                  aria-label="Accordion 1"
+                  title="Desenvolvimento de Habilidades"
+                >
+                   <p>Aula 9: Compreensão auditiva
+                  com diálogos e gravações em Kimbundu.</p><br /> <p>Aula 10: Leitura de
+                  textos curtos em Kimbundu. </p>
+                  <br /><p>Aula 11: Conversação prática com
+                  foco na fluência. </p>
+                  <br /><p>Aula 12: Escrita em Kimbundu - elaboração de
+                  pequenos textos.</p>
+                </AccordionItem>
+                <AccordionItem
+                  key="4"
+                  aria-label="Accordion 1"
+                  title="
+                  Extras: Cultura e História"
+                >
+                  <p>Ao longo do curso, faça avaliações periódicas para medir seu
+                  progresso e identificar áreas que precisam de mais atenção.</p>
+                  <br/>
+                  <p>
+                  Participe de grupos de estudo ou comunidades online de
+                  aprendizado de Kimbundu para praticar com falantes nativos ou
+                  outros estudantes.</p>
+                  <br/>
+                  
+                  <p>Durante todo o curso, incorpore elementos da cultura e
+                  história Kimbundu nas aulas.</p> 
+                </AccordionItem>
+                
+               
+                
+              </Accordion>
+            </ModalBody>
+          </>
+        </ModalContent>
+      </Modal>
       <div className="mt-10 p-4 font-mulish  flex justify-center">
         <div className=" mt-5 flex gap-3 flex-wrap justify-center items-center">
           {courseContent.map((course) => (

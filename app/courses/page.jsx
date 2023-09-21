@@ -17,13 +17,10 @@ import {
 } from "@nextui-org/react";
 
 export default function Courses() {
+  const router = useRouter();
   const [courseContent, setCourseContent] = useState(courses);
   // Modal;
   const [visible, setVisible] = useState(false);
-  const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-
-  const router = useRouter();
 
   const CourseCard = ({ course }) => {
     const { url, price, language, description } = course;
@@ -53,7 +50,8 @@ export default function Courses() {
           <p className="px-10  -mt-6 text-justify font-mulish text-[10pt] md:text-[12pt]">
             {description}
           </p>
-          <button
+         <div className="flex items-center gap-4">
+         <button
             className="ml-10 p-2 px-5 rounded-md mt-2 hover:bg-green-600 hover:text-slate-50 transition-colors font-semibold bg-green-500 text-slate-50"
             onClick={() =>
               // router.push({
@@ -63,8 +61,19 @@ export default function Courses() {
               setVisible(true)
             }
           >
-            Ver curso
+            Ver Cronograma
           </button>
+          <button
+            className="ml-10 p-2 px-5 rounded-md mt-2 hover:bg-green-600 hover:text-slate-50 transition-colors font-semibold bg-green-500 text-slate-50"
+            onClick={() =>
+              router.push("/detailcourse")
+              // setVisible(true)
+              // console.log("Ver ir para o curos")
+            }
+          >
+            Fazer curso
+          </button>
+         </div>
         </div>
       </div>
     );
@@ -75,7 +84,7 @@ export default function Courses() {
       <Modal isOpen={visible} onClose={() => setVisible(false)}>
         <ModalContent>
           <>
-            <ModalHeader className="flex flex-col gap-1">
+            <ModalHeader className="flex flex-col gap-1 ">
               Cronograma do curso
             </ModalHeader>
             <ModalBody>

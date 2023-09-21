@@ -1,7 +1,7 @@
 //Alphabetic order
 export const data =  [
     {
-        "word":"Array",
+        "word":"01",
         "translation":"Array"
     },
     {

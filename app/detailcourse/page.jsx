@@ -10,9 +10,9 @@ function DetailCOurse() {
   useEffect(() => {}, []);
 
   return (
-    <div className="flex flex-col items-center justify-center font-mulish mt-20">
+    <div className="flex flex-col overflow-hidden items-center justify-center font-mulish mt-20">
       {/* <p className="text-3xl font-bold text-slate-600">{"data"}</p> */}
-      <div className="flex w-full flex-col items-center mt-5">
+      <div className="flex w-full flex-col items-center mt-5 scroll-m-1">
         <Tabs aria-label="Options" color="primary" variant="bordered">
           <Tab
             key="Gramática"
@@ -50,7 +50,7 @@ function DetailCOurse() {
                 <video controls src="/01.mp4" className="col-span-3 rounded-md">
                   <source src="/01.mp4" type="video/mp4" />
                 </video>
-                <div className="flex flex-col gap-2 w-full h-full rounded-md p-2 bg-slate-50">
+                <div className="flex flex-col gap-2 w-full h-full rounded-md p-2 bg-slate-50 overflow-y-auto ">
                   <div className="flex gap-2 flex-col">
                     {[1, 2, 3, 4, 5, 6].map(( key, item) => (
                       <Accordion key={key}>
